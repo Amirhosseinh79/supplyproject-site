@@ -1,0 +1,140 @@
+/* ===========================================================
+   Smart Supply — brand overrides on top of Sneat's default theme
+   Repoints Sneat's purple accent to the FMCG platform's blue palette
+   =========================================================== */
+
+:root {
+  --bs-primary: #1e3a8a;
+  --bs-primary-rgb: 30, 58, 138;
+  --sneat-accent: #2563eb;
+}
+
+.bg-label-primary { color: #1e3a8a !important; background-color: #dbe4f9 !important; }
+.btn-primary,
+.bg-primary { background-color: #1e3a8a !important; border-color: #1e3a8a !important; }
+.btn-primary:hover,
+.btn-primary:active { background-color: #17306f !important; border-color: #17306f !important; }
+.btn-outline-primary { color: #1e3a8a !important; border-color: #1e3a8a !important; }
+.btn-outline-primary:hover { background-color: #1e3a8a !important; color: #fff !important; }
+.text-primary { color: #1e3a8a !important; }
+.link-primary { color: #1e3a8a !important; }
+a.menu-link { color: inherit; }
+.menu-vertical .menu-item.active > .menu-link:not(.menu-toggle) { background: linear-gradient(72.47deg, #1e3a8a 22.16%, #2f52b0 76.47%); }
+.menu-vertical .menu-item.open:not(.menu-item.active) > .menu-link { background: rgba(30, 58, 138, 0.06); }
+.form-check-input:checked { background-color: #1e3a8a !important; border-color: #1e3a8a !important; }
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link { background-color: #1e3a8a !important; }
+.progress-bar { background-color: #1e3a8a; }
+
+/* AI insight banner */
+.ai-insight-banner {
+  background: linear-gradient(90deg, #1e3a8a 0%, #1e40af 100%);
+  border-radius: 0.5rem;
+  color: #fff;
+}
+
+/* KPI card icon tile */
+.kpi-icon-tile {
+  width: 46px;
+  height: 46px;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.risk-badge { font-weight: 600; font-size: 0.7rem; padding: 0.2rem 0.55rem; border-radius: 50rem; }
+.risk-critical { background-color: #ffedd5; color: #c2410c; }  /* Critical — orange */
+.risk-under3   { background-color: #fee2e2; color: #b91c1c; }  /* Under 3 — red (more severe than Critical) */
+
+.dropzone {
+  border: 2px dashed #c8cbdb;
+  border-radius: 0.75rem;
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  background: #fbfbfe;
+}
+.dropzone:hover, .dropzone.dz-active {
+  border-color: #1e3a8a;
+  background: #eef2ff;
+}
+
+.badge-soft-danger  { background-color: #fee2e2; color: #b91c1c; }
+.badge-soft-warning { background-color: #fef3c7; color: #92400e; }
+.badge-soft-info    { background-color: #dbeafe; color: #1d4ed8; }
+.badge-soft-success { background-color: #d1fae5; color: #047857; }
+.badge-soft-secondary { background-color: #e2e8f0; color: #475569; }
+
+.text-xs { font-size: 0.75rem; }
+.table td, .table th { vertical-align: middle; }
+.rtl-label { direction: rtl; text-align: right; font-family: 'Tahoma', sans-serif; }
+
+/* ===========================================================
+   Inventory-Days columns — DI(S) / DI(Tr) / DI(S)2 / DI(Tr)2
+   Discrete 4-bucket rule (no gradient):
+     0-5d   Low        -> blue
+     5-15d  Adequate   -> green
+     15-25d High       -> orange
+     >25d   Very High  -> red
+   =========================================================== */
+.inv-badge { font-weight: 600; min-width: 52px; display: inline-block; text-align: center; }
+.inv-under5 { background-color: #fee2e2; color: #b91c1c; }  /* <5 — red */
+.inv-mid    { background-color: #d1fae5; color: #047857; }  /* 5-12 — green */
+.inv-over12 { background-color: #dbeafe; color: #1d4ed8; }  /* >12 — blue */
+
+/* SUP-INV column — highlighted when supplier inventory is zero */
+.sup-inv-zero { background-color: #fee2e2; color: #b91c1c; font-weight: 600; }
+
+/* Detail modal — "Sale" row, highlighted when Sale > 7D AVG Sales */
+.sale-high { background-color: #ffedd5; }
+.sale-high-text { color: #c2410c; font-weight: 700; }
+
+/* Sortable table headers (AI Order Recommendation) */
+.sortable { cursor: pointer; user-select: none; white-space: nowrap; }
+.sortable:hover { background-color: rgba(30, 58, 138, 0.06); }
+.sortable i { font-size: 0.85rem; vertical-align: -1px; opacity: 0.6; }
+
+/* Confirm toggle — small circle, click to confirm, click again to undo */
+.confirm-toggle {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 24px; height: 24px; border-radius: 50%;
+  border: 2px solid #cbd5e1; color: #cbd5e1; cursor: pointer;
+  transition: all 0.15s ease; font-size: 14px; background: #fff;
+}
+.confirm-toggle:hover { border-color: #16a34a; color: #16a34a; }
+.confirm-toggle.confirmed { background-color: #16a34a; border-color: #16a34a; color: #fff; }
+
+/* Row-level risk indicator — replaces the old inline CRIT/URGENT text badge.
+   A thin colored left border + a very light tint on the whole row says the
+   same thing without taking up any column width. */
+tr.row-lt3      { background-color: #fef4f4; border-left: 3px solid #b91c1c; }
+tr.row-critical { background-color: #f5f3ff; border-left: 3px solid #7c3aed; }
+tr.row-lt3 td:first-child, tr.row-critical td:first-child { padding-left: 0.5rem; }
+
+/* Compact action icon buttons (Edit) — smaller footprint than the old
+   text-label buttons so OP/IN have room without triggering horizontal scroll */
+.btn-icon-sm {
+  width: 26px; height: 26px; padding: 0 !important;
+  display: inline-flex; align-items: center; justify-content: center;
+  font-size: 0.8rem;
+}
+
+/* Reset icon next to the Orders badge */
+.reset-icon { cursor: pointer; font-size: 0.8rem; }
+
+/* Pallet/box quantity sync inputs in the Edit panel */
+.qty-sync-input { font-size: 0.8rem; }
+.qty-sync-hint { font-size: 0.65rem; color: #94a3b8; }
+
+/* Clickable KPI alert cards */
+.kpi-card-clickable { cursor: pointer; transition: transform 0.1s ease, box-shadow 0.15s ease; }
+.kpi-card-clickable:hover { transform: translateY(-1px); box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.08); }
+
+/* Row flash highlight, used when a card jumps the user to a specific row */
+@keyframes rowFlash {
+  0%   { background-color: #fef9c3; }
+  100% { background-color: transparent; }
+}
+tr.row-flash { animation: rowFlash 1.6s ease-out; }

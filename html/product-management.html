@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en" class="light-style layout-menu-fixed" dir="ltr" data-theme="theme-default"
+  data-assets-path="../assets/" data-template="vertical-menu-template-free">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <title>Product Management | Smart Supply — FMCG Procurement Platform</title>
+    <meta name="description" content="Smart Supply — AI-powered FMCG procurement platform" />
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/vendor/fonts/boxicons.css" />
+    <link rel="stylesheet" href="../assets/vendor/css/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="../assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="../assets/css/demo.css" />
+    <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="../assets/vendor/libs/apex-charts/apex-charts.css" />
+    <link rel="stylesheet" href="../assets/css/custom.css" />
+    
+    <script src="../assets/vendor/js/helpers.js"></script>
+    <script src="../assets/js/config.js"></script>
+  </head>
+
+  <body>
+    <div class="layout-wrapper layout-content-navbar">
+      <div class="layout-container">
+        <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+          <div class="app-brand demo">
+            <a href="index.html" class="app-brand-link">
+              <span class="app-brand-logo demo">
+                <span class="d-flex align-items-center justify-content-center" style="width:32px;height:32px;border-radius:8px;background:linear-gradient(135deg,#1e3a8a,#1e293b);">
+                  <i class="bx bx-package text-white" style="font-size:18px;"></i>
+                </span>
+              </span>
+              <span class="app-brand-text demo menu-text fw-bolder ms-2">Smart Supply</span>
+            </a>
+            <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
+              <i class="bx bx-chevron-left bx-sm align-middle"></i>
+            </a>
+          </div>
+
+          <div class="menu-inner-shadow"></div>
+          <ul class="menu-inner py-1">
+            <li class="menu-item">
+              <a href="index.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-line-chart"></i>
+                <div>
+                  <div class="fw-semibold">Executive Dashboard</div>
+                  <small class="text-muted" style="font-size:.65rem;">Real-time procurement overview</small>
+                </div>
+                
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="order-recommendations.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-cart"></i>
+                <div>
+                  <div class="fw-semibold">AI Order Recommendation</div>
+                  <small class="text-muted" style="font-size:.65rem;">Smart ordering suggestions</small>
+                </div>
+                <span class="badge bg-label-primary rounded-pill ms-2">10</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="promotion-planning.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bxs-megaphone"></i>
+                <div>
+                  <div class="fw-semibold">Promotion Planning</div>
+                  <small class="text-muted" style="font-size:.65rem;">Upload & manage promotions</small>
+                </div>
+                
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="supplier.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-buildings"></i>
+                <div>
+                  <div class="fw-semibold">Supplier</div>
+                  <small class="text-muted" style="font-size:.65rem;">Performance & inventory</small>
+                </div>
+                
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="management.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-bar-chart-alt-2"></i>
+                <div>
+                  <div class="fw-semibold">Management Dashboard</div>
+                  <small class="text-muted" style="font-size:.65rem;">Executive-level overview</small>
+                </div>
+                
+              </a>
+            </li>
+            <li class="menu-item active">
+              <a href="product-management.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-box"></i>
+                <div>
+                  <div class="fw-semibold">Product Management</div>
+                  <small class="text-muted" style="font-size:.65rem;">Master data & catalog</small>
+                </div>
+                
+              </a>
+            </li>
+            <li class="menu-header small text-uppercase"><span class="menu-header-text">System</span></li>
+            <li class="px-3 pb-3">
+              <div class="p-3 rounded" style="background:#f4f5fa;">
+                <p class="mb-0 fw-semibold small">AI Engine</p>
+                <p class="mb-1 text-muted small">Model: v2.4.1</p>
+                <div class="d-flex align-items-center gap-1">
+                  <span class="badge badge-dot bg-success"></span>
+                  <span class="small text-success fw-semibold">Live</span>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+        </aside>
+
+        <div class="layout-page">
+          <nav class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme" id="layout-navbar">
+            <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+              <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+                <i class="bx bx-menu bx-sm"></i>
+              </a>
+            </div>
+            <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+              <div class="navbar-nav align-items-center">
+                <div class="nav-item d-flex align-items-center">
+                  <i class="bx bx-search fs-4 lh-0"></i>
+                  <input type="text" class="form-control border-0 shadow-none" placeholder="Search SKU, products, branches..." aria-label="Search..." />
+                </div>
+              </div>
+              <ul class="navbar-nav flex-row align-items-center ms-auto">
+                <li class="nav-item lh-1 me-3 dropdown">
+                  <a class="nav-link dropdown-toggle hide-arrow position-relative" href="javascript:void(0);" data-bs-toggle="dropdown">
+                    <i class="bx bx-bell bx-sm"></i>
+                    <span class="badge bg-danger rounded-pill badge-notifications">6</span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end py-0">
+                    <li class="dropdown-menu-header border-bottom">
+                      <div class="dropdown-header d-flex align-items-center py-3">
+                        <h6 class="mb-0 me-auto">Procurement Alerts</h6>
+                        <span class="badge bg-label-primary rounded-pill">6 New</span>
+                      </div>
+                    </li>
+                    <li class="dropdown-notifications-list scrollable-container">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item list-group-item-action dropdown-notifications-item">
+                          <small class="text-danger fw-semibold">8 SKUs will stock out within 48 hours</small>
+                        </li>
+                        <li class="list-group-item list-group-item-action dropdown-notifications-item">
+                          <small class="text-warning fw-semibold">Tehran Foods Co. delayed 3.2 days avg this week</small>
+                        </li>
+                        <li class="list-group-item list-group-item-action dropdown-notifications-item">
+                          <small class="text-info fw-semibold">High shortage risk detected for 12 SKUs</small>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                  <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
+                    <div class="avatar avatar-online">
+                      <span class="avatar-initial rounded-circle" style="background:linear-gradient(135deg,#1e3a8a,#1e40af);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;">SM</span>
+                    </div>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end">
+                    <li>
+                      <a class="dropdown-item" href="javascript:void(0);">
+                        <div class="d-flex">
+                          <div class="flex-shrink-0 me-3">
+                            <div class="avatar avatar-online">
+                              <span class="avatar-initial rounded-circle" style="background:linear-gradient(135deg,#1e3a8a,#1e40af);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;">SM</span>
+                            </div>
+                          </div>
+                          <div class="flex-grow-1">
+                            <span class="fw-semibold d-block">Supply Manager</span>
+                            <small class="text-muted">Procurement Team</small>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li><div class="dropdown-divider"></div></li>
+                    <li><a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-user me-2"></i><span class="align-middle">My Profile</span></a></li>
+                    <li><a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-cog me-2"></i><span class="align-middle">Settings</span></a></li>
+                    <li><div class="dropdown-divider"></div></li>
+                    <li><a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-power-off me-2"></i><span class="align-middle">Log Out</span></a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+          <div class="content-wrapper">
+            <div class="container-xxl flex-grow-1 container-p-y">
+
+              <div class="d-flex align-items-center justify-content-between pb-3 mb-4 border-bottom flex-wrap gap-2">
+                <div>
+                  <h4 class="fw-bold mb-1">Product Management</h4>
+                  <p class="text-muted mb-0">Master product catalog used to generate AI order recommendations</p>
+                </div>
+                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#productModal" onclick="openAddProductModal()">
+                  <i class="bx bx-plus me-1"></i>Add Product
+                </button>
+              </div>
+
+              <!-- KPI strip -->
+              <div class="row g-3 mb-4">
+                <div class="col-md-4">
+                  <div class="card h-100"><div class="card-body d-flex align-items-center gap-3">
+                    <div class="kpi-icon-tile bg-primary flex-shrink-0"><i class="bx bx-box text-white fs-4"></i></div>
+                    <div>
+                      <p class="text-xs text-muted text-uppercase mb-1">Total Products</p>
+                      <h4 class="fw-bold mb-0" id="totalProductCount">7</h4>
+                    </div>
+                  </div></div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card h-100"><div class="card-body d-flex align-items-center gap-3">
+                    <div class="kpi-icon-tile" style="background:#059669;" flex-shrink-0><i class="bx bx-check-circle text-white fs-4"></i></div>
+                    <div>
+                      <p class="text-xs text-muted text-uppercase mb-1">Active</p>
+                      <h4 class="fw-bold mb-0 text-success" id="activeProductCount">5</h4>
+                    </div>
+                  </div></div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card h-100"><div class="card-body d-flex align-items-center gap-3">
+                    <div class="kpi-icon-tile bg-secondary flex-shrink-0"><i class="bx bx-pause-circle text-white fs-4"></i></div>
+                    <div>
+                      <p class="text-xs text-muted text-uppercase mb-1">Inactive</p>
+                      <h4 class="fw-bold mb-0 text-muted" id="inactiveProductCount">2</h4>
+                    </div>
+                  </div></div>
+                </div>
+              </div>
+
+              <div class="row g-4">
+                <!-- Upload column -->
+                <div class="col-lg-4">
+                  <div class="dropzone mb-3" onclick="document.getElementById('productFileInput').click()">
+                    <input type="file" id="productFileInput" accept=".xlsx,.csv,.xls" class="d-none"
+                      onchange="document.getElementById('productUploadResult').classList.remove('d-none'); document.getElementById('productFileName').innerText = this.files[0]?.name || '';" />
+                    <div class="d-flex align-items-center justify-content-center rounded-4 mx-auto mb-3" style="width:64px;height:64px;background:#f1f5f9;">
+                      <i class="bx bx-cloud-upload fs-1 text-secondary"></i>
+                    </div>
+                    <p class="fw-semibold mb-1">Drag &amp; drop your product master file</p>
+                    <p class="text-muted small mb-1">or <span class="text-primary fw-semibold">browse to upload</span></p>
+                    <p class="text-xs text-muted mb-0">Supports: .xlsx, .csv, .xls &nbsp;·&nbsp; New products are added, existing codes are updated</p>
+                  </div>
+
+                  <div id="productUploadResult" class="d-none alert d-flex align-items-center gap-3" style="background:#d1fae5;border-color:#a7f3d0;">
+                    <i class="bx bx-check-circle text-success fs-4"></i>
+                    <div class="flex-grow-1">
+                      <p class="mb-0 fw-semibold small text-success" id="productFileName"></p>
+                      <p class="mb-0 text-xs text-success">Ready to import — click Confirm to process</p>
+                    </div>
+                    <button class="btn btn-sm btn-success">Confirm</button>
+                  </div>
+
+                  <div class="card mt-3">
+                    <div class="card-header d-flex align-items-center justify-content-between">
+                      <span class="fw-semibold">Upload History</span>
+                      <span class="badge badge-soft-secondary rounded-pill">2 files</span>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                    <li class="list-group-item d-flex align-items-center gap-3">
+                      <i class="bx bx-check-circle text-success fs-5"></i>
+                      <div class="flex-grow-1">
+                        <div class="d-flex align-items-center gap-2">
+                          <i class="bx bxs-file text-success text-xs"></i>
+                          <p class="mb-0 fw-semibold small">Product_Master_2025-06.xlsx</p>
+                        </div>
+                        <p class="mb-0 text-xs text-muted">2025-06-20 09:12 · 412 KB · 148 rows · 12 new · 136 updated</p>
+                      </div>
+                      <span class="badge badge-soft-success rounded-pill">Imported</span>
+                    </li>
+                    <li class="list-group-item d-flex align-items-center gap-3">
+                      <i class="bx bx-check-circle text-success fs-5"></i>
+                      <div class="flex-grow-1">
+                        <div class="d-flex align-items-center gap-2">
+                          <i class="bx bxs-file text-success text-xs"></i>
+                          <p class="mb-0 fw-semibold small">New_SKUs_Q3.xlsx</p>
+                        </div>
+                        <p class="mb-0 text-xs text-muted">2025-06-05 14:30 · 58 KB · 9 rows · 9 new</p>
+                      </div>
+                      <span class="badge badge-soft-success rounded-pill">Imported</span>
+                    </li>
+
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Grid column -->
+                <div class="col-lg-8">
+                  <div class="card">
+                    <div class="card-header d-flex align-items-center justify-content-between">
+                      <span class="fw-semibold">Product Catalog</span>
+                      <div class="d-flex align-items-center gap-2">
+                        <input type="text" class="form-control form-control-sm" style="width:180px;" placeholder="Search code or name..." id="productSearch" oninput="filterProducts()" />
+                        <button class="btn btn-outline-primary btn-sm"><i class="bx bx-download me-1"></i>Export</button>
+                      </div>
+                    </div>
+                    <div class="table-responsive">
+                      <table class="table table-sm mb-0 align-middle">
+                        <thead class="table-light">
+                          <tr class="text-xs text-uppercase">
+                            <th>Code</th>
+                            <th>Name</th>
+                            <th>Category</th>
+                            <th>Supplier</th>
+                            <th>Packaging</th>
+                            <th class="text-end">Pallet</th>
+                            <th class="text-end">Shelf Life</th>
+                            <th class="text-center">Active</th>
+                            <th class="text-center">Edit</th>
+                          </tr>
+                        </thead>
+                        <tbody id="productsTbody">
+                    <tr id="prow-100001" class="">
+                      <td class="font-monospace text-xs">100001</td>
+                      <td class="rtl-label" style="max-width:220px;">سن ايچ کول PET سيب6*1Lit</td>
+                      <td class="rtl-label text-xs">نوشیدنی گازدار<br><span class="text-muted">سن ایچ کول 1000cc پت</span></td>
+                      <td class="rtl-label text-xs">عالیفرد<br><span class="text-muted">ساوه</span></td>
+                      <td class="text-xs">بطري / شرینک</td>
+                      <td class="text-end font-monospace text-xs">112</td>
+                      <td class="text-end font-monospace text-xs">186d</td>
+                      <td class="text-center" id="status-cell-100001"><div class="form-check form-switch mb-0" title="Active / Inactive"><input class="form-check-input" type="checkbox" role="switch" id="active-100001" checked onchange="toggleActive('100001')"></div></td>
+                      <td class="text-center">
+                        <button class="btn btn-icon-sm btn-outline-secondary" onclick="editProduct('100001')" title="Edit product">
+                          <i class="bx bx-edit-alt"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr id="prow-100002" class="">
+                      <td class="font-monospace text-xs">100002</td>
+                      <td class="rtl-label" style="max-width:220px;">سن ايچ کول PET ليمو6*1Lit</td>
+                      <td class="rtl-label text-xs">نوشیدنی گازدار<br><span class="text-muted">سن ایچ کول 1000cc پت</span></td>
+                      <td class="rtl-label text-xs">عالیفرد<br><span class="text-muted">ساوه</span></td>
+                      <td class="text-xs">بطري / شرینک</td>
+                      <td class="text-end font-monospace text-xs">112</td>
+                      <td class="text-end font-monospace text-xs">155d</td>
+                      <td class="text-center" id="status-cell-100002"><div class="form-check form-switch mb-0" title="Active / Inactive"><input class="form-check-input" type="checkbox" role="switch" id="active-100002" checked onchange="toggleActive('100002')"></div></td>
+                      <td class="text-center">
+                        <button class="btn btn-icon-sm btn-outline-secondary" onclick="editProduct('100002')" title="Edit product">
+                          <i class="bx bx-edit-alt"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr id="prow-100003" class="">
+                      <td class="font-monospace text-xs">100003</td>
+                      <td class="rtl-label" style="max-width:220px;">سن ايچ کول PET موهيتو6*1Lit</td>
+                      <td class="rtl-label text-xs">نوشیدنی گازدار<br><span class="text-muted">سن ایچ کول 1000cc پت</span></td>
+                      <td class="rtl-label text-xs">عالیفرد<br><span class="text-muted">ساوه</span></td>
+                      <td class="text-xs">بطري / شرینک</td>
+                      <td class="text-end font-monospace text-xs">112</td>
+                      <td class="text-end font-monospace text-xs">155d</td>
+                      <td class="text-center" id="status-cell-100003"><div class="form-check form-switch mb-0" title="Active / Inactive"><input class="form-check-input" type="checkbox" role="switch" id="active-100003" checked onchange="toggleActive('100003')"></div></td>
+                      <td class="text-center">
+                        <button class="btn btn-icon-sm btn-outline-secondary" onclick="editProduct('100003')" title="Edit product">
+                          <i class="bx bx-edit-alt"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr id="prow-100007" class="">
+                      <td class="font-monospace text-xs">100007</td>
+                      <td class="rtl-label" style="max-width:220px;">سن ايچ کول PET پرتقال6*1Lit</td>
+                      <td class="rtl-label text-xs">نوشیدنی گازدار<br><span class="text-muted">سن ایچ کول 1000cc پت</span></td>
+                      <td class="rtl-label text-xs">عالیفرد<br><span class="text-muted">ساوه</span></td>
+                      <td class="text-xs">بطري / شرینک</td>
+                      <td class="text-end font-monospace text-xs">112</td>
+                      <td class="text-end font-monospace text-xs">186d</td>
+                      <td class="text-center" id="status-cell-100007"><div class="form-check form-switch mb-0" title="Active / Inactive"><input class="form-check-input" type="checkbox" role="switch" id="active-100007" checked onchange="toggleActive('100007')"></div></td>
+                      <td class="text-center">
+                        <button class="btn btn-icon-sm btn-outline-secondary" onclick="editProduct('100007')" title="Edit product">
+                          <i class="bx bx-edit-alt"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr id="prow-100028" class="text-muted">
+                      <td class="font-monospace text-xs">100028</td>
+                      <td class="rtl-label" style="max-width:220px;">سن ايچ کول PET آلبالو6*1Lit</td>
+                      <td class="rtl-label text-xs">نوشیدنی گازدار<br><span class="text-muted">سن ایچ کول 1000cc پت</span></td>
+                      <td class="rtl-label text-xs">عالیفرد<br><span class="text-muted">ساوه</span></td>
+                      <td class="text-xs">بطري / شرینک</td>
+                      <td class="text-end font-monospace text-xs">112</td>
+                      <td class="text-end font-monospace text-xs">186d</td>
+                      <td class="text-center" id="status-cell-100028"><div class="form-check form-switch mb-0" title="Active / Inactive"><input class="form-check-input" type="checkbox" role="switch" id="active-100028"  onchange="toggleActive('100028')"></div></td>
+                      <td class="text-center">
+                        <button class="btn btn-icon-sm btn-outline-secondary" onclick="editProduct('100028')" title="Edit product">
+                          <i class="bx bx-edit-alt"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr id="prow-100029" class="">
+                      <td class="font-monospace text-xs">100029</td>
+                      <td class="rtl-label" style="max-width:220px;">آيسي مانکي آلبالو 12*250cc</td>
+                      <td class="rtl-label text-xs">آیسی مانکی<br><span class="text-muted">آیسی مانکی 250cc</span></td>
+                      <td class="rtl-label text-xs">رکسان دارا<br><span class="text-muted">فیروزکوه</span></td>
+                      <td class="text-xs">شيشه / شرینک</td>
+                      <td class="text-end font-monospace text-xs">174</td>
+                      <td class="text-end font-monospace text-xs">365d</td>
+                      <td class="text-center" id="status-cell-100029"><div class="form-check form-switch mb-0" title="Active / Inactive"><input class="form-check-input" type="checkbox" role="switch" id="active-100029" checked onchange="toggleActive('100029')"></div></td>
+                      <td class="text-center">
+                        <button class="btn btn-icon-sm btn-outline-secondary" onclick="editProduct('100029')" title="Edit product">
+                          <i class="bx bx-edit-alt"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr id="prow-100030" class="text-muted">
+                      <td class="font-monospace text-xs">100030</td>
+                      <td class="rtl-label" style="max-width:220px;">آيسي مانکي هندوانه 12*250cc</td>
+                      <td class="rtl-label text-xs">آیسی مانکی<br><span class="text-muted">آیسی مانکی 250cc</span></td>
+                      <td class="rtl-label text-xs">رکسان دارا<br><span class="text-muted">فیروزکوه</span></td>
+                      <td class="text-xs">شيشه / شرینک</td>
+                      <td class="text-end font-monospace text-xs">174</td>
+                      <td class="text-end font-monospace text-xs">365d</td>
+                      <td class="text-center" id="status-cell-100030"><div class="form-check form-switch mb-0" title="Active / Inactive"><input class="form-check-input" type="checkbox" role="switch" id="active-100030"  onchange="toggleActive('100030')"></div></td>
+                      <td class="text-center">
+                        <button class="btn btn-icon-sm btn-outline-secondary" onclick="editProduct('100030')" title="Edit product">
+                          <i class="bx bx-edit-alt"></i>
+                        </button>
+                      </td>
+                    </tr>
+
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="card-footer">
+                      <p class="mb-0 text-xs text-muted">Toggle Active to include/exclude a product from AI order recommendations without deleting it.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Add / Edit Product Modal -->
+              <div class="modal fade" id="productModal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h6 class="modal-title" id="productModalTitle">Add Product</h6>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                      <input type="hidden" id="pf-original-code" value="" />
+                      <div class="row g-2">
+                        <div class="col-6 col-md-3">
+                          <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Code *</label>
+                          <input type="text" class="form-control form-control-sm" id="pf-code" />
+                        </div>
+                        <div class="col-6 col-md-9">
+                          <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Name *</label>
+                          <input type="text" class="form-control form-control-sm" id="pf-name" />
+                        </div>
+                        <div class="col-6 col-md-4">
+                          <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Category</label>
+                          <input type="text" class="form-control form-control-sm" id="pf-category" />
+                        </div>
+                        <div class="col-6 col-md-4">
+                          <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Sub-Category</label>
+                          <input type="text" class="form-control form-control-sm" id="pf-subcategory" />
+                        </div>
+                        <div class="col-6 col-md-2">
+                          <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Primary Pkg.</label>
+                          <input type="text" class="form-control form-control-sm" id="pf-primarypkg" />
+                        </div>
+                        <div class="col-6 col-md-2">
+                          <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Second Pkg.</label>
+                          <input type="text" class="form-control form-control-sm" id="pf-secondpkg" />
+                        </div>
+                        <div class="col-6 col-md-2">
+                          <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Net Weight</label>
+                          <input type="number" step="0.01" class="form-control form-control-sm" id="pf-netweight" />
+                        </div>
+                        <div class="col-6 col-md-2">
+                          <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Shelf Life (d)</label>
+                          <input type="number" class="form-control form-control-sm" id="pf-shelflife" />
+                        </div>
+                        <div class="col-6 col-md-2">
+                          <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Unit Sale</label>
+                          <input type="text" class="form-control form-control-sm" id="pf-unitsale" />
+                        </div>
+                        <div class="col-6 col-md-2">
+                          <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Number US</label>
+                          <input type="number" class="form-control form-control-sm" id="pf-numberus" />
+                        </div>
+                        <div class="col-6 col-md-2">
+                          <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Unit Buy</label>
+                          <input type="text" class="form-control form-control-sm" id="pf-unitbuy" />
+                        </div>
+                        <div class="col-6 col-md-2">
+                          <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Number UB</label>
+                          <input type="number" class="form-control form-control-sm" id="pf-numberub" />
+                        </div>
+                        <div class="col-6 col-md-2">
+                          <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Order US</label>
+                          <input type="number" class="form-control form-control-sm" id="pf-orderus" />
+                        </div>
+                        <div class="col-6 col-md-2">
+                          <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Pallet *</label>
+                          <input type="number" class="form-control form-control-sm" id="pf-pallet" />
+                        </div>
+                        <div class="col-6 col-md-2">
+                          <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Convert Ord.</label>
+                          <input type="number" step="0.01" class="form-control form-control-sm" id="pf-convertord" value="1" />
+                        </div>
+                        <div class="col-6 col-md-3">
+                          <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Supplier Name</label>
+                          <input type="text" class="form-control form-control-sm" id="pf-suppliername" />
+                        </div>
+                        <div class="col-6 col-md-3">
+                          <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Location</label>
+                          <input type="text" class="form-control form-control-sm" id="pf-location" />
+                        </div>
+                        <div class="col-6 col-md-3">
+                          <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Planner</label>
+                          <input type="text" class="form-control form-control-sm" id="pf-planner" />
+                        </div>
+                        <div class="col-6 col-md-3">
+                          <label class="text-xs text-muted fw-semibold text-uppercase mb-1">AB Code</label>
+                          <input type="text" class="form-control form-control-sm" id="pf-abcode" />
+                        </div>
+                      </div>
+                      <div class="form-check form-switch mt-3">
+                        <input class="form-check-input" type="checkbox" role="switch" id="pf-active" checked>
+                        <label class="form-check-label small" for="pf-active">Active — included in AI order recommendations</label>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-sm btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+                      <button class="btn btn-sm btn-primary" onclick="saveProduct()"><i class="bx bx-check me-1"></i>Save Product</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <footer class="content-footer footer bg-footer-theme">
+              <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
+                <div class="mb-2 mb-md-0">
+                  © <script>document.write(new Date().getFullYear());</script>, Smart Supply — FMCG Procurement Platform
+                </div>
+                <div>
+                  <span class="text-muted">Built on the</span>
+                  <a href="https://themeselection.com/products/sneat-bootstrap-html-admin-template/" target="_blank" class="footer-link fw-bolder">Sneat</a>
+                  <span class="text-muted">admin template</span>
+                </div>
+              </div>
+            </footer>
+
+            <div class="content-backdrop fade"></div>
+          </div>
+        </div>
+      </div>
+      <div class="layout-overlay layout-menu-toggle"></div>
+    </div>
+
+    <script src="../assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="../assets/vendor/libs/popper/popper.js"></script>
+    <script src="../assets/vendor/js/bootstrap.js"></script>
+    <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="../assets/vendor/js/menu.js"></script>
+    <script src="../assets/vendor/libs/apex-charts/apexcharts.js"></script>
+    <script src="../assets/js/main.js"></script>
+
+    <script>
+      let productData = [{"code": "100001", "name": "\u0633\u0646 \u0627\u064a\u0686 \u06a9\u0648\u0644 PET \u0633\u064a\u06286*1Lit", "category": "\u0646\u0648\u0634\u06cc\u062f\u0646\u06cc \u06af\u0627\u0632\u062f\u0627\u0631", "subCategory": "\u0633\u0646 \u0627\u06cc\u0686 \u06a9\u0648\u0644 1000cc \u067e\u062a", "primaryPackaging": "\u0628\u0637\u0631\u064a", "secondPackaging": "\u0634\u0631\u06cc\u0646\u06a9", "netWeight": 1.06, "shelfLife": 186, "unitSale": "PAC", "numberUS": 6, "unitBuy": "PAC", "numberUB": 6, "orderUS": 112, "pallet": 112, "convertOrd": 1, "supplierName": "\u0639\u0627\u0644\u06cc\u0641\u0631\u062f", "location": "\u0633\u0627\u0648\u0647", "planner": "\u0646\u06a9\u06cc\u0633\u0627 \u0627\u06a9\u0628\u0631\u0632\u0627\u062f\u0647", "abCode": "Al-Sa", "w2w": "PAC", "active": true}, {"code": "100002", "name": "\u0633\u0646 \u0627\u064a\u0686 \u06a9\u0648\u0644 PET \u0644\u064a\u0645\u06486*1Lit", "category": "\u0646\u0648\u0634\u06cc\u062f\u0646\u06cc \u06af\u0627\u0632\u062f\u0627\u0631", "subCategory": "\u0633\u0646 \u0627\u06cc\u0686 \u06a9\u0648\u0644 1000cc \u067e\u062a", "primaryPackaging": "\u0628\u0637\u0631\u064a", "secondPackaging": "\u0634\u0631\u06cc\u0646\u06a9", "netWeight": 1.06, "shelfLife": 155, "unitSale": "PAC", "numberUS": 6, "unitBuy": "PAC", "numberUB": 6, "orderUS": 112, "pallet": 112, "convertOrd": 1, "supplierName": "\u0639\u0627\u0644\u06cc\u0641\u0631\u062f", "location": "\u0633\u0627\u0648\u0647", "planner": "\u0646\u06a9\u06cc\u0633\u0627 \u0627\u06a9\u0628\u0631\u0632\u0627\u062f\u0647", "abCode": "Al-Sa", "w2w": "PAC", "active": true}, {"code": "100003", "name": "\u0633\u0646 \u0627\u064a\u0686 \u06a9\u0648\u0644 PET \u0645\u0648\u0647\u064a\u062a\u06486*1Lit", "category": "\u0646\u0648\u0634\u06cc\u062f\u0646\u06cc \u06af\u0627\u0632\u062f\u0627\u0631", "subCategory": "\u0633\u0646 \u0627\u06cc\u0686 \u06a9\u0648\u0644 1000cc \u067e\u062a", "primaryPackaging": "\u0628\u0637\u0631\u064a", "secondPackaging": "\u0634\u0631\u06cc\u0646\u06a9", "netWeight": 1.06, "shelfLife": 155, "unitSale": "PAC", "numberUS": 6, "unitBuy": "PAC", "numberUB": 6, "orderUS": 112, "pallet": 112, "convertOrd": 1, "supplierName": "\u0639\u0627\u0644\u06cc\u0641\u0631\u062f", "location": "\u0633\u0627\u0648\u0647", "planner": "\u0646\u06a9\u06cc\u0633\u0627 \u0627\u06a9\u0628\u0631\u0632\u0627\u062f\u0647", "abCode": "Al-Sa", "w2w": "PAC", "active": true}, {"code": "100007", "name": "\u0633\u0646 \u0627\u064a\u0686 \u06a9\u0648\u0644 PET \u067e\u0631\u062a\u0642\u0627\u06446*1Lit", "category": "\u0646\u0648\u0634\u06cc\u062f\u0646\u06cc \u06af\u0627\u0632\u062f\u0627\u0631", "subCategory": "\u0633\u0646 \u0627\u06cc\u0686 \u06a9\u0648\u0644 1000cc \u067e\u062a", "primaryPackaging": "\u0628\u0637\u0631\u064a", "secondPackaging": "\u0634\u0631\u06cc\u0646\u06a9", "netWeight": 1.06, "shelfLife": 186, "unitSale": "PAC", "numberUS": 6, "unitBuy": "PAC", "numberUB": 6, "orderUS": 112, "pallet": 112, "convertOrd": 1, "supplierName": "\u0639\u0627\u0644\u06cc\u0641\u0631\u062f", "location": "\u0633\u0627\u0648\u0647", "planner": "\u0646\u06a9\u06cc\u0633\u0627 \u0627\u06a9\u0628\u0631\u0632\u0627\u062f\u0647", "abCode": "Al-Sa", "w2w": "PAC", "active": true}, {"code": "100028", "name": "\u0633\u0646 \u0627\u064a\u0686 \u06a9\u0648\u0644 PET \u0622\u0644\u0628\u0627\u0644\u06486*1Lit", "category": "\u0646\u0648\u0634\u06cc\u062f\u0646\u06cc \u06af\u0627\u0632\u062f\u0627\u0631", "subCategory": "\u0633\u0646 \u0627\u06cc\u0686 \u06a9\u0648\u0644 1000cc \u067e\u062a", "primaryPackaging": "\u0628\u0637\u0631\u064a", "secondPackaging": "\u0634\u0631\u06cc\u0646\u06a9", "netWeight": 1.06, "shelfLife": 186, "unitSale": "PAC", "numberUS": 6, "unitBuy": "PAC", "numberUB": 6, "orderUS": 112, "pallet": 112, "convertOrd": 1, "supplierName": "\u0639\u0627\u0644\u06cc\u0641\u0631\u062f", "location": "\u0633\u0627\u0648\u0647", "planner": "\u0646\u06a9\u06cc\u0633\u0627 \u0627\u06a9\u0628\u0631\u0632\u0627\u062f\u0647", "abCode": "Al-Sa", "w2w": "PAC", "active": false}, {"code": "100029", "name": "\u0622\u064a\u0633\u064a \u0645\u0627\u0646\u06a9\u064a \u0622\u0644\u0628\u0627\u0644\u0648 12*250cc", "category": "\u0622\u06cc\u0633\u06cc \u0645\u0627\u0646\u06a9\u06cc", "subCategory": "\u0622\u06cc\u0633\u06cc \u0645\u0627\u0646\u06a9\u06cc 250cc", "primaryPackaging": "\u0634\u064a\u0634\u0647", "secondPackaging": "\u0634\u0631\u06cc\u0646\u06a9", "netWeight": 0.25, "shelfLife": 365, "unitSale": "PAC", "numberUS": 12, "unitBuy": "PAC", "numberUB": 12, "orderUS": 174, "pallet": 174, "convertOrd": 1, "supplierName": "\u0631\u06a9\u0633\u0627\u0646 \u062f\u0627\u0631\u0627", "location": "\u0641\u06cc\u0631\u0648\u0632\u06a9\u0648\u0647", "planner": "\u0645\u0647\u0634\u06cc\u062f \u0639\u0627\u0637\u0641\u0647", "abCode": "Ro-Da", "w2w": "PAC", "active": true}, {"code": "100030", "name": "\u0622\u064a\u0633\u064a \u0645\u0627\u0646\u06a9\u064a \u0647\u0646\u062f\u0648\u0627\u0646\u0647 12*250cc", "category": "\u0622\u06cc\u0633\u06cc \u0645\u0627\u0646\u06a9\u06cc", "subCategory": "\u0622\u06cc\u0633\u06cc \u0645\u0627\u0646\u06a9\u06cc 250cc", "primaryPackaging": "\u0634\u064a\u0634\u0647", "secondPackaging": "\u0634\u0631\u06cc\u0646\u06a9", "netWeight": 0.25, "shelfLife": 365, "unitSale": "PAC", "numberUS": 12, "unitBuy": "PAC", "numberUB": 12, "orderUS": 174, "pallet": 174, "convertOrd": 1, "supplierName": "\u0631\u06a9\u0633\u0627\u0646 \u062f\u0627\u0631\u0627", "location": "\u0641\u06cc\u0631\u0648\u0632\u06a9\u0648\u0647", "planner": "\u0645\u0647\u0634\u06cc\u062f \u0639\u0627\u0637\u0641\u0647", "abCode": "Ro-Da", "w2w": "PAC", "active": false}];
+
+      function updateProductCounts() {
+        const total = productData.length;
+        const activeN = productData.filter(p => p.active).length;
+        document.getElementById('totalProductCount').innerText = total;
+        document.getElementById('activeProductCount').innerText = activeN;
+        document.getElementById('inactiveProductCount').innerText = total - activeN;
+      }
+
+      function toggleActive(code) {
+        const p = productData.find(d => d.code === code);
+        if (!p) return;
+        p.active = !p.active;
+        const row = document.getElementById('prow-' + code);
+        if (row) row.classList.toggle('text-muted', !p.active);
+        updateProductCounts();
+      }
+
+      function openAddProductModal() {
+        document.getElementById('productModalTitle').innerText = 'Add Product';
+        document.getElementById('pf-original-code').value = '';
+        ['code','name','category','subcategory','primarypkg','secondpkg','netweight','shelflife',
+         'unitsale','numberus','unitbuy','numberub','orderus','pallet','suppliername','location','planner','abcode']
+          .forEach(f => { const el = document.getElementById('pf-' + f); if (el) el.value = ''; });
+        document.getElementById('pf-convertord').value = 1;
+        document.getElementById('pf-active').checked = true;
+      }
+
+      function editProduct(code) {
+        const p = productData.find(d => d.code === code);
+        if (!p) return;
+        document.getElementById('productModalTitle').innerText = 'Edit Product — ' + code;
+        document.getElementById('pf-original-code').value = code;
+        document.getElementById('pf-code').value = p.code;
+        document.getElementById('pf-name').value = p.name;
+        document.getElementById('pf-category').value = p.category;
+        document.getElementById('pf-subcategory').value = p.subCategory;
+        document.getElementById('pf-primarypkg').value = p.primaryPackaging;
+        document.getElementById('pf-secondpkg').value = p.secondPackaging;
+        document.getElementById('pf-netweight').value = p.netWeight;
+        document.getElementById('pf-shelflife').value = p.shelfLife;
+        document.getElementById('pf-unitsale').value = p.unitSale;
+        document.getElementById('pf-numberus').value = p.numberUS;
+        document.getElementById('pf-unitbuy').value = p.unitBuy;
+        document.getElementById('pf-numberub').value = p.numberUB;
+        document.getElementById('pf-orderus').value = p.orderUS;
+        document.getElementById('pf-pallet').value = p.pallet;
+        document.getElementById('pf-convertord').value = p.convertOrd;
+        document.getElementById('pf-suppliername').value = p.supplierName;
+        document.getElementById('pf-location').value = p.location;
+        document.getElementById('pf-planner').value = p.planner;
+        document.getElementById('pf-abcode').value = p.abCode;
+        document.getElementById('pf-active').checked = p.active;
+        const modalEl = document.getElementById('productModal');
+        if (window.bootstrap) bootstrap.Modal.getOrCreateInstance(modalEl).show();
+      }
+
+      function productRowHtml(p) {
+        const rowMuted = p.active ? '' : 'text-muted';
+        return `<tr id="prow-${p.code}" class="${rowMuted}">
+          <td class="font-monospace text-xs">${p.code}</td>
+          <td class="rtl-label" style="max-width:220px;">${p.name}</td>
+          <td class="rtl-label text-xs">${p.category}<br><span class="text-muted">${p.subCategory}</span></td>
+          <td class="rtl-label text-xs">${p.supplierName}<br><span class="text-muted">${p.location}</span></td>
+          <td class="text-xs">${p.primaryPackaging} / ${p.secondPackaging}</td>
+          <td class="text-end font-monospace text-xs">${p.pallet}</td>
+          <td class="text-end font-monospace text-xs">${p.shelfLife}d</td>
+          <td class="text-center" id="status-cell-${p.code}">
+            <div class="form-check form-switch mb-0" title="Active / Inactive">
+              <input class="form-check-input" type="checkbox" role="switch" id="active-${p.code}" ${p.active ? 'checked' : ''} onchange="toggleActive('${p.code}')">
+            </div>
+          </td>
+          <td class="text-center">
+            <button class="btn btn-icon-sm btn-outline-secondary" onclick="editProduct('${p.code}')" title="Edit product"><i class="bx bx-edit-alt"></i></button>
+          </td>
+        </tr>`;
+      }
+
+      function saveProduct() {
+        const originalCode = document.getElementById('pf-original-code').value;
+        const code = document.getElementById('pf-code').value.trim();
+        const name = document.getElementById('pf-name').value.trim();
+        if (!code || !name) { alert('Code and Name are required.'); return; }
+
+        const product = {
+          code: code,
+          name: name,
+          category: document.getElementById('pf-category').value,
+          subCategory: document.getElementById('pf-subcategory').value,
+          primaryPackaging: document.getElementById('pf-primarypkg').value,
+          secondPackaging: document.getElementById('pf-secondpkg').value,
+          netWeight: parseFloat(document.getElementById('pf-netweight').value) || 0,
+          shelfLife: parseInt(document.getElementById('pf-shelflife').value) || 0,
+          unitSale: document.getElementById('pf-unitsale').value,
+          numberUS: parseInt(document.getElementById('pf-numberus').value) || 0,
+          unitBuy: document.getElementById('pf-unitbuy').value,
+          numberUB: parseInt(document.getElementById('pf-numberub').value) || 0,
+          orderUS: parseInt(document.getElementById('pf-orderus').value) || 0,
+          pallet: parseInt(document.getElementById('pf-pallet').value) || 1,
+          convertOrd: parseFloat(document.getElementById('pf-convertord').value) || 1,
+          supplierName: document.getElementById('pf-suppliername').value,
+          location: document.getElementById('pf-location').value,
+          planner: document.getElementById('pf-planner').value,
+          abCode: document.getElementById('pf-abcode').value,
+          w2w: 'PAC',
+          active: document.getElementById('pf-active').checked,
+        };
+
+        if (originalCode) {
+          const idx = productData.findIndex(d => d.code === originalCode);
+          if (idx > -1) productData[idx] = product;
+          const oldRow = document.getElementById('prow-' + originalCode);
+          if (oldRow) oldRow.outerHTML = productRowHtml(product);
+        } else {
+          if (productData.some(d => d.code === code)) { alert('A product with this code already exists.'); return; }
+          productData.push(product);
+          document.getElementById('productsTbody').insertAdjacentHTML('beforeend', productRowHtml(product));
+        }
+
+        updateProductCounts();
+        const modalEl = document.getElementById('productModal');
+        if (window.bootstrap) bootstrap.Modal.getOrCreateInstance(modalEl).hide();
+      }
+
+      function filterProducts() {
+        const q = document.getElementById('productSearch').value.trim().toLowerCase();
+        document.querySelectorAll('#productsTbody tr[id^="prow-"]').forEach(row => {
+          const code = row.id.replace('prow-', '');
+          const p = productData.find(d => d.code === code);
+          const match = !q || (p && (p.code.toLowerCase().includes(q) || p.name.toLowerCase().includes(q)));
+          row.style.display = match ? '' : 'none';
+        });
+      }
+    </script>
+
+  </body>
+</html>

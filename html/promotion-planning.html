@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en" class="light-style layout-menu-fixed" dir="ltr" data-theme="theme-default"
+  data-assets-path="../assets/" data-template="vertical-menu-template-free">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <title>Promotion Planning | Smart Supply — FMCG Procurement Platform</title>
+    <meta name="description" content="Smart Supply — AI-powered FMCG procurement platform" />
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/vendor/fonts/boxicons.css" />
+    <link rel="stylesheet" href="../assets/vendor/css/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="../assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="../assets/css/demo.css" />
+    <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="../assets/vendor/libs/apex-charts/apex-charts.css" />
+    <link rel="stylesheet" href="../assets/css/custom.css" />
+    
+    <script src="../assets/vendor/js/helpers.js"></script>
+    <script src="../assets/js/config.js"></script>
+  </head>
+
+  <body>
+    <div class="layout-wrapper layout-content-navbar">
+      <div class="layout-container">
+        <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+          <div class="app-brand demo">
+            <a href="index.html" class="app-brand-link">
+              <span class="app-brand-logo demo">
+                <span class="d-flex align-items-center justify-content-center" style="width:32px;height:32px;border-radius:8px;background:linear-gradient(135deg,#1e3a8a,#1e293b);">
+                  <i class="bx bx-package text-white" style="font-size:18px;"></i>
+                </span>
+              </span>
+              <span class="app-brand-text demo menu-text fw-bolder ms-2">Smart Supply</span>
+            </a>
+            <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
+              <i class="bx bx-chevron-left bx-sm align-middle"></i>
+            </a>
+          </div>
+
+          <div class="menu-inner-shadow"></div>
+          <ul class="menu-inner py-1">
+            <li class="menu-item">
+              <a href="index.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-line-chart"></i>
+                <div>
+                  <div class="fw-semibold">Executive Dashboard</div>
+                  <small class="text-muted" style="font-size:.65rem;">Real-time procurement overview</small>
+                </div>
+                
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="order-recommendations.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-cart"></i>
+                <div>
+                  <div class="fw-semibold">AI Order Recommendation</div>
+                  <small class="text-muted" style="font-size:.65rem;">Smart ordering suggestions</small>
+                </div>
+                <span class="badge bg-label-primary rounded-pill ms-2">10</span>
+              </a>
+            </li>
+            <li class="menu-item active">
+              <a href="promotion-planning.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bxs-megaphone"></i>
+                <div>
+                  <div class="fw-semibold">Promotion Planning</div>
+                  <small class="text-muted" style="font-size:.65rem;">Upload & manage promotions</small>
+                </div>
+                
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="supplier.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-buildings"></i>
+                <div>
+                  <div class="fw-semibold">Supplier</div>
+                  <small class="text-muted" style="font-size:.65rem;">Performance & inventory</small>
+                </div>
+                
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="management.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-bar-chart-alt-2"></i>
+                <div>
+                  <div class="fw-semibold">Management Dashboard</div>
+                  <small class="text-muted" style="font-size:.65rem;">Executive-level overview</small>
+                </div>
+                
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="product-management.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-box"></i>
+                <div>
+                  <div class="fw-semibold">Product Management</div>
+                  <small class="text-muted" style="font-size:.65rem;">Master data & catalog</small>
+                </div>
+                
+              </a>
+            </li>
+            <li class="menu-header small text-uppercase"><span class="menu-header-text">System</span></li>
+            <li class="px-3 pb-3">
+              <div class="p-3 rounded" style="background:#f4f5fa;">
+                <p class="mb-0 fw-semibold small">AI Engine</p>
+                <p class="mb-1 text-muted small">Model: v2.4.1</p>
+                <div class="d-flex align-items-center gap-1">
+                  <span class="badge badge-dot bg-success"></span>
+                  <span class="small text-success fw-semibold">Live</span>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+        </aside>
+
+        <div class="layout-page">
+          <nav class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme" id="layout-navbar">
+            <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+              <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+                <i class="bx bx-menu bx-sm"></i>
+              </a>
+            </div>
+            <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+              <div class="navbar-nav align-items-center">
+                <div class="nav-item d-flex align-items-center">
+                  <i class="bx bx-search fs-4 lh-0"></i>
+                  <input type="text" class="form-control border-0 shadow-none" placeholder="Search SKU, products, branches..." aria-label="Search..." />
+                </div>
+              </div>
+              <ul class="navbar-nav flex-row align-items-center ms-auto">
+                <li class="nav-item lh-1 me-3 dropdown">
+                  <a class="nav-link dropdown-toggle hide-arrow position-relative" href="javascript:void(0);" data-bs-toggle="dropdown">
+                    <i class="bx bx-bell bx-sm"></i>
+                    <span class="badge bg-danger rounded-pill badge-notifications">6</span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end py-0">
+                    <li class="dropdown-menu-header border-bottom">
+                      <div class="dropdown-header d-flex align-items-center py-3">
+                        <h6 class="mb-0 me-auto">Procurement Alerts</h6>
+                        <span class="badge bg-label-primary rounded-pill">6 New</span>
+                      </div>
+                    </li>
+                    <li class="dropdown-notifications-list scrollable-container">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item list-group-item-action dropdown-notifications-item">
+                          <small class="text-danger fw-semibold">8 SKUs will stock out within 48 hours</small>
+                        </li>
+                        <li class="list-group-item list-group-item-action dropdown-notifications-item">
+                          <small class="text-warning fw-semibold">Tehran Foods Co. delayed 3.2 days avg this week</small>
+                        </li>
+                        <li class="list-group-item list-group-item-action dropdown-notifications-item">
+                          <small class="text-info fw-semibold">High shortage risk detected for 12 SKUs</small>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                  <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
+                    <div class="avatar avatar-online">
+                      <span class="avatar-initial rounded-circle" style="background:linear-gradient(135deg,#1e3a8a,#1e40af);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;">SM</span>
+                    </div>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end">
+                    <li>
+                      <a class="dropdown-item" href="javascript:void(0);">
+                        <div class="d-flex">
+                          <div class="flex-shrink-0 me-3">
+                            <div class="avatar avatar-online">
+                              <span class="avatar-initial rounded-circle" style="background:linear-gradient(135deg,#1e3a8a,#1e40af);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;">SM</span>
+                            </div>
+                          </div>
+                          <div class="flex-grow-1">
+                            <span class="fw-semibold d-block">Supply Manager</span>
+                            <small class="text-muted">Procurement Team</small>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li><div class="dropdown-divider"></div></li>
+                    <li><a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-user me-2"></i><span class="align-middle">My Profile</span></a></li>
+                    <li><a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-cog me-2"></i><span class="align-middle">Settings</span></a></li>
+                    <li><div class="dropdown-divider"></div></li>
+                    <li><a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-power-off me-2"></i><span class="align-middle">Log Out</span></a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+          <div class="content-wrapper">
+            <div class="container-xxl flex-grow-1 container-p-y">
+
+              <div class="d-flex align-items-center justify-content-between pb-3 mb-4 border-bottom">
+                <div>
+                  <h4 class="fw-bold mb-1">Promotion Planning</h4>
+                  <p class="text-muted mb-0">Upload promotion plans to improve demand forecasting accuracy</p>
+                </div>
+                <button class="btn btn-outline-primary btn-sm"><i class="bx bx-download me-1"></i> Export Excel</button>
+              </div>
+
+              <div class="row g-4">
+                <div class="col-lg-6">
+                  <div class="dropzone mb-3" onclick="document.getElementById('promoFileInput').click()">
+                    <input type="file" id="promoFileInput" accept=".xlsx,.csv,.xls" class="d-none"
+                      onchange="document.getElementById('promoUploadResult').classList.remove('d-none'); document.getElementById('promoFileName').innerText = this.files[0]?.name || '';" />
+                    <div class="d-flex align-items-center justify-content-center rounded-4 mx-auto mb-3" style="width:64px;height:64px;background:#f1f5f9;">
+                      <i class="bx bx-cloud-upload fs-1 text-secondary"></i>
+                    </div>
+                    <p class="fw-semibold mb-1">Drag &amp; drop your promotion file</p>
+                    <p class="text-muted small mb-1">or <span class="text-primary fw-semibold">browse to upload</span></p>
+                    <p class="text-xs text-muted mb-0">Supports: .xlsx, .csv, .xls &nbsp;·&nbsp; Max 50MB</p>
+                  </div>
+
+                  <div id="promoUploadResult" class="d-none alert d-flex align-items-center gap-3" style="background:#d1fae5;border-color:#a7f3d0;">
+                    <i class="bx bx-check-circle text-success fs-4"></i>
+                    <div class="flex-grow-1">
+                      <p class="mb-0 fw-semibold small text-success" id="promoFileName"></p>
+                      <p class="mb-0 text-xs text-success">Ready to upload — click Confirm to process</p>
+                    </div>
+                    <button class="btn btn-sm btn-success">Confirm</button>
+                  </div>
+
+                  <div class="card mt-3">
+                    <div class="card-header d-flex align-items-center justify-content-between">
+                      <span class="fw-semibold">Upload History</span>
+                      <span class="badge badge-soft-secondary rounded-pill">4 files</span>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                    <li class="list-group-item d-flex align-items-center gap-3">
+                      <i class="bx bx-check-circle text-success fs-5"></i>
+                      <div class="flex-grow-1">
+                        <div class="d-flex align-items-center gap-2">
+                          <i class="bx bxs-file text-success text-xs"></i>
+                          <p class="mb-0 fw-semibold small">Summer_2025_Promo.xlsx</p>
+                        </div>
+                        <p class="mb-0 text-xs text-muted">2025-06-25 10:42 · 148 KB</p>
+                      </div>
+                      <span class="badge badge-soft-success rounded-pill">Uploaded</span>
+                      <button class="btn btn-sm btn-icon text-muted"><i class="bx bx-trash"></i></button>
+                    </li>
+                    <li class="list-group-item d-flex align-items-center gap-3">
+                      <i class="bx bx-check-circle text-success fs-5"></i>
+                      <div class="flex-grow-1">
+                        <div class="d-flex align-items-center gap-2">
+                          <i class="bx bxs-file text-success text-xs"></i>
+                          <p class="mb-0 fw-semibold small">Ramadan_Deals_Plan.csv</p>
+                        </div>
+                        <p class="mb-0 text-xs text-muted">2025-06-20 14:18 · 62 KB</p>
+                      </div>
+                      <span class="badge badge-soft-success rounded-pill">Uploaded</span>
+                      <button class="btn btn-sm btn-icon text-muted"><i class="bx bx-trash"></i></button>
+                    </li>
+                    <li class="list-group-item d-flex align-items-center gap-3">
+                      <i class="bx bx-time-five text-warning fs-5"></i>
+                      <div class="flex-grow-1">
+                        <div class="d-flex align-items-center gap-2">
+                          <i class="bx bxs-file text-success text-xs"></i>
+                          <p class="mb-0 fw-semibold small">Q3_Promotion_Draft.xlsx</p>
+                        </div>
+                        <p class="mb-0 text-xs text-muted">2025-06-18 09:05 · 214 KB</p>
+                      </div>
+                      <span class="badge badge-soft-warning rounded-pill">Pending</span>
+                      <button class="btn btn-sm btn-icon text-muted"><i class="bx bx-trash"></i></button>
+                    </li>
+                    <li class="list-group-item d-flex align-items-center gap-3">
+                      <i class="bx bx-x-circle text-danger fs-5"></i>
+                      <div class="flex-grow-1">
+                        <div class="d-flex align-items-center gap-2">
+                          <i class="bx bxs-file text-success text-xs"></i>
+                          <p class="mb-0 fw-semibold small">Weekend_Flash_Sale.csv</p>
+                        </div>
+                        <p class="mb-0 text-xs text-muted">2025-06-15 16:33 · 38 KB</p>
+                      </div>
+                      <span class="badge badge-soft-danger rounded-pill">Failed</span>
+                      <button class="btn btn-sm btn-icon text-muted"><i class="bx bx-trash"></i></button>
+                    </li>
+
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="col-lg-6">
+                  <div class="card h-100">
+                    <div class="card-header d-flex align-items-center justify-content-between">
+                      <span class="fw-semibold">Promotion Campaigns</span>
+                      <button class="btn btn-sm btn-outline-primary"><i class="bx bx-download me-1"></i>Export Excel</button>
+                    </div>
+                    <div class="table-responsive">
+                      <table class="table table-sm mb-0">
+                        <thead class="table-light">
+                          <tr class="text-xs text-uppercase">
+                            <th>Campaign</th>
+                            <th>Product Group</th>
+                            <th>Start</th>
+                            <th>End</th>
+                            <th class="text-center">SKUs</th>
+                            <th>Status</th>
+                            <th class="text-center">Actions</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                    <tr>
+                      <td>
+                        <p class="mb-0 fw-semibold text-xs">Summer Deals 2025</p>
+                        <p class="mb-0 text-xs text-muted">Uploaded 2025-06-25</p>
+                      </td>
+                      <td class="text-xs">Beverages, Snacks</td>
+                      <td class="text-xs">2025-07-01</td>
+                      <td class="text-xs">2025-07-31</td>
+                      <td class="text-center"><span class="fw-bold text-primary text-xs">23</span></td>
+                      <td><span class="badge badge-soft-info rounded-pill">Scheduled</span></td>
+                      <td class="text-center">
+                        <button class="btn btn-sm btn-icon text-muted" title="Preview"><i class="bx bx-show"></i></button>
+                        <button class="btn btn-sm btn-icon text-muted" title="Download"><i class="bx bx-download"></i></button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p class="mb-0 fw-semibold text-xs">Ramadan Special</p>
+                        <p class="mb-0 text-xs text-muted">Uploaded 2025-06-20</p>
+                      </td>
+                      <td class="text-xs">Food, Dairy, Confectionery</td>
+                      <td class="text-xs">2025-06-01</td>
+                      <td class="text-xs">2025-06-30</td>
+                      <td class="text-center"><span class="fw-bold text-primary text-xs">41</span></td>
+                      <td><span class="badge badge-soft-success rounded-pill">Active</span></td>
+                      <td class="text-center">
+                        <button class="btn btn-sm btn-icon text-muted" title="Preview"><i class="bx bx-show"></i></button>
+                        <button class="btn btn-sm btn-icon text-muted" title="Download"><i class="bx bx-download"></i></button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p class="mb-0 fw-semibold text-xs">Q3 Volume Boost</p>
+                        <p class="mb-0 text-xs text-muted">Uploaded 2025-06-18</p>
+                      </td>
+                      <td class="text-xs">Beverages</td>
+                      <td class="text-xs">2025-07-15</td>
+                      <td class="text-xs">2025-09-15</td>
+                      <td class="text-center"><span class="fw-bold text-primary text-xs">18</span></td>
+                      <td><span class="badge badge-soft-secondary rounded-pill">Draft</span></td>
+                      <td class="text-center">
+                        <button class="btn btn-sm btn-icon text-muted" title="Preview"><i class="bx bx-show"></i></button>
+                        <button class="btn btn-sm btn-icon text-muted" title="Download"><i class="bx bx-download"></i></button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p class="mb-0 fw-semibold text-xs">Weekend Flash Sale</p>
+                        <p class="mb-0 text-xs text-muted">Uploaded 2025-06-15</p>
+                      </td>
+                      <td class="text-xs">Snacks</td>
+                      <td class="text-xs">2025-06-20</td>
+                      <td class="text-xs">2025-06-22</td>
+                      <td class="text-center"><span class="fw-bold text-primary text-xs">9</span></td>
+                      <td><span class="badge badge-soft-secondary rounded-pill">Ended</span></td>
+                      <td class="text-center">
+                        <button class="btn btn-sm btn-icon text-muted" title="Preview"><i class="bx bx-show"></i></button>
+                        <button class="btn btn-sm btn-icon text-muted" title="Download"><i class="bx bx-download"></i></button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p class="mb-0 fw-semibold text-xs">New Product Launch</p>
+                        <p class="mb-0 text-xs text-muted">Uploaded 2025-06-10</p>
+                      </td>
+                      <td class="text-xs">Food</td>
+                      <td class="text-xs">2025-06-15</td>
+                      <td class="text-xs">2025-06-30</td>
+                      <td class="text-center"><span class="fw-bold text-primary text-xs">5</span></td>
+                      <td><span class="badge badge-soft-success rounded-pill">Active</span></td>
+                      <td class="text-center">
+                        <button class="btn btn-sm btn-icon text-muted" title="Preview"><i class="bx bx-show"></i></button>
+                        <button class="btn btn-sm btn-icon text-muted" title="Download"><i class="bx bx-download"></i></button>
+                      </td>
+                    </tr>
+
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <footer class="content-footer footer bg-footer-theme">
+              <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
+                <div class="mb-2 mb-md-0">
+                  © <script>document.write(new Date().getFullYear());</script>, Smart Supply — FMCG Procurement Platform
+                </div>
+                <div>
+                  <span class="text-muted">Built on the</span>
+                  <a href="https://themeselection.com/products/sneat-bootstrap-html-admin-template/" target="_blank" class="footer-link fw-bolder">Sneat</a>
+                  <span class="text-muted">admin template</span>
+                </div>
+              </div>
+            </footer>
+
+            <div class="content-backdrop fade"></div>
+          </div>
+        </div>
+      </div>
+      <div class="layout-overlay layout-menu-toggle"></div>
+    </div>
+
+    <script src="../assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="../assets/vendor/libs/popper/popper.js"></script>
+    <script src="../assets/vendor/js/bootstrap.js"></script>
+    <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="../assets/vendor/js/menu.js"></script>
+    <script src="../assets/vendor/libs/apex-charts/apexcharts.js"></script>
+    <script src="../assets/js/main.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,2106 @@
+<!DOCTYPE html>
+<html lang="en" class="light-style layout-menu-fixed" dir="ltr" data-theme="theme-default"
+  data-assets-path="../assets/" data-template="vertical-menu-template-free">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <title>AI Order Recommendation | Smart Supply — FMCG Procurement Platform</title>
+    <meta name="description" content="Smart Supply — AI-powered FMCG procurement platform" />
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/vendor/fonts/boxicons.css" />
+    <link rel="stylesheet" href="../assets/vendor/css/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="../assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="../assets/css/demo.css" />
+    <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="../assets/vendor/libs/apex-charts/apex-charts.css" />
+    <link rel="stylesheet" href="../assets/css/custom.css" />
+    
+    <script src="../assets/vendor/js/helpers.js"></script>
+    <script src="../assets/js/config.js"></script>
+  </head>
+
+  <body>
+    <div class="layout-wrapper layout-content-navbar">
+      <div class="layout-container">
+        <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+          <div class="app-brand demo">
+            <a href="index.html" class="app-brand-link">
+              <span class="app-brand-logo demo">
+                <span class="d-flex align-items-center justify-content-center" style="width:32px;height:32px;border-radius:8px;background:linear-gradient(135deg,#1e3a8a,#1e293b);">
+                  <i class="bx bx-package text-white" style="font-size:18px;"></i>
+                </span>
+              </span>
+              <span class="app-brand-text demo menu-text fw-bolder ms-2">Smart Supply</span>
+            </a>
+            <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
+              <i class="bx bx-chevron-left bx-sm align-middle"></i>
+            </a>
+          </div>
+
+          <div class="menu-inner-shadow"></div>
+          <ul class="menu-inner py-1">
+            <li class="menu-item">
+              <a href="index.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-line-chart"></i>
+                <div>
+                  <div class="fw-semibold">Executive Dashboard</div>
+                  <small class="text-muted" style="font-size:.65rem;">Real-time procurement overview</small>
+                </div>
+                
+              </a>
+            </li>
+            <li class="menu-item active">
+              <a href="order-recommendations.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-cart"></i>
+                <div>
+                  <div class="fw-semibold">AI Order Recommendation</div>
+                  <small class="text-muted" style="font-size:.65rem;">Smart ordering suggestions</small>
+                </div>
+                
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="promotion-planning.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bxs-megaphone"></i>
+                <div>
+                  <div class="fw-semibold">Promotion Planning</div>
+                  <small class="text-muted" style="font-size:.65rem;">Upload & manage promotions</small>
+                </div>
+                
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="supplier.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-buildings"></i>
+                <div>
+                  <div class="fw-semibold">Supplier</div>
+                  <small class="text-muted" style="font-size:.65rem;">Performance & inventory</small>
+                </div>
+                
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="management.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-bar-chart-alt-2"></i>
+                <div>
+                  <div class="fw-semibold">Management Dashboard</div>
+                  <small class="text-muted" style="font-size:.65rem;">Executive-level overview</small>
+                </div>
+                
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="product-management.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-box"></i>
+                <div>
+                  <div class="fw-semibold">Product Management</div>
+                  <small class="text-muted" style="font-size:.65rem;">Master data & catalog</small>
+                </div>
+                
+              </a>
+            </li>
+            <li class="menu-header small text-uppercase"><span class="menu-header-text">System</span></li>
+            <li class="px-3 pb-3">
+              <div class="p-3 rounded" style="background:#f4f5fa;">
+                <p class="mb-0 fw-semibold small">AI Engine</p>
+                <p class="mb-1 text-muted small">Model: v2.4.1</p>
+                <div class="d-flex align-items-center gap-1">
+                  <span class="badge badge-dot bg-success"></span>
+                  <span class="small text-success fw-semibold">Live</span>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+        </aside>
+
+        <div class="layout-page">
+          <nav class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme" id="layout-navbar">
+            <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+              <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+                <i class="bx bx-menu bx-sm"></i>
+              </a>
+            </div>
+            <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+              <div class="navbar-nav align-items-center">
+                <div class="nav-item d-flex align-items-center">
+                  <i class="bx bx-search fs-4 lh-0"></i>
+                  <input type="text" class="form-control border-0 shadow-none" placeholder="Search SKU, products, branches..." aria-label="Search..." />
+                </div>
+              </div>
+              <ul class="navbar-nav flex-row align-items-center ms-auto">
+                <li class="nav-item lh-1 me-3 dropdown">
+                  <a class="nav-link dropdown-toggle hide-arrow position-relative" href="javascript:void(0);" data-bs-toggle="dropdown">
+                    <i class="bx bx-bell bx-sm"></i>
+                    <span class="badge bg-danger rounded-pill badge-notifications">6</span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end py-0">
+                    <li class="dropdown-menu-header border-bottom">
+                      <div class="dropdown-header d-flex align-items-center py-3">
+                        <h6 class="mb-0 me-auto">Procurement Alerts</h6>
+                        <span class="badge bg-label-primary rounded-pill">6 New</span>
+                      </div>
+                    </li>
+                    <li class="dropdown-notifications-list scrollable-container">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item list-group-item-action dropdown-notifications-item">
+                          <small class="text-danger fw-semibold">8 SKUs will stock out within 48 hours</small>
+                        </li>
+                        <li class="list-group-item list-group-item-action dropdown-notifications-item">
+                          <small class="text-warning fw-semibold">Tehran Foods Co. delayed 3.2 days avg this week</small>
+                        </li>
+                        <li class="list-group-item list-group-item-action dropdown-notifications-item">
+                          <small class="text-info fw-semibold">High shortage risk detected for 12 SKUs</small>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                  <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
+                    <div class="avatar avatar-online">
+                      <span class="avatar-initial rounded-circle" style="background:linear-gradient(135deg,#1e3a8a,#1e40af);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;">SM</span>
+                    </div>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end">
+                    <li>
+                      <a class="dropdown-item" href="javascript:void(0);">
+                        <div class="d-flex">
+                          <div class="flex-shrink-0 me-3">
+                            <div class="avatar avatar-online">
+                              <span class="avatar-initial rounded-circle" style="background:linear-gradient(135deg,#1e3a8a,#1e40af);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;">SM</span>
+                            </div>
+                          </div>
+                          <div class="flex-grow-1">
+                            <span class="fw-semibold d-block">Supply Manager</span>
+                            <small class="text-muted">Procurement Team</small>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li><div class="dropdown-divider"></div></li>
+                    <li><a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-user me-2"></i><span class="align-middle">My Profile</span></a></li>
+                    <li><a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-cog me-2"></i><span class="align-middle">Settings</span></a></li>
+                    <li><div class="dropdown-divider"></div></li>
+                    <li><a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-power-off me-2"></i><span class="align-middle">Log Out</span></a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+          <div class="content-wrapper">
+            <div class="container-xxl flex-grow-1 container-p-y">
+
+              <div class="d-flex align-items-center justify-content-between pb-3 mb-4 border-bottom">
+                <div>
+                  <h4 class="fw-bold mb-1">AI Order Recommendation</h4>
+                  <p class="text-muted mb-0">Intelligent order suggestions for all branches <span class="text-primary small">· Last updated: Today at 14:35</span></p>
+                </div>
+              </div>
+
+              <!-- Supervisor Performance KPIs — computed live from the data below, click to act -->
+              <p class="text-xs fw-semibold text-uppercase text-muted mb-2"><i class="bx bx-tachometer text-primary me-1"></i>Your Performance <span class="text-muted normal-case fw-normal">— click a card to act on it</span></p>
+              <div class="row g-3 mb-4">
+                <div class="col-md-4">
+                  <div class="d-flex gap-2 p-3 rounded border border-danger-subtle bg-danger-subtle bg-opacity-25 h-100 kpi-card-clickable"
+                    onclick="filterRows('lt3')" title="Show only rows with inventory under 3 days">
+                    <i class="bx bx-error-circle text-danger mt-1"></i>
+                    <div>
+                      <span class="badge badge-soft-danger rounded-pill mb-1">Low Stock</span>
+                      <p class="text-xs mb-0"><span id="lowStockCount">4</span> SKUs have inventory under 3 days across WH-CTR-01 and BR-STH-03 (+1 more).</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="d-flex gap-2 p-3 rounded border border-warning-subtle bg-warning-subtle bg-opacity-25 h-100 kpi-card-clickable"
+                    onclick="filterRows('unconfirmed')" title="Show only unconfirmed rows">
+                    <i class="bx bx-time-five text-warning mt-1"></i>
+                    <div>
+                      <span class="badge badge-soft-warning rounded-pill mb-1">Pending Confirmation</span>
+                      <p class="text-xs mb-0"><span id="pendingConfirmCount">2</span> orders are still awaiting your decision.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="d-flex gap-2 p-3 rounded border border-info-subtle bg-info-subtle bg-opacity-25 h-100 kpi-card-clickable"
+                    data-bs-toggle="modal" data-bs-target="#demandSpikeModal" title="View the top 5 demand spikes in detail">
+                    <i class="bx bx-trending-up text-info mt-1"></i>
+                    <div>
+                      <span class="badge badge-soft-info rounded-pill mb-1">Top 5 Demand Spikes</span>
+                      <p class="text-xs mb-0">SKU-30789 leads at +40% vs 7D avg — click to see all 5.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Top 5 Demand Spikes modal -->
+              <div class="modal fade" id="demandSpikeModal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h6 class="modal-title"><i class="bx bx-trending-up text-info me-1"></i>Top 5 Demand Spikes</h6>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body p-0">
+                      <table class="table table-sm mb-0">
+                        <thead class="table-light">
+                          <tr class="text-xs text-uppercase">
+                            <th>Product</th>
+                            <th>Branch</th>
+                            <th class="text-end">Y Sale</th>
+                            <th class="text-end">7D Avg</th>
+                            <th class="text-end">Jump</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                      <tr>
+                        <td class="text-xs">
+                          <span class="fw-semibold d-block">SKU-30789</span>
+                          <span class="text-muted">Natural Spring Mineral Water 500ml (24-pack)</span>
+                        </td>
+                        <td class="text-xs">BR-STH-03</td>
+                        <td class="text-end text-xs">42</td>
+                        <td class="text-end text-xs">30</td>
+                        <td class="text-end"><span class="badge sale-high sale-high-text font-monospace">+40%</span></td>
+                      </tr>
+                      <tr>
+                        <td class="text-xs">
+                          <span class="fw-semibold d-block">SKU-80665</span>
+                          <span class="text-muted">Cold Press Juice Orange & Carrot 1L</span>
+                        </td>
+                        <td class="text-xs">BR-STH-03</td>
+                        <td class="text-end text-xs">26</td>
+                        <td class="text-end text-xs">20</td>
+                        <td class="text-end"><span class="badge sale-high sale-high-text font-monospace">+30%</span></td>
+                      </tr>
+                      <tr>
+                        <td class="text-xs">
+                          <span class="fw-semibold d-block">SKU-11887</span>
+                          <span class="text-muted">Sparkling Lemonade Natural 330ml (6-pack)</span>
+                        </td>
+                        <td class="text-xs">BR-WST-05</td>
+                        <td class="text-end text-xs">44</td>
+                        <td class="text-end text-xs">35</td>
+                        <td class="text-end"><span class="badge sale-high sale-high-text font-monospace">+26%</span></td>
+                      </tr>
+                      <tr>
+                        <td class="text-xs">
+                          <span class="fw-semibold d-block">SKU-10245</span>
+                          <span class="text-muted">Premium Arabica Coffee Beans 1kg</span>
+                        </td>
+                        <td class="text-xs">WH-CTR-01</td>
+                        <td class="text-end text-xs">31</td>
+                        <td class="text-end text-xs">25</td>
+                        <td class="text-end"><span class="badge sale-high sale-high-text font-monospace">+24%</span></td>
+                      </tr>
+                      <tr>
+                        <td class="text-xs">
+                          <span class="fw-semibold d-block">SKU-50892</span>
+                          <span class="text-muted">High Protein Mixed Flavor Bars Box (20-count)</span>
+                        </td>
+                        <td class="text-xs">BR-WST-05</td>
+                        <td class="text-end text-xs">27</td>
+                        <td class="text-end text-xs">22</td>
+                        <td class="text-end"><span class="badge sale-high sale-high-text font-monospace">+23%</span></td>
+                      </tr>
+
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-sm btn-primary" data-bs-dismiss="modal">Done</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+                            <!-- Global Filters (shared across pages) -->
+              <div class="card mb-4">
+                <div class="card-body">
+                  <div class="row g-2 align-items-end">
+                    <div class="col-md-2">
+                      <label class="text-xs text-muted mb-1">Branch</label>
+                      <select class="form-select form-select-sm">
+                        <option>All Branches</option>
+                        <option>WH-CTR-01</option><option>BR-NTH-02</option><option>BR-STH-03</option>
+                        <option>BR-EST-04</option><option>BR-WST-05</option>
+                      </select>
+                    </div>
+                    <div class="col-md-2">
+                      <label class="text-xs text-muted mb-1">Supplier</label>
+                      <select class="form-select form-select-sm"><option>All Suppliers</option></select>
+                    </div>
+                    <div class="col-md-2">
+                      <label class="text-xs text-muted mb-1">Category</label>
+                      <select class="form-select form-select-sm">
+                        <option>All Categories</option><option>Beverages</option><option>Snacks</option>
+                        <option>Food</option><option>Confectionery</option>
+                      </select>
+                    </div>
+                    <div class="col-md-2">
+                      <label class="text-xs text-muted mb-1">Risk Type</label>
+                      <select class="form-select form-select-sm" id="riskTypeFilter"
+                        onchange="if (typeof filterRows === 'function') filterRows(this.value)">
+                        <option value="all">All Risk Types</option>
+                        <option value="lt3">LT3</option>
+                        <option value="critical">Critical</option>
+                      </select>
+                    </div>
+                    <div class="col-md-2">
+                      <label class="text-xs text-muted mb-1">Date</label>
+                      <input type="date" class="form-control form-control-sm" value="2025-06-28" />
+                    </div>
+                    <div class="col-md-2">
+                      <button class="btn btn-outline-primary btn-sm w-100"><i class="bx bx-download me-1"></i>Export</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- Table -->
+              <div class="card mb-4">
+                <!-- Top bar: color legend, status filters -->
+                <div class="px-3 py-2 border-bottom bg-light d-flex align-items-center justify-content-between gap-3 flex-wrap rounded-top">
+                  <div class="d-flex align-items-center gap-3 flex-wrap">
+                    <span class="text-xs fw-semibold text-uppercase text-muted">DI(S) · DI(Tr) · DI(S)2 · DI(Tr)2:</span>
+                    <span class="text-xs d-flex align-items-center gap-1"><span class="badge rounded-pill inv-badge inv-under5"><5</span> Red</span><span class="text-xs d-flex align-items-center gap-1"><span class="badge rounded-pill inv-badge inv-mid">5-12</span> Green</span><span class="text-xs d-flex align-items-center gap-1"><span class="badge rounded-pill inv-badge inv-over12">>12</span> Blue</span>
+                  </div>
+                  <div class="btn-group btn-group-sm" role="group" aria-label="Filter by status">
+                    <button type="button" class="btn btn-outline-primary active" id="filter-all" onclick="filterRows('all')">All</button>
+                    <button type="button" class="btn btn-outline-primary" id="filter-unconfirmed" onclick="filterRows('unconfirmed')">Unconfirmed</button>
+                    <button type="button" class="btn btn-outline-primary" id="filter-confirmed" onclick="filterRows('confirmed')">Confirmed</button>
+                  </div>
+                </div>
+
+                <div class="px-3 py-1 text-xs text-muted border-bottom">
+                  <span class="d-inline-block me-3"><span class="d-inline-block" style="width:10px;height:10px;background:#fef4f4;border-left:3px solid #b91c1c;"></span> LT3 row (inventory &lt; 3 days)</span>
+                  <span class="d-inline-block me-3"><span class="d-inline-block" style="width:10px;height:10px;background:#f5f3ff;border-left:3px solid #7c3aed;"></span> Critical row (has expiring stock ≤90d)</span>
+                  <span class="d-inline-block me-3 fst-italic">— rows that are both show Critical</span>
+                  <span class="ms-2">INIT = Opening Inventory · OP = Open Orders · IN = Shipped (incoming)</span>
+                </div>
+
+                <div class="table-responsive">
+                  <table class="table table-sm mb-0 align-middle">
+                    <thead class="table-light">
+                      <tr class="text-xs text-uppercase">
+                        <th class="sortable" onclick="sortTable('product')">ProductCode <i class="bx bx-sort" id="sort-icon-product"></i></th>
+                        <th class="sortable" onclick="sortTable('name')">Product Name <i class="bx bx-sort" id="sort-icon-name"></i></th>
+                        <th class="sortable" onclick="sortTable('branch')">Branch <i class="bx bx-sort" id="sort-icon-branch"></i></th>
+                        <th class="text-end sortable" onclick="sortTable('inv')">INV <i class="bx bx-sort" id="sort-icon-inv"></i></th>
+                        <th class="text-end sortable" title="Opening Inventory (Beginning Inventory)" onclick="sortTable('init')">INIT <i class="bx bx-sort" id="sort-icon-init"></i></th>
+                        <th class="text-end sortable" title="Open Orders" onclick="sortTable('op')">OP <i class="bx bx-sort" id="sort-icon-op"></i></th>
+                        <th class="text-end sortable" title="Shipped Order (Incoming)" onclick="sortTable('in')">IN <i class="bx bx-sort" id="sort-icon-in"></i></th>
+                        <th class="text-center sortable" title="Days of Inventory based on Target" onclick="sortTable('dis')">DI(S) <i class="bx bx-sort" id="sort-icon-dis"></i></th>
+                        <th class="text-center sortable" title="Days of Inventory based on Sales" onclick="sortTable('ditr')">DI(Tr) <i class="bx bx-sort" id="sort-icon-ditr"></i></th>
+                        <th class="text-center bg-primary-subtle sortable" onclick="sortTable('orders')">Orders <i class="bx bx-sort" id="sort-icon-orders"></i></th>
+                        <th class="text-center sortable" title="Days of Inventory based on Target, after placing an order" onclick="sortTable('dis2')">DI(S)2 <i class="bx bx-sort" id="sort-icon-dis2"></i></th>
+                        <th class="text-center sortable" title="Days of Inventory based on Sales, after placing an order" onclick="sortTable('ditr2')">DI(Tr)2 <i class="bx bx-sort" id="sort-icon-ditr2"></i></th>
+                        <th class="text-end sortable" onclick="sortTable('supinv')">SUP-INV <i class="bx bx-sort" id="sort-icon-supinv"></i></th>
+                        <th class="text-center">Confirm</th>
+                        <th class="text-center">Edit</th>
+                      </tr>
+                    </thead>
+                    <tbody id="ordersTbody">
+                    <tr id="row-1" data-row-id="1" data-confirmed="true"
+                        data-lt3="true" data-critical="false"
+                        data-product="SKU-10245" data-name="Premium Arabica Coffee Beans 1kg" data-branch="WH-CTR-01"
+                        data-inv="150" data-init="310" data-op="0" data-in="80"
+                        data-dis="2.1" data-ditr="2.4" data-orders="225"
+                        data-dis2="12.5" data-ditr2="13.0" data-supinv="5000"
+                        class="row-lt3">
+                      <td class="font-monospace text-xs">SKU-10245</td>
+                      <td><span class="text-xs">Premium Arabica Coffee Beans 1kg</span></td>
+                      <td class="font-monospace text-xs">WH-CTR-01</td>
+                      <td class="text-end font-monospace text-xs">150</td>
+                      <td class="text-end font-monospace text-xs text-muted" title="Opening Inventory (Beginning Inventory)">310</td>
+                      <td class="text-end font-monospace text-xs text-muted" title="Open Orders">0</td>
+                      <td class="text-end font-monospace text-xs text-muted" title="Shipped / Incoming Order">80</td>
+                      <td class="text-center"><span class="badge rounded-pill font-monospace inv-badge inv-under5">2.1d</span></td>
+                      <td class="text-center"><span class="badge rounded-pill font-monospace inv-badge inv-under5">2.4d</span></td>
+                      <td class="text-center">
+                        <span class="badge bg-primary font-monospace px-2 py-1" id="orders-badge-1">225</span>
+                        <span id="reset-icon-1" class="reset-icon d-none"
+                          onclick="resetToAI('1')" title="Reset to AI recommendation (225)">
+                          <i class="bx bx-reset text-muted"></i>
+                        </span>
+                      </td>
+                      <td class="text-center"><span class="badge rounded-pill font-monospace inv-badge inv-over12">12.5d</span></td>
+                      <td class="text-center"><span class="badge rounded-pill font-monospace inv-badge inv-over12">13.0d</span></td>
+                      <td class="text-end font-monospace text-xs text-success">5,000</td>
+                      <td class="text-center" id="confirm-cell-1"><span class="confirm-toggle confirmed" id="confirm-toggle-1" onclick="toggleConfirm('1')" title="Click to confirm — click again to undo"><i class="bx bx-check"></i></span></td>
+                      <td class="text-center">
+                        <button class="btn btn-outline-primary btn-icon-sm" data-bs-toggle="collapse" data-bs-target="#edit-1" title="Edit / view details">
+                          <i class="bx bx-edit-alt"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="collapse" id="edit-1">
+                      <td colspan="15" class="p-0 border-0">
+                        <div class="bg-light border-top border-bottom border-primary-subtle px-4 py-3">
+                          <p class="text-xs fw-bold text-primary text-uppercase mb-3">SKU-10245 · Premium Arabica Coffee Beans 1kg <span class="text-muted normal-case">— WH-CTR-01 · Beverages</span></p>
+
+                          <div class="p-3 rounded border bg-white mb-3">
+                            <p class="text-xs fw-bold text-uppercase text-muted mb-3"><i class="bx bx-info-circle me-1"></i>Reference Info <span class="fw-normal normal-case text-muted">(read-only)</span></p>
+                            <div class="row g-3">
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">AI Rec. Qty</p>
+                                <span class="badge bg-label-primary font-monospace fs-6 px-2 py-1">225</span>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Open Orders</p>
+                                <p class="fw-semibold mb-0">0</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Shipped (IN)</p>
+                                <p class="fw-semibold mb-0">80</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Opening Inventory</p>
+                                <p class="fw-semibold mb-0">310</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Cov / Trg. Cov</p>
+                                <p class="fw-semibold mb-0">40% / 38%</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">W2W</p>
+                                <p class="fw-semibold mb-0">0</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">7D AVG Sales</p>
+                                <p class="fw-semibold mb-0">25</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Sale</p>
+                                <span class="badge sale-high sale-high-text">31</span>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">SUP-INV</p>
+                                <p class="fw-semibold mb-0">5,000</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Confidence</p>
+                                <p class="fw-semibold mb-0">95%</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Promotion</p>
+                                <p class="fw-semibold mb-0">Summer Deals 2025</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Critical (Expiry ≤90d)</p>
+                                <p class="fw-semibold mb-0">0</p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="p-3 rounded border border-primary-subtle" style="background:rgba(30,58,138,0.05);">
+                            <p class="text-xs fw-bold text-uppercase text-primary mb-2"><i class="bx bx-edit-alt me-1"></i>Your Decision <span class="fw-normal normal-case text-primary opacity-75">(editable)</span></p>
+                            <div class="row g-2">
+                            <div class="col-6 col-lg-2">
+                              <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Final Order Qty (Boxes) *</label>
+                              <input type="number" class="form-control form-control-sm qty-sync-input" id="finalqty-1" value="225"
+                                oninput="syncFromBoxes('1')" />
+                            </div>
+                            <div class="col-6 col-lg-2">
+                              <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Final Order Qty (Pallets)</label>
+                              <input type="number" step="0.01" class="form-control form-control-sm qty-sync-input" id="finalqty-pallets-1"
+                                value="4.50"
+                                oninput="syncFromPallets('1')" />
+                              <p class="qty-sync-hint mb-0 mt-1">1 pallet = 50 boxes</p>
+                            </div>
+                            <div class="col-6 col-lg-2">
+                              <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Branch</label>
+                              <select class="form-select form-select-sm"><option>WH-CTR-01</option></select>
+                            </div>
+                            <div class="col-6 col-lg-2">
+                              <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Constraint Gap</label>
+                              <div class="form-control form-control-sm text-muted">—</div>
+                            </div>
+                            <div class="col-lg-4">
+                              <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Override Reason *</label>
+                              <select class="form-select form-select-sm" id="reason-1">
+                                <option value="">Select reason...</option>
+                                <option>Supplier Capacity Constraint</option>
+                                <option>Budget Limitation</option>
+                                <option>Promotion Adjustment</option>
+                                <option>Demand Correction</option>
+                                <option>Manual Override</option>
+                                <option>Other</option>
+                              </select>
+                            </div>
+                            </div>
+                            <div class="row g-2 mt-1 align-items-end">
+                              <div class="col-lg-9">
+                                <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Notes</label>
+                                <textarea class="form-control form-control-sm" rows="2" placeholder="e.g. Supplier can only deliver X units due to production limitation."></textarea>
+                              </div>
+                              <div class="col-lg-3 d-flex gap-2 justify-content-end">
+                              <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="collapse" data-bs-target="#edit-1">Cancel</button>
+                              <button class="btn btn-sm btn-primary" onclick="saveDecision('1')"><i class="bx bx-check me-1"></i>Save Decision</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr id="row-2" data-row-id="2" data-confirmed="true"
+                        data-lt3="false" data-critical="false"
+                        data-product="SKU-20156" data-name="Organic Green Tea Premium Selection 100pk" data-branch="BR-NTH-02"
+                        data-inv="80" data-init="155" data-op="50" data-in="30"
+                        data-dis="4.6" data-ditr="4.2" data-orders="100"
+                        data-dis2="9.8" data-ditr2="10.5" data-supinv="3200"
+                        class="">
+                      <td class="font-monospace text-xs">SKU-20156</td>
+                      <td><span class="text-xs">Organic Green Tea Premium Selection 100pk</span></td>
+                      <td class="font-monospace text-xs">BR-NTH-02</td>
+                      <td class="text-end font-monospace text-xs">80</td>
+                      <td class="text-end font-monospace text-xs text-muted" title="Opening Inventory (Beginning Inventory)">155</td>
+                      <td class="text-end font-monospace text-xs text-muted" title="Open Orders">50</td>
+                      <td class="text-end font-monospace text-xs text-muted" title="Shipped / Incoming Order">30</td>
+                      <td class="text-center"><span class="badge rounded-pill font-monospace inv-badge inv-under5">4.6d</span></td>
+                      <td class="text-center"><span class="badge rounded-pill font-monospace inv-badge inv-under5">4.2d</span></td>
+                      <td class="text-center">
+                        <span class="badge bg-primary font-monospace px-2 py-1" id="orders-badge-2">100</span>
+                        <span id="reset-icon-2" class="reset-icon d-none"
+                          onclick="resetToAI('2')" title="Reset to AI recommendation (100)">
+                          <i class="bx bx-reset text-muted"></i>
+                        </span>
+                      </td>
+                      <td class="text-center"><span class="badge rounded-pill font-monospace inv-badge inv-mid">9.8d</span></td>
+                      <td class="text-center"><span class="badge rounded-pill font-monospace inv-badge inv-mid">10.5d</span></td>
+                      <td class="text-end font-monospace text-xs text-success">3,200</td>
+                      <td class="text-center" id="confirm-cell-2"><span class="confirm-toggle confirmed" id="confirm-toggle-2" onclick="toggleConfirm('2')" title="Click to confirm — click again to undo"><i class="bx bx-check"></i></span></td>
+                      <td class="text-center">
+                        <button class="btn btn-outline-primary btn-icon-sm" data-bs-toggle="collapse" data-bs-target="#edit-2" title="Edit / view details">
+                          <i class="bx bx-edit-alt"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="collapse" id="edit-2">
+                      <td colspan="15" class="p-0 border-0">
+                        <div class="bg-light border-top border-bottom border-primary-subtle px-4 py-3">
+                          <p class="text-xs fw-bold text-primary text-uppercase mb-3">SKU-20156 · Organic Green Tea Premium Selection 100pk <span class="text-muted normal-case">— BR-NTH-02 · Beverages</span></p>
+
+                          <div class="p-3 rounded border bg-white mb-3">
+                            <p class="text-xs fw-bold text-uppercase text-muted mb-3"><i class="bx bx-info-circle me-1"></i>Reference Info <span class="fw-normal normal-case text-muted">(read-only)</span></p>
+                            <div class="row g-3">
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">AI Rec. Qty</p>
+                                <span class="badge bg-label-primary font-monospace fs-6 px-2 py-1">100</span>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Open Orders</p>
+                                <p class="fw-semibold mb-0">50</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Shipped (IN)</p>
+                                <p class="fw-semibold mb-0">30</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Opening Inventory</p>
+                                <p class="fw-semibold mb-0">155</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Cov / Trg. Cov</p>
+                                <p class="fw-semibold mb-0">58% / 61%</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">W2W</p>
+                                <p class="fw-semibold mb-0">20</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">7D AVG Sales</p>
+                                <p class="fw-semibold mb-0">15</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Sale</p>
+                                <p class="fw-semibold mb-0">10</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">SUP-INV</p>
+                                <p class="fw-semibold mb-0">3,200</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Confidence</p>
+                                <p class="fw-semibold mb-0">88%</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Promotion</p>
+                                <p class="fw-semibold mb-0">—</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Critical (Expiry ≤90d)</p>
+                                <p class="fw-semibold mb-0">0</p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="p-3 rounded border border-primary-subtle" style="background:rgba(30,58,138,0.05);">
+                            <p class="text-xs fw-bold text-uppercase text-primary mb-2"><i class="bx bx-edit-alt me-1"></i>Your Decision <span class="fw-normal normal-case text-primary opacity-75">(editable)</span></p>
+                            <div class="row g-2">
+                            <div class="col-6 col-lg-2">
+                              <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Final Order Qty (Boxes) *</label>
+                              <input type="number" class="form-control form-control-sm qty-sync-input" id="finalqty-2" value="100"
+                                oninput="syncFromBoxes('2')" />
+                            </div>
+                            <div class="col-6 col-lg-2">
+                              <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Final Order Qty (Pallets)</label>
+                              <input type="number" step="0.01" class="form-control form-control-sm qty-sync-input" id="finalqty-pallets-2"
+                                value="2.50"
+                                oninput="syncFromPallets('2')" />
+                              <p class="qty-sync-hint mb-0 mt-1">1 pallet = 40 boxes</p>
+                            </div>
+                            <div class="col-6 col-lg-2">
+                              <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Branch</label>
+                              <select class="form-select form-select-sm"><option>BR-NTH-02</option></select>
+                            </div>
+                            <div class="col-6 col-lg-2">
+                              <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Constraint Gap</label>
+                              <div class="form-control form-control-sm text-muted">—</div>
+                            </div>
+                            <div class="col-lg-4">
+                              <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Override Reason *</label>
+                              <select class="form-select form-select-sm" id="reason-2">
+                                <option value="">Select reason...</option>
+                                <option>Supplier Capacity Constraint</option>
+                                <option>Budget Limitation</option>
+                                <option>Promotion Adjustment</option>
+                                <option>Demand Correction</option>
+                                <option>Manual Override</option>
+                                <option>Other</option>
+                              </select>
+                            </div>
+                            </div>
+                            <div class="row g-2 mt-1 align-items-end">
+                              <div class="col-lg-9">
+                                <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Notes</label>
+                                <textarea class="form-control form-control-sm" rows="2" placeholder="e.g. Supplier can only deliver X units due to production limitation."></textarea>
+                              </div>
+                              <div class="col-lg-3 d-flex gap-2 justify-content-end">
+                              <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="collapse" data-bs-target="#edit-2">Cancel</button>
+                              <button class="btn btn-sm btn-primary" onclick="saveDecision('2')"><i class="bx bx-check me-1"></i>Save Decision</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr id="row-3" data-row-id="3" data-confirmed="true"
+                        data-lt3="true" data-critical="true"
+                        data-product="SKU-30789" data-name="Natural Spring Mineral Water 500ml (24-pack)" data-branch="BR-STH-03"
+                        data-inv="45" data-init="520" data-op="0" data-in="0"
+                        data-dis="1.2" data-ditr="1.5" data-orders="255"
+                        data-dis2="18.5" data-ditr2="19.0" data-supinv="8000"
+                        class="row-critical">
+                      <td class="font-monospace text-xs">SKU-30789</td>
+                      <td><span class="text-xs">Natural Spring Mineral Water 500ml (24-pack)</span></td>
+                      <td class="font-monospace text-xs">BR-STH-03</td>
+                      <td class="text-end font-monospace text-xs">45</td>
+                      <td class="text-end font-monospace text-xs text-muted" title="Opening Inventory (Beginning Inventory)">520</td>
+                      <td class="text-end font-monospace text-xs text-muted" title="Open Orders">0</td>
+                      <td class="text-end font-monospace text-xs text-muted" title="Shipped / Incoming Order">0</td>
+                      <td class="text-center"><span class="badge rounded-pill font-monospace inv-badge inv-under5">1.2d</span></td>
+                      <td class="text-center"><span class="badge rounded-pill font-monospace inv-badge inv-under5">1.5d</span></td>
+                      <td class="text-center">
+                        <span class="badge bg-primary font-monospace px-2 py-1" id="orders-badge-3">255</span>
+                        <span id="reset-icon-3" class="reset-icon d-none"
+                          onclick="resetToAI('3')" title="Reset to AI recommendation (255)">
+                          <i class="bx bx-reset text-muted"></i>
+                        </span>
+                      </td>
+                      <td class="text-center"><span class="badge rounded-pill font-monospace inv-badge inv-over12">18.5d</span></td>
+                      <td class="text-center"><span class="badge rounded-pill font-monospace inv-badge inv-over12">19.0d</span></td>
+                      <td class="text-end font-monospace text-xs text-success">8,000</td>
+                      <td class="text-center" id="confirm-cell-3"><span class="confirm-toggle confirmed" id="confirm-toggle-3" onclick="toggleConfirm('3')" title="Click to confirm — click again to undo"><i class="bx bx-check"></i></span></td>
+                      <td class="text-center">
+                        <button class="btn btn-outline-primary btn-icon-sm" data-bs-toggle="collapse" data-bs-target="#edit-3" title="Edit / view details">
+                          <i class="bx bx-edit-alt"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="collapse" id="edit-3">
+                      <td colspan="15" class="p-0 border-0">
+                        <div class="bg-light border-top border-bottom border-primary-subtle px-4 py-3">
+                          <p class="text-xs fw-bold text-primary text-uppercase mb-3">SKU-30789 · Natural Spring Mineral Water 500ml (24-pack) <span class="text-muted normal-case">— BR-STH-03 · Beverages</span></p>
+
+                          <div class="p-3 rounded border bg-white mb-3">
+                            <p class="text-xs fw-bold text-uppercase text-muted mb-3"><i class="bx bx-info-circle me-1"></i>Reference Info <span class="fw-normal normal-case text-muted">(read-only)</span></p>
+                            <div class="row g-3">
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">AI Rec. Qty</p>
+                                <span class="badge bg-label-primary font-monospace fs-6 px-2 py-1">255</span>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Open Orders</p>
+                                <p class="fw-semibold mb-0">0</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Shipped (IN)</p>
+                                <p class="fw-semibold mb-0">0</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Opening Inventory</p>
+                                <p class="fw-semibold mb-0">520</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Cov / Trg. Cov</p>
+                                <p class="fw-semibold mb-0">15% / 13%</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">W2W</p>
+                                <p class="fw-semibold mb-0">0</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">7D AVG Sales</p>
+                                <p class="fw-semibold mb-0">30</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Sale</p>
+                                <span class="badge sale-high sale-high-text">42</span>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">SUP-INV</p>
+                                <p class="fw-semibold mb-0">8,000</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Confidence</p>
+                                <p class="fw-semibold mb-0">92%</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Promotion</p>
+                                <p class="fw-semibold mb-0">Ramadan Special</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Critical (Expiry ≤90d)</p>
+                                <span class="badge sup-inv-zero">18</span>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="p-3 rounded border border-primary-subtle" style="background:rgba(30,58,138,0.05);">
+                            <p class="text-xs fw-bold text-uppercase text-primary mb-2"><i class="bx bx-edit-alt me-1"></i>Your Decision <span class="fw-normal normal-case text-primary opacity-75">(editable)</span></p>
+                            <div class="row g-2">
+                            <div class="col-6 col-lg-2">
+                              <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Final Order Qty (Boxes) *</label>
+                              <input type="number" class="form-control form-control-sm qty-sync-input" id="finalqty-3" value="255"
+                                oninput="syncFromBoxes('3')" />
+                            </div>
+                            <div class="col-6 col-lg-2">
+                              <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Final Order Qty (Pallets)</label>
+                              <input type="number" step="0.01" class="form-control form-control-sm qty-sync-input" id="finalqty-pallets-3"
+                                value="4.25"
+                                oninput="syncFromPallets('3')" />
+                              <p class="qty-sync-hint mb-0 mt-1">1 pallet = 60 boxes</p>
+                            </div>
+                            <div class="col-6 col-lg-2">
+                              <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Branch</label>
+                              <select class="form-select form-select-sm"><option>BR-STH-03</option></select>
+                            </div>
+                            <div class="col-6 col-lg-2">
+                              <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Constraint Gap</label>
+                              <div class="form-control form-control-sm text-muted">—</div>
+                            </div>
+                            <div class="col-lg-4">
+                              <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Override Reason *</label>
+                              <select class="form-select form-select-sm" id="reason-3">
+                                <option value="">Select reason...</option>
+                                <option>Supplier Capacity Constraint</option>
+                                <option>Budget Limitation</option>
+                                <option>Promotion Adjustment</option>
+                                <option>Demand Correction</option>
+                                <option>Manual Override</option>
+                                <option>Other</option>
+                              </select>
+                            </div>
+                            </div>
+                            <div class="row g-2 mt-1 align-items-end">
+                              <div class="col-lg-9">
+                                <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Notes</label>
+                                <textarea class="form-control form-control-sm" rows="2" placeholder="e.g. Supplier can only deliver X units due to production limitation."></textarea>
+                              </div>
+                              <div class="col-lg-3 d-flex gap-2 justify-content-end">
+                              <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="collapse" data-bs-target="#edit-3">Cancel</button>
+                              <button class="btn btn-sm btn-primary" onclick="saveDecision('3')"><i class="bx bx-check me-1"></i>Save Decision</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr id="row-4" data-row-id="4" data-confirmed="true"
+                        data-lt3="false" data-critical="false"
+                        data-product="SKU-40321" data-name="Energy Boost Performance Drink 250ml (12-pack)" data-branch="BR-EST-04"
+                        data-inv="200" data-init="260" data-op="100" data-in="120"
+                        data-dis="19.5" data-ditr="21.0" data-orders="52"
+                        data-dis2="32.0" data-ditr2="34.0" data-supinv="4500"
+                        class="">
+                      <td class="font-monospace text-xs">SKU-40321</td>
+                      <td><span class="text-xs">Energy Boost Performance Drink 250ml (12-pack)</span></td>
+                      <td class="font-monospace text-xs">BR-EST-04</td>
+                      <td class="text-end font-monospace text-xs">200</td>
+                      <td class="text-end font-monospace text-xs text-muted" title="Opening Inventory (Beginning Inventory)">260</td>
+                      <td class="text-end font-monospace text-xs text-muted" title="Open Orders">100</td>
+                      <td class="text-end font-monospace text-xs text-muted" title="Shipped / Incoming Order">120</td>
+                      <td class="text-center"><span class="badge rounded-pill font-monospace inv-badge inv-over12">19.5d</span></td>
+                      <td class="text-center"><span class="badge rounded-pill font-monospace inv-badge inv-over12">21.0d</span></td>
+                      <td class="text-center">
+                        <span class="badge bg-primary font-monospace px-2 py-1" id="orders-badge-4">52</span>
+                        <span id="reset-icon-4" class="reset-icon d-none"
+                          onclick="resetToAI('4')" title="Reset to AI recommendation (52)">
+                          <i class="bx bx-reset text-muted"></i>
+                        </span>
+                      </td>
+                      <td class="text-center"><span class="badge rounded-pill font-monospace inv-badge inv-over12">32.0d</span></td>
+                      <td class="text-center"><span class="badge rounded-pill font-monospace inv-badge inv-over12">34.0d</span></td>
+                      <td class="text-end font-monospace text-xs text-success">4,500</td>
+                      <td class="text-center" id="confirm-cell-4"><span class="confirm-toggle confirmed" id="confirm-toggle-4" onclick="toggleConfirm('4')" title="Click to confirm — click again to undo"><i class="bx bx-check"></i></span></td>
+                      <td class="text-center">
+                        <button class="btn btn-outline-primary btn-icon-sm" data-bs-toggle="collapse" data-bs-target="#edit-4" title="Edit / view details">
+                          <i class="bx bx-edit-alt"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="collapse" id="edit-4">
+                      <td colspan="15" class="p-0 border-0">
+                        <div class="bg-light border-top border-bottom border-primary-subtle px-4 py-3">
+                          <p class="text-xs fw-bold text-primary text-uppercase mb-3">SKU-40321 · Energy Boost Performance Drink 250ml (12-pack) <span class="text-muted normal-case">— BR-EST-04 · Beverages</span></p>
+
+                          <div class="p-3 rounded border bg-white mb-3">
+                            <p class="text-xs fw-bold text-uppercase text-muted mb-3"><i class="bx bx-info-circle me-1"></i>Reference Info <span class="fw-normal normal-case text-muted">(read-only)</span></p>
+                            <div class="row g-3">
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">AI Rec. Qty</p>
+                                <span class="badge bg-label-primary font-monospace fs-6 px-2 py-1">52</span>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Open Orders</p>
+                                <p class="fw-semibold mb-0">100</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Shipped (IN)</p>
+                                <p class="fw-semibold mb-0">120</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Opening Inventory</p>
+                                <p class="fw-semibold mb-0">260</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Cov / Trg. Cov</p>
+                                <p class="fw-semibold mb-0">96% / 101%</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">W2W</p>
+                                <p class="fw-semibold mb-0">0</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">7D AVG Sales</p>
+                                <p class="fw-semibold mb-0">18</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Sale</p>
+                                <p class="fw-semibold mb-0">16</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">SUP-INV</p>
+                                <p class="fw-semibold mb-0">4,500</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Confidence</p>
+                                <p class="fw-semibold mb-0">78%</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Promotion</p>
+                                <p class="fw-semibold mb-0">—</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Critical (Expiry ≤90d)</p>
+                                <p class="fw-semibold mb-0">0</p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="p-3 rounded border border-primary-subtle" style="background:rgba(30,58,138,0.05);">
+                            <p class="text-xs fw-bold text-uppercase text-primary mb-2"><i class="bx bx-edit-alt me-1"></i>Your Decision <span class="fw-normal normal-case text-primary opacity-75">(editable)</span></p>
+                            <div class="row g-2">
+                            <div class="col-6 col-lg-2">
+                              <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Final Order Qty (Boxes) *</label>
+                              <input type="number" class="form-control form-control-sm qty-sync-input" id="finalqty-4" value="52"
+                                oninput="syncFromBoxes('4')" />
+                            </div>
+                            <div class="col-6 col-lg-2">
+                              <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Final Order Qty (Pallets)</label>
+                              <input type="number" step="0.01" class="form-control form-control-sm qty-sync-input" id="finalqty-pallets-4"
+                                value="1.08"
+                                oninput="syncFromPallets('4')" />
+                              <p class="qty-sync-hint mb-0 mt-1">1 pallet = 48 boxes</p>
+                            </div>
+                            <div class="col-6 col-lg-2">
+                              <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Branch</label>
+                              <select class="form-select form-select-sm"><option>BR-EST-04</option></select>
+                            </div>
+                            <div class="col-6 col-lg-2">
+                              <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Constraint Gap</label>
+                              <div class="form-control form-control-sm text-muted">—</div>
+                            </div>
+                            <div class="col-lg-4">
+                              <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Override Reason *</label>
+                              <select class="form-select form-select-sm" id="reason-4">
+                                <option value="">Select reason...</option>
+                                <option>Supplier Capacity Constraint</option>
+                                <option>Budget Limitation</option>
+                                <option>Promotion Adjustment</option>
+                                <option>Demand Correction</option>
+                                <option>Manual Override</option>
+                                <option>Other</option>
+                              </select>
+                            </div>
+                            </div>
+                            <div class="row g-2 mt-1 align-items-end">
+                              <div class="col-lg-9">
+                                <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Notes</label>
+                                <textarea class="form-control form-control-sm" rows="2" placeholder="e.g. Supplier can only deliver X units due to production limitation."></textarea>
+                              </div>
+                              <div class="col-lg-3 d-flex gap-2 justify-content-end">
+                              <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="collapse" data-bs-target="#edit-4">Cancel</button>
+                              <button class="btn btn-sm btn-primary" onclick="saveDecision('4')"><i class="bx bx-check me-1"></i>Save Decision</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr id="row-5" data-row-id="5" data-confirmed="true"
+                        data-lt3="true" data-critical="false"
+                        data-product="SKU-50892" data-name="High Protein Mixed Flavor Bars Box (20-count)" data-branch="BR-WST-05"
+                        data-inv="35" data-init="410" data-op="0" data-in="0"
+                        data-dis="1.6" data-ditr="1.8" data-orders="294"
+                        data-dis2="20.5" data-ditr2="21.3" data-supinv="1200"
+                        class="row-lt3">
+                      <td class="font-monospace text-xs">SKU-50892</td>
+                      <td><span class="text-xs">High Protein Mixed Flavor Bars Box (20-count)</span></td>
+                      <td class="font-monospace text-xs">BR-WST-05</td>
+                      <td class="text-end font-monospace text-xs">35</td>
+                      <td class="text-end font-monospace text-xs text-muted" title="Opening Inventory (Beginning Inventory)">410</td>
+                      <td class="text-end font-monospace text-xs text-muted" title="Open Orders">0</td>
+                      <td class="text-end font-monospace text-xs text-muted" title="Shipped / Incoming Order">0</td>
+                      <td class="text-center"><span class="badge rounded-pill font-monospace inv-badge inv-under5">1.6d</span></td>
+                      <td class="text-center"><span class="badge rounded-pill font-monospace inv-badge inv-under5">1.8d</span></td>
+                      <td class="text-center">
+                        <span class="badge bg-primary font-monospace px-2 py-1" id="orders-badge-5">294</span>
+                        <span id="reset-icon-5" class="reset-icon d-none"
+                          onclick="resetToAI('5')" title="Reset to AI recommendation (294)">
+                          <i class="bx bx-reset text-muted"></i>
+                        </span>
+                      </td>
+                      <td class="text-center"><span class="badge rounded-pill font-monospace inv-badge inv-over12">20.5d</span></td>
+                      <td class="text-center"><span class="badge rounded-pill font-monospace inv-badge inv-over12">21.3d</span></td>
+                      <td class="text-end font-monospace text-xs text-success">1,200</td>
+                      <td class="text-center" id="confirm-cell-5"><span class="confirm-toggle confirmed" id="confirm-toggle-5" onclick="toggleConfirm('5')" title="Click to confirm — click again to undo"><i class="bx bx-check"></i></span></td>
+                      <td class="text-center">
+                        <button class="btn btn-outline-primary btn-icon-sm" data-bs-toggle="collapse" data-bs-target="#edit-5" title="Edit / view details">
+                          <i class="bx bx-edit-alt"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="collapse" id="edit-5">
+                      <td colspan="15" class="p-0 border-0">
+                        <div class="bg-light border-top border-bottom border-primary-subtle px-4 py-3">
+                          <p class="text-xs fw-bold text-primary text-uppercase mb-3">SKU-50892 · High Protein Mixed Flavor Bars Box (20-count) <span class="text-muted normal-case">— BR-WST-05 · Snacks</span></p>
+
+                          <div class="p-3 rounded border bg-white mb-3">
+                            <p class="text-xs fw-bold text-uppercase text-muted mb-3"><i class="bx bx-info-circle me-1"></i>Reference Info <span class="fw-normal normal-case text-muted">(read-only)</span></p>
+                            <div class="row g-3">
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">AI Rec. Qty</p>
+                                <span class="badge bg-label-primary font-monospace fs-6 px-2 py-1">294</span>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Open Orders</p>
+                                <p class="fw-semibold mb-0">0</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Shipped (IN)</p>
+                                <p class="fw-semibold mb-0">0</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Opening Inventory</p>
+                                <p class="fw-semibold mb-0">410</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Cov / Trg. Cov</p>
+                                <p class="fw-semibold mb-0">16% / 14%</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">W2W</p>
+                                <p class="fw-semibold mb-0">0</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">7D AVG Sales</p>
+                                <p class="fw-semibold mb-0">22</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Sale</p>
+                                <span class="badge sale-high sale-high-text">27</span>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">SUP-INV</p>
+                                <p class="fw-semibold mb-0">1,200</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Confidence</p>
+                                <p class="fw-semibold mb-0">96%</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Promotion</p>
+                                <p class="fw-semibold mb-0">Summer Deals 2025</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Critical (Expiry ≤90d)</p>
+                                <p class="fw-semibold mb-0">0</p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="p-3 rounded border border-primary-subtle" style="background:rgba(30,58,138,0.05);">
+                            <p class="text-xs fw-bold text-uppercase text-primary mb-2"><i class="bx bx-edit-alt me-1"></i>Your Decision <span class="fw-normal normal-case text-primary opacity-75">(editable)</span></p>
+                            <div class="row g-2">
+                            <div class="col-6 col-lg-2">
+                              <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Final Order Qty (Boxes) *</label>
+                              <input type="number" class="form-control form-control-sm qty-sync-input" id="finalqty-5" value="294"
+                                oninput="syncFromBoxes('5')" />
+                            </div>
+                            <div class="col-6 col-lg-2">
+                              <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Final Order Qty (Pallets)</label>
+                              <input type="number" step="0.01" class="form-control form-control-sm qty-sync-input" id="finalqty-pallets-5"
+                                value="7.00"
+                                oninput="syncFromPallets('5')" />
+                              <p class="qty-sync-hint mb-0 mt-1">1 pallet = 42 boxes</p>
+                            </div>
+                            <div class="col-6 col-lg-2">
+                              <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Branch</label>
+                              <select class="form-select form-select-sm"><option>BR-WST-05</option></select>
+                            </div>
+                            <div class="col-6 col-lg-2">
+                              <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Constraint Gap</label>
+                              <div class="form-control form-control-sm text-muted">—</div>
+                            </div>
+                            <div class="col-lg-4">
+                              <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Override Reason *</label>
+                              <select class="form-select form-select-sm" id="reason-5">
+                                <option value="">Select reason...</option>
+                                <option>Supplier Capacity Constraint</option>
+                                <option>Budget Limitation</option>
+                                <option>Promotion Adjustment</option>
+                                <option>Demand Correction</option>
+                                <option>Manual Override</option>
+                                <option>Other</option>
+                              </select>
+                            </div>
+                            </div>
+                            <div class="row g-2 mt-1 align-items-end">
+                              <div class="col-lg-9">
+                                <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Notes</label>
+                                <textarea class="form-control form-control-sm" rows="2" placeholder="e.g. Supplier can only deliver X units due to production limitation."></textarea>
+                              </div>
+                              <div class="col-lg-3 d-flex gap-2 justify-content-end">
+                              <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="collapse" data-bs-target="#edit-5">Cancel</button>
+                              <button class="btn btn-sm btn-primary" onclick="saveDecision('5')"><i class="bx bx-check me-1"></i>Save Decision</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr id="row-6" data-row-id="6" data-confirmed="true"
+                        data-lt3="false" data-critical="true"
+                        data-product="SKU-60443" data-name="Premium Instant Noodles Variety Pack" data-branch="WH-CTR-01"
+                        data-inv="320" data-init="470" data-op="200" data-in="150"
+                        data-dis="7.1" data-ditr="6.8" data-orders="220"
+                        data-dis2="16.4" data-ditr2="15.9" data-supinv="6000"
+                        class="row-critical">
+                      <td class="font-monospace text-xs">SKU-60443</td>
+                      <td><span class="text-xs">Premium Instant Noodles Variety Pack</span></td>
+                      <td class="font-monospace text-xs">WH-CTR-01</td>
+                      <td class="text-end font-monospace text-xs">320</td>
+                      <td class="text-end font-monospace text-xs text-muted" title="Opening Inventory (Beginning Inventory)">470</td>
+                      <td class="text-end font-monospace text-xs text-muted" title="Open Orders">200</td>
+                      <td class="text-end font-monospace text-xs text-muted" title="Shipped / Incoming Order">150</td>
+                      <td class="text-center"><span class="badge rounded-pill font-monospace inv-badge inv-mid">7.1d</span></td>
+                      <td class="text-center"><span class="badge rounded-pill font-monospace inv-badge inv-mid">6.8d</span></td>
+                      <td class="text-center">
+                        <span class="badge bg-primary font-monospace px-2 py-1" id="orders-badge-6">220</span>
+                        <span id="reset-icon-6" class="reset-icon d-none"
+                          onclick="resetToAI('6')" title="Reset to AI recommendation (220)">
+                          <i class="bx bx-reset text-muted"></i>
+                        </span>
+                      </td>
+                      <td class="text-center"><span class="badge rounded-pill font-monospace inv-badge inv-over12">16.4d</span></td>
+                      <td class="text-center"><span class="badge rounded-pill font-monospace inv-badge inv-over12">15.9d</span></td>
+                      <td class="text-end font-monospace text-xs text-success">6,000</td>
+                      <td class="text-center" id="confirm-cell-6"><span class="confirm-toggle confirmed" id="confirm-toggle-6" onclick="toggleConfirm('6')" title="Click to confirm — click again to undo"><i class="bx bx-check"></i></span></td>
+                      <td class="text-center">
+                        <button class="btn btn-outline-primary btn-icon-sm" data-bs-toggle="collapse" data-bs-target="#edit-6" title="Edit / view details">
+                          <i class="bx bx-edit-alt"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="collapse" id="edit-6">
+                      <td colspan="15" class="p-0 border-0">
+                        <div class="bg-light border-top border-bottom border-primary-subtle px-4 py-3">
+                          <p class="text-xs fw-bold text-primary text-uppercase mb-3">SKU-60443 · Premium Instant Noodles Variety Pack <span class="text-muted normal-case">— WH-CTR-01 · Food</span></p>
+
+                          <div class="p-3 rounded border bg-white mb-3">
+                            <p class="text-xs fw-bold text-uppercase text-muted mb-3"><i class="bx bx-info-circle me-1"></i>Reference Info <span class="fw-normal normal-case text-muted">(read-only)</span></p>
+                            <div class="row g-3">
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">AI Rec. Qty</p>
+                                <span class="badge bg-label-primary font-monospace fs-6 px-2 py-1">220</span>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Open Orders</p>
+                                <p class="fw-semibold mb-0">200</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Shipped (IN)</p>
+                                <p class="fw-semibold mb-0">150</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Opening Inventory</p>
+                                <p class="fw-semibold mb-0">470</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Cov / Trg. Cov</p>
+                                <p class="fw-semibold mb-0">78% / 75%</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">W2W</p>
+                                <p class="fw-semibold mb-0">50</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">7D AVG Sales</p>
+                                <p class="fw-semibold mb-0">45</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Sale</p>
+                                <p class="fw-semibold mb-0">40</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">SUP-INV</p>
+                                <p class="fw-semibold mb-0">6,000</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Confidence</p>
+                                <p class="fw-semibold mb-0">85%</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Promotion</p>
+                                <p class="fw-semibold mb-0">—</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Critical (Expiry ≤90d)</p>
+                                <span class="badge sup-inv-zero">12</span>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="p-3 rounded border border-primary-subtle" style="background:rgba(30,58,138,0.05);">
+                            <p class="text-xs fw-bold text-uppercase text-primary mb-2"><i class="bx bx-edit-alt me-1"></i>Your Decision <span class="fw-normal normal-case text-primary opacity-75">(editable)</span></p>
+                            <div class="row g-2">
+                            <div class="col-6 col-lg-2">
+                              <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Final Order Qty (Boxes) *</label>
+                              <input type="number" class="form-control form-control-sm qty-sync-input" id="finalqty-6" value="220"
+                                oninput="syncFromBoxes('6')" />
+                            </div>
+                            <div class="col-6 col-lg-2">
+                              <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Final Order Qty (Pallets)</label>
+                              <input type="number" step="0.01" class="form-control form-control-sm qty-sync-input" id="finalqty-pallets-6"
+                                value="4.00"
+                                oninput="syncFromPallets('6')" />
+                              <p class="qty-sync-hint mb-0 mt-1">1 pallet = 55 boxes</p>
+                            </div>
+                            <div class="col-6 col-lg-2">
+                              <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Branch</label>
+                              <select class="form-select form-select-sm"><option>WH-CTR-01</option></select>
+                            </div>
+                            <div class="col-6 col-lg-2">
+                              <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Constraint Gap</label>
+                              <div class="form-control form-control-sm text-muted">—</div>
+                            </div>
+                            <div class="col-lg-4">
+                              <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Override Reason *</label>
+                              <select class="form-select form-select-sm" id="reason-6">
+                                <option value="">Select reason...</option>
+                                <option>Supplier Capacity Constraint</option>
+                                <option>Budget Limitation</option>
+                                <option>Promotion Adjustment</option>
+                                <option>Demand Correction</option>
+                                <option>Manual Override</option>
+                                <option>Other</option>
+                              </select>
+                            </div>
+                            </div>
+                            <div class="row g-2 mt-1 align-items-end">
+                              <div class="col-lg-9">
+                                <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Notes</label>
+                                <textarea class="form-control form-control-sm" rows="2" placeholder="e.g. Supplier can only deliver X units due to production limitation."></textarea>
+                              </div>
+                              <div class="col-lg-3 d-flex gap-2 justify-content-end">
+                              <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="collapse" data-bs-target="#edit-6">Cancel</button>
+                              <button class="btn btn-sm btn-primary" onclick="saveDecision('6')"><i class="bx bx-check me-1"></i>Save Decision</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr id="row-7" data-row-id="7" data-confirmed="false"
+                        data-lt3="false" data-critical="false"
+                        data-product="SKU-70554" data-name="Artisan Crackers Assorted 200g" data-branch="BR-NTH-02"
+                        data-inv="180" data-init="205" data-op="0" data-in="60"
+                        data-dis="45.0" data-ditr="48.0" data-orders="0"
+                        data-dis2="45.0" data-ditr2="48.0" data-supinv="2500"
+                        class="">
+                      <td class="font-monospace text-xs">SKU-70554</td>
+                      <td><span class="text-xs">Artisan Crackers Assorted 200g</span></td>
+                      <td class="font-monospace text-xs">BR-NTH-02</td>
+                      <td class="text-end font-monospace text-xs">180</td>
+                      <td class="text-end font-monospace text-xs text-muted" title="Opening Inventory (Beginning Inventory)">205</td>
+                      <td class="text-end font-monospace text-xs text-muted" title="Open Orders">0</td>
+                      <td class="text-end font-monospace text-xs text-muted" title="Shipped / Incoming Order">60</td>
+                      <td class="text-center"><span class="badge rounded-pill font-monospace inv-badge inv-over12">45.0d</span></td>
+                      <td class="text-center"><span class="badge rounded-pill font-monospace inv-badge inv-over12">48.0d</span></td>
+                      <td class="text-center">
+                        <span class="badge bg-primary font-monospace px-2 py-1" id="orders-badge-7">0</span>
+                        <span id="reset-icon-7" class="reset-icon d-none"
+                          onclick="resetToAI('7')" title="Reset to AI recommendation (0)">
+                          <i class="bx bx-reset text-muted"></i>
+                        </span>
+                      </td>
+                      <td class="text-center"><span class="badge rounded-pill font-monospace inv-badge inv-over12">45.0d</span></td>
+                      <td class="text-center"><span class="badge rounded-pill font-monospace inv-badge inv-over12">48.0d</span></td>
+                      <td class="text-end font-monospace text-xs text-success">2,500</td>
+                      <td class="text-center" id="confirm-cell-7"><span class="confirm-toggle " id="confirm-toggle-7" onclick="toggleConfirm('7')" title="Click to confirm — click again to undo"><i class="bx bx-check"></i></span></td>
+                      <td class="text-center">
+                        <button class="btn btn-outline-primary btn-icon-sm" data-bs-toggle="collapse" data-bs-target="#edit-7" title="Edit / view details">
+                          <i class="bx bx-edit-alt"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="collapse" id="edit-7">
+                      <td colspan="15" class="p-0 border-0">
+                        <div class="bg-light border-top border-bottom border-primary-subtle px-4 py-3">
+                          <p class="text-xs fw-bold text-primary text-uppercase mb-3">SKU-70554 · Artisan Crackers Assorted 200g <span class="text-muted normal-case">— BR-NTH-02 · Snacks</span></p>
+
+                          <div class="p-3 rounded border bg-white mb-3">
+                            <p class="text-xs fw-bold text-uppercase text-muted mb-3"><i class="bx bx-info-circle me-1"></i>Reference Info <span class="fw-normal normal-case text-muted">(read-only)</span></p>
+                            <div class="row g-3">
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">AI Rec. Qty</p>
+                                <span class="badge bg-label-primary font-monospace fs-6 px-2 py-1">0</span>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Open Orders</p>
+                                <p class="fw-semibold mb-0">0</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Shipped (IN)</p>
+                                <p class="fw-semibold mb-0">60</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Opening Inventory</p>
+                                <p class="fw-semibold mb-0">205</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Cov / Trg. Cov</p>
+                                <p class="fw-semibold mb-0">107% / 110%</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">W2W</p>
+                                <p class="fw-semibold mb-0">0</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">7D AVG Sales</p>
+                                <p class="fw-semibold mb-0">12</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Sale</p>
+                                <p class="fw-semibold mb-0">9</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">SUP-INV</p>
+                                <p class="fw-semibold mb-0">2,500</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Confidence</p>
+                                <p class="fw-semibold mb-0">91%</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Promotion</p>
+                                <p class="fw-semibold mb-0">—</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Critical (Expiry ≤90d)</p>
+                                <p class="fw-semibold mb-0">0</p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="p-3 rounded border border-primary-subtle" style="background:rgba(30,58,138,0.05);">
+                            <p class="text-xs fw-bold text-uppercase text-primary mb-2"><i class="bx bx-edit-alt me-1"></i>Your Decision <span class="fw-normal normal-case text-primary opacity-75">(editable)</span></p>
+                            <div class="row g-2">
+                            <div class="col-6 col-lg-2">
+                              <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Final Order Qty (Boxes) *</label>
+                              <input type="number" class="form-control form-control-sm qty-sync-input" id="finalqty-7" value="0"
+                                oninput="syncFromBoxes('7')" />
+                            </div>
+                            <div class="col-6 col-lg-2">
+                              <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Final Order Qty (Pallets)</label>
+                              <input type="number" step="0.01" class="form-control form-control-sm qty-sync-input" id="finalqty-pallets-7"
+                                value="0.00"
+                                oninput="syncFromPallets('7')" />
+                              <p class="qty-sync-hint mb-0 mt-1">1 pallet = 30 boxes</p>
+                            </div>
+                            <div class="col-6 col-lg-2">
+                              <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Branch</label>
+                              <select class="form-select form-select-sm"><option>BR-NTH-02</option></select>
+                            </div>
+                            <div class="col-6 col-lg-2">
+                              <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Constraint Gap</label>
+                              <div class="form-control form-control-sm text-muted">—</div>
+                            </div>
+                            <div class="col-lg-4">
+                              <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Override Reason *</label>
+                              <select class="form-select form-select-sm" id="reason-7">
+                                <option value="">Select reason...</option>
+                                <option>Supplier Capacity Constraint</option>
+                                <option>Budget Limitation</option>
+                                <option>Promotion Adjustment</option>
+                                <option>Demand Correction</option>
+                                <option>Manual Override</option>
+                                <option>Other</option>
+                              </select>
+                            </div>
+                            </div>
+                            <div class="row g-2 mt-1 align-items-end">
+                              <div class="col-lg-9">
+                                <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Notes</label>
+                                <textarea class="form-control form-control-sm" rows="2" placeholder="e.g. Supplier can only deliver X units due to production limitation."></textarea>
+                              </div>
+                              <div class="col-lg-3 d-flex gap-2 justify-content-end">
+                              <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="collapse" data-bs-target="#edit-7">Cancel</button>
+                              <button class="btn btn-sm btn-primary" onclick="saveDecision('7')"><i class="bx bx-check me-1"></i>Save Decision</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr id="row-8" data-row-id="8" data-confirmed="true"
+                        data-lt3="false" data-critical="true"
+                        data-product="SKU-80665" data-name="Cold Press Juice Orange & Carrot 1L" data-branch="BR-STH-03"
+                        data-inv="65" data-init="195" data-op="40" data-in="20"
+                        data-dis="3.3" data-ditr="3.6" data-orders="175"
+                        data-dis2="12.8" data-ditr2="13.5" data-supinv="800"
+                        class="row-critical">
+                      <td class="font-monospace text-xs">SKU-80665</td>
+                      <td><span class="text-xs">Cold Press Juice Orange & Carrot 1L</span></td>
+                      <td class="font-monospace text-xs">BR-STH-03</td>
+                      <td class="text-end font-monospace text-xs">65</td>
+                      <td class="text-end font-monospace text-xs text-muted" title="Opening Inventory (Beginning Inventory)">195</td>
+                      <td class="text-end font-monospace text-xs text-muted" title="Open Orders">40</td>
+                      <td class="text-end font-monospace text-xs text-muted" title="Shipped / Incoming Order">20</td>
+                      <td class="text-center"><span class="badge rounded-pill font-monospace inv-badge inv-under5">3.3d</span></td>
+                      <td class="text-center"><span class="badge rounded-pill font-monospace inv-badge inv-under5">3.6d</span></td>
+                      <td class="text-center">
+                        <span class="badge bg-primary font-monospace px-2 py-1" id="orders-badge-8">175</span>
+                        <span id="reset-icon-8" class="reset-icon d-none"
+                          onclick="resetToAI('8')" title="Reset to AI recommendation (175)">
+                          <i class="bx bx-reset text-muted"></i>
+                        </span>
+                      </td>
+                      <td class="text-center"><span class="badge rounded-pill font-monospace inv-badge inv-over12">12.8d</span></td>
+                      <td class="text-center"><span class="badge rounded-pill font-monospace inv-badge inv-over12">13.5d</span></td>
+                      <td class="text-end font-monospace text-xs text-success">800</td>
+                      <td class="text-center" id="confirm-cell-8"><span class="confirm-toggle confirmed" id="confirm-toggle-8" onclick="toggleConfirm('8')" title="Click to confirm — click again to undo"><i class="bx bx-check"></i></span></td>
+                      <td class="text-center">
+                        <button class="btn btn-outline-primary btn-icon-sm" data-bs-toggle="collapse" data-bs-target="#edit-8" title="Edit / view details">
+                          <i class="bx bx-edit-alt"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="collapse" id="edit-8">
+                      <td colspan="15" class="p-0 border-0">
+                        <div class="bg-light border-top border-bottom border-primary-subtle px-4 py-3">
+                          <p class="text-xs fw-bold text-primary text-uppercase mb-3">SKU-80665 · Cold Press Juice Orange & Carrot 1L <span class="text-muted normal-case">— BR-STH-03 · Beverages</span></p>
+
+                          <div class="p-3 rounded border bg-white mb-3">
+                            <p class="text-xs fw-bold text-uppercase text-muted mb-3"><i class="bx bx-info-circle me-1"></i>Reference Info <span class="fw-normal normal-case text-muted">(read-only)</span></p>
+                            <div class="row g-3">
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">AI Rec. Qty</p>
+                                <span class="badge bg-label-primary font-monospace fs-6 px-2 py-1">175</span>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Open Orders</p>
+                                <p class="fw-semibold mb-0">40</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Shipped (IN)</p>
+                                <p class="fw-semibold mb-0">20</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Opening Inventory</p>
+                                <p class="fw-semibold mb-0">195</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Cov / Trg. Cov</p>
+                                <p class="fw-semibold mb-0">36% / 33%</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">W2W</p>
+                                <p class="fw-semibold mb-0">0</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">7D AVG Sales</p>
+                                <p class="fw-semibold mb-0">20</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Sale</p>
+                                <span class="badge sale-high sale-high-text">26</span>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">SUP-INV</p>
+                                <p class="fw-semibold mb-0">800</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Confidence</p>
+                                <p class="fw-semibold mb-0">82%</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Promotion</p>
+                                <p class="fw-semibold mb-0">Summer Deals 2025</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Critical (Expiry ≤90d)</p>
+                                <span class="badge sup-inv-zero">24</span>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="p-3 rounded border border-primary-subtle" style="background:rgba(30,58,138,0.05);">
+                            <p class="text-xs fw-bold text-uppercase text-primary mb-2"><i class="bx bx-edit-alt me-1"></i>Your Decision <span class="fw-normal normal-case text-primary opacity-75">(editable)</span></p>
+                            <div class="row g-2">
+                            <div class="col-6 col-lg-2">
+                              <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Final Order Qty (Boxes) *</label>
+                              <input type="number" class="form-control form-control-sm qty-sync-input" id="finalqty-8" value="175"
+                                oninput="syncFromBoxes('8')" />
+                            </div>
+                            <div class="col-6 col-lg-2">
+                              <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Final Order Qty (Pallets)</label>
+                              <input type="number" step="0.01" class="form-control form-control-sm qty-sync-input" id="finalqty-pallets-8"
+                                value="5.00"
+                                oninput="syncFromPallets('8')" />
+                              <p class="qty-sync-hint mb-0 mt-1">1 pallet = 35 boxes</p>
+                            </div>
+                            <div class="col-6 col-lg-2">
+                              <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Branch</label>
+                              <select class="form-select form-select-sm"><option>BR-STH-03</option></select>
+                            </div>
+                            <div class="col-6 col-lg-2">
+                              <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Constraint Gap</label>
+                              <div class="form-control form-control-sm text-muted">—</div>
+                            </div>
+                            <div class="col-lg-4">
+                              <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Override Reason *</label>
+                              <select class="form-select form-select-sm" id="reason-8">
+                                <option value="">Select reason...</option>
+                                <option>Supplier Capacity Constraint</option>
+                                <option>Budget Limitation</option>
+                                <option>Promotion Adjustment</option>
+                                <option>Demand Correction</option>
+                                <option>Manual Override</option>
+                                <option>Other</option>
+                              </select>
+                            </div>
+                            </div>
+                            <div class="row g-2 mt-1 align-items-end">
+                              <div class="col-lg-9">
+                                <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Notes</label>
+                                <textarea class="form-control form-control-sm" rows="2" placeholder="e.g. Supplier can only deliver X units due to production limitation."></textarea>
+                              </div>
+                              <div class="col-lg-3 d-flex gap-2 justify-content-end">
+                              <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="collapse" data-bs-target="#edit-8">Cancel</button>
+                              <button class="btn btn-sm btn-primary" onclick="saveDecision('8')"><i class="bx bx-check me-1"></i>Save Decision</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr id="row-9" data-row-id="9" data-confirmed="false"
+                        data-lt3="false" data-critical="false"
+                        data-product="SKU-90776" data-name="Gourmet Chocolate Bar Dark 70% Cacao 100g" data-branch="BR-EST-04"
+                        data-inv="420" data-init="455" data-op="150" data-in="200"
+                        data-dis="68.0" data-ditr="72.0" data-orders="0"
+                        data-dis2="68.0" data-ditr2="72.0" data-supinv="5500"
+                        class="">
+                      <td class="font-monospace text-xs">SKU-90776</td>
+                      <td><span class="text-xs">Gourmet Chocolate Bar Dark 70% Cacao 100g</span></td>
+                      <td class="font-monospace text-xs">BR-EST-04</td>
+                      <td class="text-end font-monospace text-xs">420</td>
+                      <td class="text-end font-monospace text-xs text-muted" title="Opening Inventory (Beginning Inventory)">455</td>
+                      <td class="text-end font-monospace text-xs text-muted" title="Open Orders">150</td>
+                      <td class="text-end font-monospace text-xs text-muted" title="Shipped / Incoming Order">200</td>
+                      <td class="text-center"><span class="badge rounded-pill font-monospace inv-badge inv-over12">68.0d</span></td>
+                      <td class="text-center"><span class="badge rounded-pill font-monospace inv-badge inv-over12">72.0d</span></td>
+                      <td class="text-center">
+                        <span class="badge bg-primary font-monospace px-2 py-1" id="orders-badge-9">0</span>
+                        <span id="reset-icon-9" class="reset-icon d-none"
+                          onclick="resetToAI('9')" title="Reset to AI recommendation (0)">
+                          <i class="bx bx-reset text-muted"></i>
+                        </span>
+                      </td>
+                      <td class="text-center"><span class="badge rounded-pill font-monospace inv-badge inv-over12">68.0d</span></td>
+                      <td class="text-center"><span class="badge rounded-pill font-monospace inv-badge inv-over12">72.0d</span></td>
+                      <td class="text-end font-monospace text-xs text-success">5,500</td>
+                      <td class="text-center" id="confirm-cell-9"><span class="confirm-toggle " id="confirm-toggle-9" onclick="toggleConfirm('9')" title="Click to confirm — click again to undo"><i class="bx bx-check"></i></span></td>
+                      <td class="text-center">
+                        <button class="btn btn-outline-primary btn-icon-sm" data-bs-toggle="collapse" data-bs-target="#edit-9" title="Edit / view details">
+                          <i class="bx bx-edit-alt"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="collapse" id="edit-9">
+                      <td colspan="15" class="p-0 border-0">
+                        <div class="bg-light border-top border-bottom border-primary-subtle px-4 py-3">
+                          <p class="text-xs fw-bold text-primary text-uppercase mb-3">SKU-90776 · Gourmet Chocolate Bar Dark 70% Cacao 100g <span class="text-muted normal-case">— BR-EST-04 · Confectionery</span></p>
+
+                          <div class="p-3 rounded border bg-white mb-3">
+                            <p class="text-xs fw-bold text-uppercase text-muted mb-3"><i class="bx bx-info-circle me-1"></i>Reference Info <span class="fw-normal normal-case text-muted">(read-only)</span></p>
+                            <div class="row g-3">
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">AI Rec. Qty</p>
+                                <span class="badge bg-label-primary font-monospace fs-6 px-2 py-1">0</span>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Open Orders</p>
+                                <p class="fw-semibold mb-0">150</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Shipped (IN)</p>
+                                <p class="fw-semibold mb-0">200</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Opening Inventory</p>
+                                <p class="fw-semibold mb-0">455</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Cov / Trg. Cov</p>
+                                <p class="fw-semibold mb-0">164% / 170%</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">W2W</p>
+                                <p class="fw-semibold mb-0">0</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">7D AVG Sales</p>
+                                <p class="fw-semibold mb-0">28</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Sale</p>
+                                <p class="fw-semibold mb-0">24</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">SUP-INV</p>
+                                <p class="fw-semibold mb-0">5,500</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Confidence</p>
+                                <p class="fw-semibold mb-0">94%</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Promotion</p>
+                                <p class="fw-semibold mb-0">—</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Critical (Expiry ≤90d)</p>
+                                <p class="fw-semibold mb-0">0</p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="p-3 rounded border border-primary-subtle" style="background:rgba(30,58,138,0.05);">
+                            <p class="text-xs fw-bold text-uppercase text-primary mb-2"><i class="bx bx-edit-alt me-1"></i>Your Decision <span class="fw-normal normal-case text-primary opacity-75">(editable)</span></p>
+                            <div class="row g-2">
+                            <div class="col-6 col-lg-2">
+                              <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Final Order Qty (Boxes) *</label>
+                              <input type="number" class="form-control form-control-sm qty-sync-input" id="finalqty-9" value="0"
+                                oninput="syncFromBoxes('9')" />
+                            </div>
+                            <div class="col-6 col-lg-2">
+                              <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Final Order Qty (Pallets)</label>
+                              <input type="number" step="0.01" class="form-control form-control-sm qty-sync-input" id="finalqty-pallets-9"
+                                value="0.00"
+                                oninput="syncFromPallets('9')" />
+                              <p class="qty-sync-hint mb-0 mt-1">1 pallet = 50 boxes</p>
+                            </div>
+                            <div class="col-6 col-lg-2">
+                              <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Branch</label>
+                              <select class="form-select form-select-sm"><option>BR-EST-04</option></select>
+                            </div>
+                            <div class="col-6 col-lg-2">
+                              <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Constraint Gap</label>
+                              <div class="form-control form-control-sm text-muted">—</div>
+                            </div>
+                            <div class="col-lg-4">
+                              <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Override Reason *</label>
+                              <select class="form-select form-select-sm" id="reason-9">
+                                <option value="">Select reason...</option>
+                                <option>Supplier Capacity Constraint</option>
+                                <option>Budget Limitation</option>
+                                <option>Promotion Adjustment</option>
+                                <option>Demand Correction</option>
+                                <option>Manual Override</option>
+                                <option>Other</option>
+                              </select>
+                            </div>
+                            </div>
+                            <div class="row g-2 mt-1 align-items-end">
+                              <div class="col-lg-9">
+                                <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Notes</label>
+                                <textarea class="form-control form-control-sm" rows="2" placeholder="e.g. Supplier can only deliver X units due to production limitation."></textarea>
+                              </div>
+                              <div class="col-lg-3 d-flex gap-2 justify-content-end">
+                              <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="collapse" data-bs-target="#edit-9">Cancel</button>
+                              <button class="btn btn-sm btn-primary" onclick="saveDecision('9')"><i class="bx bx-check me-1"></i>Save Decision</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr id="row-10" data-row-id="10" data-confirmed="true"
+                        data-lt3="true" data-critical="true"
+                        data-product="SKU-11887" data-name="Sparkling Lemonade Natural 330ml (6-pack)" data-branch="BR-WST-05"
+                        data-inv="92" data-init="340" data-op="0" data-in="0"
+                        data-dis="2.6" data-ditr="2.9" data-orders="258"
+                        data-dis2="17.9" data-ditr2="18.5" data-supinv="3400"
+                        class="row-critical">
+                      <td class="font-monospace text-xs">SKU-11887</td>
+                      <td><span class="text-xs">Sparkling Lemonade Natural 330ml (6-pack)</span></td>
+                      <td class="font-monospace text-xs">BR-WST-05</td>
+                      <td class="text-end font-monospace text-xs">92</td>
+                      <td class="text-end font-monospace text-xs text-muted" title="Opening Inventory (Beginning Inventory)">340</td>
+                      <td class="text-end font-monospace text-xs text-muted" title="Open Orders">0</td>
+                      <td class="text-end font-monospace text-xs text-muted" title="Shipped / Incoming Order">0</td>
+                      <td class="text-center"><span class="badge rounded-pill font-monospace inv-badge inv-under5">2.6d</span></td>
+                      <td class="text-center"><span class="badge rounded-pill font-monospace inv-badge inv-under5">2.9d</span></td>
+                      <td class="text-center">
+                        <span class="badge bg-primary font-monospace px-2 py-1" id="orders-badge-10">258</span>
+                        <span id="reset-icon-10" class="reset-icon d-none"
+                          onclick="resetToAI('10')" title="Reset to AI recommendation (258)">
+                          <i class="bx bx-reset text-muted"></i>
+                        </span>
+                      </td>
+                      <td class="text-center"><span class="badge rounded-pill font-monospace inv-badge inv-over12">17.9d</span></td>
+                      <td class="text-center"><span class="badge rounded-pill font-monospace inv-badge inv-over12">18.5d</span></td>
+                      <td class="text-end font-monospace text-xs text-success">3,400</td>
+                      <td class="text-center" id="confirm-cell-10"><span class="confirm-toggle confirmed" id="confirm-toggle-10" onclick="toggleConfirm('10')" title="Click to confirm — click again to undo"><i class="bx bx-check"></i></span></td>
+                      <td class="text-center">
+                        <button class="btn btn-outline-primary btn-icon-sm" data-bs-toggle="collapse" data-bs-target="#edit-10" title="Edit / view details">
+                          <i class="bx bx-edit-alt"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="collapse" id="edit-10">
+                      <td colspan="15" class="p-0 border-0">
+                        <div class="bg-light border-top border-bottom border-primary-subtle px-4 py-3">
+                          <p class="text-xs fw-bold text-primary text-uppercase mb-3">SKU-11887 · Sparkling Lemonade Natural 330ml (6-pack) <span class="text-muted normal-case">— BR-WST-05 · Beverages</span></p>
+
+                          <div class="p-3 rounded border bg-white mb-3">
+                            <p class="text-xs fw-bold text-uppercase text-muted mb-3"><i class="bx bx-info-circle me-1"></i>Reference Info <span class="fw-normal normal-case text-muted">(read-only)</span></p>
+                            <div class="row g-3">
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">AI Rec. Qty</p>
+                                <span class="badge bg-label-primary font-monospace fs-6 px-2 py-1">258</span>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Open Orders</p>
+                                <p class="fw-semibold mb-0">0</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Shipped (IN)</p>
+                                <p class="fw-semibold mb-0">0</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Opening Inventory</p>
+                                <p class="fw-semibold mb-0">340</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Cov / Trg. Cov</p>
+                                <p class="fw-semibold mb-0">29% / 27%</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">W2W</p>
+                                <p class="fw-semibold mb-0">30</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">7D AVG Sales</p>
+                                <p class="fw-semibold mb-0">35</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Sale</p>
+                                <span class="badge sale-high sale-high-text">44</span>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">SUP-INV</p>
+                                <p class="fw-semibold mb-0">3,400</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Confidence</p>
+                                <p class="fw-semibold mb-0">89%</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Promotion</p>
+                                <p class="fw-semibold mb-0">Ramadan Special</p>
+                              </div>
+                              <div class="col-6 col-md-2">
+                                <p class="text-xs text-muted fw-semibold text-uppercase mb-0">Critical (Expiry ≤90d)</p>
+                                <span class="badge sup-inv-zero">9</span>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="p-3 rounded border border-primary-subtle" style="background:rgba(30,58,138,0.05);">
+                            <p class="text-xs fw-bold text-uppercase text-primary mb-2"><i class="bx bx-edit-alt me-1"></i>Your Decision <span class="fw-normal normal-case text-primary opacity-75">(editable)</span></p>
+                            <div class="row g-2">
+                            <div class="col-6 col-lg-2">
+                              <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Final Order Qty (Boxes) *</label>
+                              <input type="number" class="form-control form-control-sm qty-sync-input" id="finalqty-10" value="258"
+                                oninput="syncFromBoxes('10')" />
+                            </div>
+                            <div class="col-6 col-lg-2">
+                              <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Final Order Qty (Pallets)</label>
+                              <input type="number" step="0.01" class="form-control form-control-sm qty-sync-input" id="finalqty-pallets-10"
+                                value="4.30"
+                                oninput="syncFromPallets('10')" />
+                              <p class="qty-sync-hint mb-0 mt-1">1 pallet = 60 boxes</p>
+                            </div>
+                            <div class="col-6 col-lg-2">
+                              <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Branch</label>
+                              <select class="form-select form-select-sm"><option>BR-WST-05</option></select>
+                            </div>
+                            <div class="col-6 col-lg-2">
+                              <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Constraint Gap</label>
+                              <div class="form-control form-control-sm text-muted">—</div>
+                            </div>
+                            <div class="col-lg-4">
+                              <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Override Reason *</label>
+                              <select class="form-select form-select-sm" id="reason-10">
+                                <option value="">Select reason...</option>
+                                <option>Supplier Capacity Constraint</option>
+                                <option>Budget Limitation</option>
+                                <option>Promotion Adjustment</option>
+                                <option>Demand Correction</option>
+                                <option>Manual Override</option>
+                                <option>Other</option>
+                              </select>
+                            </div>
+                            </div>
+                            <div class="row g-2 mt-1 align-items-end">
+                              <div class="col-lg-9">
+                                <label class="text-xs text-muted fw-semibold text-uppercase mb-1">Notes</label>
+                                <textarea class="form-control form-control-sm" rows="2" placeholder="e.g. Supplier can only deliver X units due to production limitation."></textarea>
+                              </div>
+                              <div class="col-lg-3 d-flex gap-2 justify-content-end">
+                              <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="collapse" data-bs-target="#edit-10">Cancel</button>
+                              <button class="btn btn-sm btn-primary" onclick="saveDecision('10')"><i class="bx bx-check me-1"></i>Save Decision</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+
+                    </tbody>
+                  </table>
+                </div>
+                <div class="card-footer d-flex align-items-center gap-3 flex-wrap">
+                  <span class="text-xs"><span class="d-inline-block" style="width:10px;height:6px;border-left:3px solid #b91c1c;"></span> LT3 (4)</span>
+                  <span class="text-xs"><span class="d-inline-block" style="width:10px;height:6px;border-left:3px solid #7c3aed;"></span> Critical / Expiring (4)</span>
+                </div>
+              </div>
+
+              <!-- Branch Summary -->
+              <div class="card mb-4">
+                <div class="card-header bg-light d-flex align-items-center justify-content-between">
+                  <div class="d-flex align-items-center gap-2">
+                    <span class="d-inline-block bg-primary rounded-pill" style="width:4px;height:20px;"></span>
+                    <div>
+                      <p class="mb-0 fw-bold small">Order Summary by Branch</p>
+                      <p class="mb-0 text-xs text-muted">Auto-updates when order quantities are modified</p>
+                    </div>
+                  </div>
+                  <div class="d-flex gap-4 text-end">
+                    <div><p class="mb-0 text-xs text-muted">Total Qty</p><p class="mb-0 fw-bold text-primary">1,579</p></div>
+                    <div><p class="mb-0 text-xs text-muted">Total Pallets</p><p class="mb-0 fw-bold">36</p></div>
+                  </div>
+                </div>
+                <div class="table-responsive">
+                  <table class="table table-sm mb-0">
+                    <thead class="table-light">
+                      <tr class="text-xs text-uppercase">
+                        <th>Branch</th>
+                        <th class="text-center"><i class="bx bx-package"></i> Products</th>
+                        <th class="text-end">Total Order Qty</th>
+                        <th class="text-end"><i class="bx bx-box"></i> Total Pallets</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td><span class="badge bg-label-primary font-monospace">BR-WST-05</span></td>
+                      <td class="text-center"><span class="badge rounded-circle bg-label-secondary">2</span></td>
+                      <td class="text-end font-monospace fw-semibold">552</td>
+                      <td class="text-end font-monospace">12</td>
+                    </tr>
+                    <tr>
+                      <td><span class="badge bg-label-primary font-monospace">WH-CTR-01</span></td>
+                      <td class="text-center"><span class="badge rounded-circle bg-label-secondary">2</span></td>
+                      <td class="text-end font-monospace fw-semibold">445</td>
+                      <td class="text-end font-monospace">9</td>
+                    </tr>
+                    <tr>
+                      <td><span class="badge bg-label-primary font-monospace">BR-STH-03</span></td>
+                      <td class="text-center"><span class="badge rounded-circle bg-label-secondary">2</span></td>
+                      <td class="text-end font-monospace fw-semibold">430</td>
+                      <td class="text-end font-monospace">10</td>
+                    </tr>
+                    <tr>
+                      <td><span class="badge bg-label-primary font-monospace">BR-NTH-02</span></td>
+                      <td class="text-center"><span class="badge rounded-circle bg-label-secondary">1</span></td>
+                      <td class="text-end font-monospace fw-semibold">100</td>
+                      <td class="text-end font-monospace">3</td>
+                    </tr>
+                    <tr>
+                      <td><span class="badge bg-label-primary font-monospace">BR-EST-04</span></td>
+                      <td class="text-center"><span class="badge rounded-circle bg-label-secondary">1</span></td>
+                      <td class="text-end font-monospace fw-semibold">52</td>
+                      <td class="text-end font-monospace">2</td>
+                    </tr>
+
+                    </tbody>
+                    <tfoot>
+                      <tr class="table-light fw-bold text-xs text-uppercase">
+                        <td>Total</td>
+                        <td class="text-center">8</td>
+                        <td class="text-end font-monospace text-primary">1,579</td>
+                        <td class="text-end font-monospace">36</td>
+                      </tr>
+                    </tfoot>
+                  </table>
+                </div>
+                <div class="card-footer d-flex align-items-center justify-content-between flex-wrap gap-2">
+                  <p class="mb-0 text-xs text-muted">Values based on current confirmed order quantities</p>
+                  <button class="btn btn-outline-primary btn-sm"><i class="bx bx-download me-1"></i>Export Excel</button>
+                </div>
+              </div>
+
+            </div>
+            <footer class="content-footer footer bg-footer-theme">
+              <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
+                <div class="mb-2 mb-md-0">
+                  © <script>document.write(new Date().getFullYear());</script>, Smart Supply — FMCG Procurement Platform
+                </div>
+                <div>
+                  <span class="text-muted">Built on the</span>
+                  <a href="https://themeselection.com/products/sneat-bootstrap-html-admin-template/" target="_blank" class="footer-link fw-bolder">Sneat</a>
+                  <span class="text-muted">admin template</span>
+                </div>
+              </div>
+            </footer>
+
+            <div class="content-backdrop fade"></div>
+          </div>
+        </div>
+      </div>
+      <div class="layout-overlay layout-menu-toggle"></div>
+    </div>
+
+    <script src="../assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="../assets/vendor/libs/popper/popper.js"></script>
+    <script src="../assets/vendor/js/bootstrap.js"></script>
+    <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="../assets/vendor/js/menu.js"></script>
+    <script src="../assets/vendor/libs/apex-charts/apexcharts.js"></script>
+    <script src="../assets/js/main.js"></script>
+
+    <script>
+      const orderData = [{"id": "1", "branchCode": "WH-CTR-01", "productCode": "SKU-10245", "productName": "Premium Arabica Coffee Beans 1kg", "inv": 150, "initInv": 310, "supInv": 5000, "openOrders": 0, "shippedOrder": 80, "w2w": 0, "cov": 40, "trgCov": 38, "avgSales7Day": 25, "ySale": 31, "orderQty": 225, "aiQty": 225, "diS": 2.1, "diTr": 2.4, "diS2": 12.5, "diTr2": 13.0, "palletSize": 50, "confidence": 95, "category": "Beverages", "promotion": "Summer Deals 2025", "overrideReason": null, "expiringUnits": 0, "confirmed": true}, {"id": "2", "branchCode": "BR-NTH-02", "productCode": "SKU-20156", "productName": "Organic Green Tea Premium Selection 100pk", "inv": 80, "initInv": 155, "supInv": 3200, "openOrders": 50, "shippedOrder": 30, "w2w": 20, "cov": 58, "trgCov": 61, "avgSales7Day": 15, "ySale": 10, "orderQty": 100, "aiQty": 100, "diS": 4.6, "diTr": 4.2, "diS2": 9.8, "diTr2": 10.5, "palletSize": 40, "confidence": 88, "category": "Beverages", "promotion": null, "overrideReason": "Promotion Adjustment", "expiringUnits": 0, "confirmed": true}, {"id": "3", "branchCode": "BR-STH-03", "productCode": "SKU-30789", "productName": "Natural Spring Mineral Water 500ml (24-pack)", "inv": 45, "initInv": 520, "supInv": 8000, "openOrders": 0, "shippedOrder": 0, "w2w": 0, "cov": 15, "trgCov": 13, "avgSales7Day": 30, "ySale": 42, "orderQty": 255, "aiQty": 255, "diS": 1.2, "diTr": 1.5, "diS2": 18.5, "diTr2": 19.0, "palletSize": 60, "confidence": 92, "category": "Beverages", "promotion": "Ramadan Special", "overrideReason": null, "expiringUnits": 18, "confirmed": true}, {"id": "4", "branchCode": "BR-EST-04", "productCode": "SKU-40321", "productName": "Energy Boost Performance Drink 250ml (12-pack)", "inv": 200, "initInv": 260, "supInv": 4500, "openOrders": 100, "shippedOrder": 120, "w2w": 0, "cov": 96, "trgCov": 101, "avgSales7Day": 18, "ySale": 16, "orderQty": 52, "aiQty": 52, "diS": 19.5, "diTr": 21.0, "diS2": 32.0, "diTr2": 34.0, "palletSize": 48, "confidence": 78, "category": "Beverages", "promotion": null, "overrideReason": null, "expiringUnits": 0, "confirmed": true}, {"id": "5", "branchCode": "BR-WST-05", "productCode": "SKU-50892", "productName": "High Protein Mixed Flavor Bars Box (20-count)", "inv": 35, "initInv": 410, "supInv": 1200, "openOrders": 0, "shippedOrder": 0, "w2w": 0, "cov": 16, "trgCov": 14, "avgSales7Day": 22, "ySale": 27, "orderQty": 294, "aiQty": 294, "diS": 1.6, "diTr": 1.8, "diS2": 20.5, "diTr2": 21.3, "palletSize": 42, "confidence": 96, "category": "Snacks", "promotion": "Summer Deals 2025", "overrideReason": "Supplier Capacity Constraint", "expiringUnits": 0, "confirmed": true}, {"id": "6", "branchCode": "WH-CTR-01", "productCode": "SKU-60443", "productName": "Premium Instant Noodles Variety Pack", "inv": 320, "initInv": 470, "supInv": 6000, "openOrders": 200, "shippedOrder": 150, "w2w": 50, "cov": 78, "trgCov": 75, "avgSales7Day": 45, "ySale": 40, "orderQty": 220, "aiQty": 220, "diS": 7.1, "diTr": 6.8, "diS2": 16.4, "diTr2": 15.9, "palletSize": 55, "confidence": 85, "category": "Food", "promotion": null, "overrideReason": null, "expiringUnits": 12, "confirmed": true}, {"id": "7", "branchCode": "BR-NTH-02", "productCode": "SKU-70554", "productName": "Artisan Crackers Assorted 200g", "inv": 180, "initInv": 205, "supInv": 2500, "openOrders": 0, "shippedOrder": 60, "w2w": 0, "cov": 107, "trgCov": 110, "avgSales7Day": 12, "ySale": 9, "orderQty": 0, "aiQty": 0, "diS": 45.0, "diTr": 48.0, "diS2": 45.0, "diTr2": 48.0, "palletSize": 30, "confidence": 91, "category": "Snacks", "promotion": null, "overrideReason": null, "expiringUnits": 0, "confirmed": false}, {"id": "8", "branchCode": "BR-STH-03", "productCode": "SKU-80665", "productName": "Cold Press Juice Orange & Carrot 1L", "inv": 65, "initInv": 195, "supInv": 800, "openOrders": 40, "shippedOrder": 20, "w2w": 0, "cov": 36, "trgCov": 33, "avgSales7Day": 20, "ySale": 26, "orderQty": 175, "aiQty": 175, "diS": 3.3, "diTr": 3.6, "diS2": 12.8, "diTr2": 13.5, "palletSize": 35, "confidence": 82, "category": "Beverages", "promotion": "Summer Deals 2025", "overrideReason": null, "expiringUnits": 24, "confirmed": true}, {"id": "9", "branchCode": "BR-EST-04", "productCode": "SKU-90776", "productName": "Gourmet Chocolate Bar Dark 70% Cacao 100g", "inv": 420, "initInv": 455, "supInv": 5500, "openOrders": 150, "shippedOrder": 200, "w2w": 0, "cov": 164, "trgCov": 170, "avgSales7Day": 28, "ySale": 24, "orderQty": 0, "aiQty": 0, "diS": 68.0, "diTr": 72.0, "diS2": 68.0, "diTr2": 72.0, "palletSize": 50, "confidence": 94, "category": "Confectionery", "promotion": null, "overrideReason": null, "expiringUnits": 0, "confirmed": false}, {"id": "10", "branchCode": "BR-WST-05", "productCode": "SKU-11887", "productName": "Sparkling Lemonade Natural 330ml (6-pack)", "inv": 92, "initInv": 340, "supInv": 3400, "openOrders": 0, "shippedOrder": 0, "w2w": 30, "cov": 29, "trgCov": 27, "avgSales7Day": 35, "ySale": 44, "orderQty": 258, "aiQty": 258, "diS": 2.6, "diTr": 2.9, "diS2": 17.9, "diTr2": 18.5, "palletSize": 60, "confidence": 89, "category": "Beverages", "promotion": "Ramadan Special", "overrideReason": "Manual Override", "expiringUnits": 9, "confirmed": true}];
+
+      function updateTopCounts() {
+        const pending = orderData.filter(d => !d.confirmed).length;
+        document.getElementById('pendingConfirmCount').innerText = pending;
+      }
+
+      function setConfirmedUI(id, confirmed) {
+        const row = document.getElementById('row-' + id);
+        if (row) row.dataset.confirmed = confirmed ? 'true' : 'false';
+        const toggle = document.getElementById('confirm-toggle-' + id);
+        if (toggle) toggle.classList.toggle('confirmed', confirmed);
+        applyActiveFilter();
+      }
+
+      // Keeps the Orders badge, reset icon, both qty inputs (boxes + pallets),
+      // and the sortable data-orders attribute all in sync with item.orderQty
+      function updateOrdersDisplay(id) {
+        const item = orderData.find(d => d.id === id);
+        if (!item) return;
+        const badge = document.getElementById('orders-badge-' + id);
+        if (badge) badge.innerText = item.orderQty.toLocaleString();
+        const resetIcon = document.getElementById('reset-icon-' + id);
+        if (resetIcon) resetIcon.classList.toggle('d-none', item.orderQty === item.aiQty);
+        const qtyInput = document.getElementById('finalqty-' + id);
+        if (qtyInput) qtyInput.value = item.orderQty;
+        const palletsInput = document.getElementById('finalqty-pallets-' + id);
+        if (palletsInput && item.palletSize) palletsInput.value = (item.orderQty / item.palletSize).toFixed(2);
+        const row = document.getElementById('row-' + id);
+        if (row) row.dataset.orders = item.orderQty;
+      }
+
+      // Requirement #5 — boxes <-> pallets bidirectional sync in the Edit panel
+      function syncFromBoxes(id) {
+        const item = orderData.find(d => d.id === id);
+        if (!item || !item.palletSize) return;
+        const boxesEl = document.getElementById('finalqty-' + id);
+        const palletsEl = document.getElementById('finalqty-pallets-' + id);
+        const boxes = parseFloat(boxesEl.value);
+        if (!isNaN(boxes)) palletsEl.value = (boxes / item.palletSize).toFixed(2);
+      }
+      function syncFromPallets(id) {
+        const item = orderData.find(d => d.id === id);
+        if (!item || !item.palletSize) return;
+        const boxesEl = document.getElementById('finalqty-' + id);
+        const palletsEl = document.getElementById('finalqty-pallets-' + id);
+        const pallets = parseFloat(palletsEl.value);
+        if (!isNaN(pallets)) boxesEl.value = Math.round(pallets * item.palletSize);
+      }
+
+      // Reset — reverts an overridden quantity back to the AI's original number.
+      // Reverting also un-confirms the row, since the old confirmation was for
+      // the overridden value, not the AI's number.
+      function resetToAI(id) {
+        const item = orderData.find(d => d.id === id);
+        if (!item || item.orderQty === item.aiQty) return;
+        item.orderQty = item.aiQty;
+        updateOrdersDisplay(id);
+        item.confirmed = false;
+        setConfirmedUI(id, false);
+        updateTopCounts();
+      }
+
+      // Confirm toggle — click to confirm, click again to undo
+      function toggleConfirm(id) {
+        const item = orderData.find(d => d.id === id);
+        if (!item) return;
+        item.confirmed = !item.confirmed;
+        setConfirmedUI(id, item.confirmed);
+        updateTopCounts();
+      }
+
+      // Save Decision — from the Edit panel; applies any quantity override,
+      // marks confirmed, and records the override reason if picked
+      function saveDecision(id) {
+        const item = orderData.find(d => d.id === id);
+        if (!item) return;
+        const reasonEl = document.getElementById('reason-' + id);
+        const reason = reasonEl ? reasonEl.value : '';
+        const qtyEl = document.getElementById('finalqty-' + id);
+        if (qtyEl && qtyEl.value !== '') {
+          const newQty = parseFloat(qtyEl.value);
+          if (!isNaN(newQty) && newQty >= 0) item.orderQty = newQty;
+        }
+        item.confirmed = true;
+        if (reason) item.overrideReason = reason;
+        updateOrdersDisplay(id);
+        setConfirmedUI(id, true);
+        updateTopCounts();
+        const collapseEl = document.getElementById('edit-' + id);
+        if (collapseEl && window.bootstrap) {
+          const inst = bootstrap.Collapse.getOrCreateInstance(collapseEl);
+          inst.hide();
+        }
+      }
+
+      // ---------------------------------------------------------------
+      // Sorting — reorders the existing DOM rows (each primary row moves
+      // together with its Edit collapse row right behind it).
+      // ---------------------------------------------------------------
+      let sortState = { key: null, dir: 1 };
+      function sortTable(key) {
+        const tbody = document.getElementById('ordersTbody');
+        const rows = Array.from(tbody.querySelectorAll('tr[data-row-id]'));
+        sortState.dir = (sortState.key === key) ? sortState.dir * -1 : 1;
+        sortState.key = key;
+        rows.sort((a, b) => {
+          let va = a.dataset[key], vb = b.dataset[key];
+          const na = parseFloat(va), nb = parseFloat(vb);
+          if (!isNaN(na) && !isNaN(nb)) { va = na; vb = nb; }
+          if (va < vb) return -1 * sortState.dir;
+          if (va > vb) return 1 * sortState.dir;
+          return 0;
+        });
+        rows.forEach(row => {
+          const collapseRow = document.getElementById('edit-' + row.dataset.rowId);
+          tbody.appendChild(row);
+          if (collapseRow) tbody.appendChild(collapseRow);
+        });
+        document.querySelectorAll('[id^="sort-icon-"]').forEach(icon => {
+          icon.className = 'bx bx-sort';
+        });
+        const activeIcon = document.getElementById('sort-icon-' + key);
+        if (activeIcon) activeIcon.className = sortState.dir === 1 ? 'bx bx-sort-up' : 'bx bx-sort-down';
+      }
+
+      // ---------------------------------------------------------------
+      // Filter — all / unconfirmed / confirmed / lt3 / critical.
+      // The Low Stock card and the "Risk Type" dropdown in the global
+      // filter bar both drive (and stay in sync with) this same filter.
+      // ---------------------------------------------------------------
+      let activeFilter = 'all';
+      function applyActiveFilter() {
+        document.querySelectorAll('#ordersTbody tr[data-row-id]').forEach(row => {
+          const confirmed = row.dataset.confirmed === 'true';
+          const isLt3 = row.dataset.lt3 === 'true';
+          const isCritical = row.dataset.critical === 'true';
+          let show = true;
+          if (activeFilter === 'confirmed') show = confirmed;
+          if (activeFilter === 'unconfirmed') show = !confirmed;
+          if (activeFilter === 'lt3') show = isLt3;
+          if (activeFilter === 'critical') show = isCritical;
+          row.style.display = show ? '' : 'none';
+          const collapseRow = document.getElementById('edit-' + row.dataset.rowId);
+          if (collapseRow) collapseRow.style.display = show ? '' : 'none';
+        });
+      }
+      function filterRows(mode) {
+        activeFilter = mode;
+        ['all', 'unconfirmed', 'confirmed'].forEach(m => {
+          const btn = document.getElementById('filter-' + m);
+          if (btn) btn.classList.toggle('active', m === mode);
+        });
+        const riskTypeSelect = document.getElementById('riskTypeFilter');
+        if (riskTypeSelect) {
+          riskTypeSelect.value = (mode === 'lt3' || mode === 'critical') ? mode : 'all';
+        }
+        applyActiveFilter();
+        document.getElementById('ordersTbody').scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    </script>
+
+  </body>
+</html>

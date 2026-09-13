@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en" class="light-style layout-menu-fixed" dir="ltr" data-theme="theme-default"
+  data-assets-path="../assets/" data-template="vertical-menu-template-free">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <title>Executive Dashboard | Smart Supply — FMCG Procurement Platform</title>
+    <meta name="description" content="Smart Supply — AI-powered FMCG procurement platform" />
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/vendor/fonts/boxicons.css" />
+    <link rel="stylesheet" href="../assets/vendor/css/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="../assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="../assets/css/demo.css" />
+    <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="../assets/vendor/libs/apex-charts/apex-charts.css" />
+    <link rel="stylesheet" href="../assets/css/custom.css" />
+    
+    <script src="../assets/vendor/js/helpers.js"></script>
+    <script src="../assets/js/config.js"></script>
+  </head>
+
+  <body>
+    <div class="layout-wrapper layout-content-navbar">
+      <div class="layout-container">
+        <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+          <div class="app-brand demo">
+            <a href="index.html" class="app-brand-link">
+              <span class="app-brand-logo demo">
+                <span class="d-flex align-items-center justify-content-center" style="width:32px;height:32px;border-radius:8px;background:linear-gradient(135deg,#1e3a8a,#1e293b);">
+                  <i class="bx bx-package text-white" style="font-size:18px;"></i>
+                </span>
+              </span>
+              <span class="app-brand-text demo menu-text fw-bolder ms-2">Smart Supply</span>
+            </a>
+            <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
+              <i class="bx bx-chevron-left bx-sm align-middle"></i>
+            </a>
+          </div>
+
+          <div class="menu-inner-shadow"></div>
+          <ul class="menu-inner py-1">
+            <li class="menu-item active">
+              <a href="index.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-line-chart"></i>
+                <div>
+                  <div class="fw-semibold">Executive Dashboard</div>
+                  <small class="text-muted" style="font-size:.65rem;">Real-time procurement overview</small>
+                </div>
+                
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="order-recommendations.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-cart"></i>
+                <div>
+                  <div class="fw-semibold">AI Order Recommendation</div>
+                  <small class="text-muted" style="font-size:.65rem;">Smart ordering suggestions</small>
+                </div>
+                <span class="badge bg-label-primary rounded-pill ms-2">10</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="promotion-planning.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bxs-megaphone"></i>
+                <div>
+                  <div class="fw-semibold">Promotion Planning</div>
+                  <small class="text-muted" style="font-size:.65rem;">Upload & manage promotions</small>
+                </div>
+                
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="supplier.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-buildings"></i>
+                <div>
+                  <div class="fw-semibold">Supplier</div>
+                  <small class="text-muted" style="font-size:.65rem;">Performance & inventory</small>
+                </div>
+                
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="management.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-bar-chart-alt-2"></i>
+                <div>
+                  <div class="fw-semibold">Management Dashboard</div>
+                  <small class="text-muted" style="font-size:.65rem;">Executive-level overview</small>
+                </div>
+                
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="product-management.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-box"></i>
+                <div>
+                  <div class="fw-semibold">Product Management</div>
+                  <small class="text-muted" style="font-size:.65rem;">Master data & catalog</small>
+                </div>
+                
+              </a>
+            </li>
+            <li class="menu-header small text-uppercase"><span class="menu-header-text">System</span></li>
+            <li class="px-3 pb-3">
+              <div class="p-3 rounded" style="background:#f4f5fa;">
+                <p class="mb-0 fw-semibold small">AI Engine</p>
+                <p class="mb-1 text-muted small">Model: v2.4.1</p>
+                <div class="d-flex align-items-center gap-1">
+                  <span class="badge badge-dot bg-success"></span>
+                  <span class="small text-success fw-semibold">Live</span>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+        </aside>
+
+        <div class="layout-page">
+          <nav class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme" id="layout-navbar">
+            <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+              <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+                <i class="bx bx-menu bx-sm"></i>
+              </a>
+            </div>
+            <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+              <div class="navbar-nav align-items-center">
+                <div class="nav-item d-flex align-items-center">
+                  <i class="bx bx-search fs-4 lh-0"></i>
+                  <input type="text" class="form-control border-0 shadow-none" placeholder="Search SKU, products, branches..." aria-label="Search..." />
+                </div>
+              </div>
+              <ul class="navbar-nav flex-row align-items-center ms-auto">
+                <li class="nav-item lh-1 me-3 dropdown">
+                  <a class="nav-link dropdown-toggle hide-arrow position-relative" href="javascript:void(0);" data-bs-toggle="dropdown">
+                    <i class="bx bx-bell bx-sm"></i>
+                    <span class="badge bg-danger rounded-pill badge-notifications">6</span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end py-0">
+                    <li class="dropdown-menu-header border-bottom">
+                      <div class="dropdown-header d-flex align-items-center py-3">
+                        <h6 class="mb-0 me-auto">Procurement Alerts</h6>
+                        <span class="badge bg-label-primary rounded-pill">6 New</span>
+                      </div>
+                    </li>
+                    <li class="dropdown-notifications-list scrollable-container">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item list-group-item-action dropdown-notifications-item">
+                          <small class="text-danger fw-semibold">8 SKUs will stock out within 48 hours</small>
+                        </li>
+                        <li class="list-group-item list-group-item-action dropdown-notifications-item">
+                          <small class="text-warning fw-semibold">Tehran Foods Co. delayed 3.2 days avg this week</small>
+                        </li>
+                        <li class="list-group-item list-group-item-action dropdown-notifications-item">
+                          <small class="text-info fw-semibold">High shortage risk detected for 12 SKUs</small>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                  <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
+                    <div class="avatar avatar-online">
+                      <span class="avatar-initial rounded-circle" style="background:linear-gradient(135deg,#1e3a8a,#1e40af);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;">SM</span>
+                    </div>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end">
+                    <li>
+                      <a class="dropdown-item" href="javascript:void(0);">
+                        <div class="d-flex">
+                          <div class="flex-shrink-0 me-3">
+                            <div class="avatar avatar-online">
+                              <span class="avatar-initial rounded-circle" style="background:linear-gradient(135deg,#1e3a8a,#1e40af);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;">SM</span>
+                            </div>
+                          </div>
+                          <div class="flex-grow-1">
+                            <span class="fw-semibold d-block">Supply Manager</span>
+                            <small class="text-muted">Procurement Team</small>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li><div class="dropdown-divider"></div></li>
+                    <li><a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-user me-2"></i><span class="align-middle">My Profile</span></a></li>
+                    <li><a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-cog me-2"></i><span class="align-middle">Settings</span></a></li>
+                    <li><div class="dropdown-divider"></div></li>
+                    <li><a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-power-off me-2"></i><span class="align-middle">Log Out</span></a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+          <div class="content-wrapper">
+            <div class="container-xxl flex-grow-1 container-p-y">
+
+              <!-- Header -->
+              <div class="d-flex align-items-center justify-content-between pb-3 mb-4 border-bottom">
+                <div>
+                  <h4 class="fw-bold mb-1">Executive Dashboard</h4>
+                  <p class="text-muted mb-0">Real-time overview of procurement performance, stock risk, and supplier constraints</p>
+                </div>
+                <button class="btn btn-outline-primary btn-sm"><i class="bx bx-download me-1"></i> Export Excel</button>
+              </div>
+
+              <!-- Global Filters -->
+              <div class="card mb-4">
+                <div class="card-body">
+                  <div class="d-flex align-items-center gap-2 mb-3">
+                    <i class="bx bx-filter-alt text-primary"></i>
+                    <span class="fw-semibold small">Global Filters</span>
+                  </div>
+                  <div class="row g-3 align-items-end">
+                    <div class="col-md-3">
+                      <label class="form-label text-xs text-muted mb-1">Vendor</label>
+                      <select class="form-select form-select-sm">
+                        <option>All Vendors</option>
+                        <option>Tehran Foods Co.</option>
+                        <option>Saman Dairy</option>
+                        <option>Golestan Beverage</option>
+                      </select>
+                    </div>
+                    <div class="col-md-3">
+                      <label class="form-label text-xs text-muted mb-1">Branch</label>
+                      <select class="form-select form-select-sm">
+                        <option>All Branches</option>
+                        <option>BR-01 Central</option>
+                        <option>BR-04 East</option>
+                        <option>BR-07 North</option>
+                      </select>
+                    </div>
+                    <div class="col-md-4">
+                      <label class="form-label text-xs text-muted mb-1">Product SKU</label>
+                      <input type="text" class="form-control form-control-sm" placeholder="Search SKU..." />
+                    </div>
+                    <div class="col-md-2 d-flex gap-2">
+                      <button class="btn btn-primary btn-sm w-100">Apply Filters</button>
+                    </div>
+                  </div>
+                  <div class="row g-3 align-items-end mt-1 pt-3 border-top">
+                    <div class="col-md-6">
+                      <label class="form-label text-xs fw-semibold text-uppercase mb-1">
+                        <span class="badge-dot bg-primary d-inline-block rounded-circle" style="width:8px;height:8px;"></span>
+                        Monthly Period
+                        <span class="text-muted fw-normal text-normal">— Target Achievement, Lead Time, Constraint Gap, Delayed Vendors, Risk Score</span>
+                      </label>
+                      <select class="form-select form-select-sm">
+                        <option>June 2025</option>
+                        <option>May 2025</option>
+                        <option>April 2025</option>
+                        <option>Q2 2025</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6">
+                      <label class="form-label text-xs fw-semibold text-uppercase mb-1">
+                        <span class="badge-dot bg-danger d-inline-block rounded-circle" style="width:8px;height:8px;"></span>
+                        Daily Date
+                        <span class="text-muted fw-normal text-normal">— High Risk SKUs, Critical Stock</span>
+                      </label>
+                      <input type="date" class="form-control form-control-sm" value="2025-06-28" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- AI Insight Banner -->
+              <div class="ai-insight-banner p-3 d-flex align-items-center gap-3 mb-4">
+                <div class="d-flex align-items-center justify-content-center rounded-circle flex-shrink-0" style="width:42px;height:42px;background:rgba(255,255,255,.2);">
+                  <i class="bx bx-bulb fs-4"></i>
+                </div>
+                <div class="flex-grow-1">
+                  <p class="text-xs fw-semibold text-uppercase mb-1" style="opacity:.8;">AI Insight</p>
+                  <p class="mb-0 small">AI detected high shortage risk for 12 SKUs in next 7 days. Constraint gap widened 14% vs previous period. Recommend immediate review of BR-01 and BR-04.</p>
+                </div>
+                <button class="btn btn-sm flex-shrink-0" style="background:rgba(255,255,255,.2);color:#fff;border:1px solid rgba(255,255,255,.3);">View Details</button>
+              </div>
+
+              <!-- 7 KPI Cards -->
+              <p class="text-xs fw-semibold text-uppercase text-muted mb-2">
+                <span class="badge-dot bg-primary d-inline-block rounded-circle me-1" style="width:8px;height:8px;"></span>
+                KPIs for June 2025
+              </p>
+              <div class="row g-3 mb-4">
+                <div class="col-sm-6 col-lg-3 col-xl">
+                  <div class="card h-100">
+                    <div class="card-body">
+                      <div class="kpi-icon-tile bg-primary mb-3"><i class="bx bx-trending-up text-white fs-4"></i></div>
+                      <p class="text-xs text-muted text-uppercase mb-1">Target Achievement</p>
+                      <h4 class="fw-bold mb-2">78.4%</h4>
+                      <div class="progress" style="height:6px;"><div class="progress-bar" style="width:78.4%"></div></div>
+                      <p class="text-xs text-muted mt-2 mb-0">Target: 90%</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 col-xl">
+                  <div class="card h-100 border-danger-subtle">
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between mb-3">
+                        <div class="kpi-icon-tile bg-danger"><i class="bx bx-error-circle text-white fs-4"></i></div>
+                        <div class="text-end">
+                          <span class="badge badge-soft-danger rounded-pill mb-1">Alert</span>
+                          <p class="text-xs text-danger mb-0">Daily: 06-28</p>
+                        </div>
+                      </div>
+                      <p class="text-xs text-muted text-uppercase mb-1">Critical Stock</p>
+                      <h4 class="fw-bold text-danger mb-1">23 SKUs</h4>
+                      <p class="text-xs text-muted mb-0">Requires immediate action</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 col-xl">
+                  <div class="card h-100">
+                    <div class="card-body">
+                      <div class="kpi-icon-tile bg-warning mb-3"><i class="bx bx-time-five text-white fs-4"></i></div>
+                      <p class="text-xs text-muted text-uppercase mb-1">Avg Supplier Lead Time</p>
+                      <h4 class="fw-bold mb-1">4.6 Days</h4>
+                      <p class="text-xs text-warning fw-semibold mb-0">+0.4 vs prev. month</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 col-xl">
+                  <div class="card h-100 border-warning-subtle" title="AI-computed risk score (0-100)">
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between mb-3">
+                        <div class="kpi-icon-tile bg-warning"><i class="bx bxs-bolt text-white fs-4"></i></div>
+                        <span class="badge badge-soft-warning rounded-pill">Medium</span>
+                      </div>
+                      <p class="text-xs text-muted text-uppercase mb-1">Supply Delay Risk Score</p>
+                      <h4 class="fw-bold text-warning mb-2">62 / 100</h4>
+                      <div class="progress" style="height:6px;"><div class="progress-bar bg-warning" style="width:62%"></div></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 col-xl">
+                  <div class="card h-100" title="Ordering gap caused by supplier capacity limitations.">
+                    <div class="card-body">
+                      <div class="kpi-icon-tile bg-secondary mb-3"><i class="bx bx-package text-white fs-4"></i></div>
+                      <p class="text-xs text-muted text-uppercase mb-1">Supplier Constraint Gap</p>
+                      <h4 class="fw-bold mb-1">4,820 units</h4>
+                      <p class="text-xs mb-0"><span class="text-danger fw-semibold">+8.3% <i class="bx bx-up-arrow-alt"></i></span> <span class="text-muted">vs prev. period</span></p>
+                      <p class="text-xs text-muted mb-0">AI Rec. − Final Order</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 col-xl" title="SKUs with expiry date within 90 days">
+                  <div class="card h-100 border-warning-subtle">
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between mb-3">
+                        <div class="kpi-icon-tile bg-warning"><i class="bx bx-calendar-exclamation text-white fs-4"></i></div>
+                        <span class="badge badge-soft-warning rounded-pill">Warning</span>
+                      </div>
+                      <p class="text-xs text-muted text-uppercase mb-1">Expiring Products</p>
+                      <h4 class="fw-bold text-warning mb-1">17 SKUs</h4>
+                      <p class="text-xs text-muted mb-1">Expiry &lt;90 days</p>
+                      <p class="text-xs mb-0"><span class="text-danger fw-semibold">4 Critical</span> <span class="text-muted">· 13 Warning</span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 col-xl" title="Products with target-based inventory days above 30">
+                  <div class="card h-100 border-warning-subtle">
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between mb-3">
+                        <div class="kpi-icon-tile" style="background:#eab308;"><i class="bx bx-bar-chart-alt-2 text-white fs-4"></i></div>
+                        <span class="badge rounded-pill" style="background:#fef9c3;color:#854d0e;">Risk</span>
+                      </div>
+                      <p class="text-xs text-muted text-uppercase mb-1">Overstock Products</p>
+                      <h4 class="fw-bold mb-1" style="color:#ca8a04;">11 SKUs</h4>
+                      <p class="text-xs text-muted mb-2">Inv. Days &gt;30 (Target)</p>
+                      <div class="progress" style="height:6px;"><div class="progress-bar" style="width:37%;background:#eab308;"></div></div>
+                      <p class="text-xs text-muted mt-1 mb-0">37% of total SKUs</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Two-column widgets -->
+              <div class="row g-4 mb-4">
+                <div class="col-lg-6">
+                  <div class="card h-100">
+                    <div class="card-header d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center gap-2">
+                        <i class="bx bx-car text-warning"></i>
+                        <span class="fw-semibold">Top Delayed Vendors</span>
+                        <span class="badge badge-soft-info rounded-pill">Monthly</span>
+                      </div>
+                      <a href="javascript:void(0)" class="small">Export</a>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                                            <li class="list-group-item d-flex align-items-center justify-content-between">
+                        <div>
+                          <p class="mb-0 fw-semibold small">Tehran Foods Co.</p>
+                          <p class="mb-0 text-xs text-muted">14 orders tracked</p>
+                        </div>
+                        <div class="d-flex align-items-center gap-2">
+                          <span class="small fw-bold">+3.2d avg</span>
+                          <span class="risk-badge risk-high">High</span>
+                        </div>
+                      </li>
+                      <li class="list-group-item d-flex align-items-center justify-content-between">
+                        <div>
+                          <p class="mb-0 fw-semibold small">Saman Dairy</p>
+                          <p class="mb-0 text-xs text-muted">9 orders tracked</p>
+                        </div>
+                        <div class="d-flex align-items-center gap-2">
+                          <span class="small fw-bold">+2.1d avg</span>
+                          <span class="risk-badge risk-medium">Medium</span>
+                        </div>
+                      </li>
+                      <li class="list-group-item d-flex align-items-center justify-content-between">
+                        <div>
+                          <p class="mb-0 fw-semibold small">Golestan Beverage</p>
+                          <p class="mb-0 text-xs text-muted">22 orders tracked</p>
+                        </div>
+                        <div class="d-flex align-items-center gap-2">
+                          <span class="small fw-bold">+1.8d avg</span>
+                          <span class="risk-badge risk-medium">Medium</span>
+                        </div>
+                      </li>
+                      <li class="list-group-item d-flex align-items-center justify-content-between">
+                        <div>
+                          <p class="mb-0 fw-semibold small">Damavand Snacks</p>
+                          <p class="mb-0 text-xs text-muted">6 orders tracked</p>
+                        </div>
+                        <div class="d-flex align-items-center gap-2">
+                          <span class="small fw-bold">+0.9d avg</span>
+                          <span class="risk-badge risk-low">Low</span>
+                        </div>
+                      </li>
+                      <li class="list-group-item d-flex align-items-center justify-content-between">
+                        <div>
+                          <p class="mb-0 fw-semibold small">Caspian Trading</p>
+                          <p class="mb-0 text-xs text-muted">31 orders tracked</p>
+                        </div>
+                        <div class="d-flex align-items-center gap-2">
+                          <span class="small fw-bold">+0.4d avg</span>
+                          <span class="risk-badge risk-low">Low</span>
+                        </div>
+                      </li>
+
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="card h-100">
+                    <div class="card-header d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center gap-2">
+                        <i class="bx bx-error text-danger"></i>
+                        <span class="fw-semibold">High Risk SKUs</span>
+                        <span class="badge badge-soft-danger rounded-pill">Daily: 2025-06-28</span>
+                      </div>
+                      <a href="javascript:void(0)" class="small">View All</a>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                                            <li class="list-group-item d-flex align-items-center justify-content-between">
+                        <div>
+                          <span class="fw-bold text-primary small">SKU-1042</span>
+                          <span class="badge bg-label-secondary ms-1">BR-01</span>
+                          <p class="mb-0 text-xs text-muted mt-1">Sunflower Oil 5L</p>
+                        </div>
+                        <div class="d-flex align-items-center gap-2">
+                          <span class="text-xs text-muted">1.8d left</span>
+                          <span class="risk-badge risk-critical">Critical</span>
+                        </div>
+                      </li>
+                      <li class="list-group-item d-flex align-items-center justify-content-between">
+                        <div>
+                          <span class="fw-bold text-primary small">SKU-2187</span>
+                          <span class="badge bg-label-secondary ms-1">BR-04</span>
+                          <p class="mb-0 text-xs text-muted mt-1">Mineral Water 1.5L</p>
+                        </div>
+                        <div class="d-flex align-items-center gap-2">
+                          <span class="text-xs text-muted">2.4d left</span>
+                          <span class="risk-badge risk-critical">Critical</span>
+                        </div>
+                      </li>
+                      <li class="list-group-item d-flex align-items-center justify-content-between">
+                        <div>
+                          <span class="fw-bold text-primary small">SKU-0831</span>
+                          <span class="badge bg-label-secondary ms-1">BR-07</span>
+                          <p class="mb-0 text-xs text-muted mt-1">Dairy Yogurt 500g</p>
+                        </div>
+                        <div class="d-flex align-items-center gap-2">
+                          <span class="text-xs text-muted">3.1d left</span>
+                          <span class="risk-badge risk-high">High</span>
+                        </div>
+                      </li>
+                      <li class="list-group-item d-flex align-items-center justify-content-between">
+                        <div>
+                          <span class="fw-bold text-primary small">SKU-3305</span>
+                          <span class="badge bg-label-secondary ms-1">BR-01</span>
+                          <p class="mb-0 text-xs text-muted mt-1">Instant Noodles 75g</p>
+                        </div>
+                        <div class="d-flex align-items-center gap-2">
+                          <span class="text-xs text-muted">3.9d left</span>
+                          <span class="risk-badge risk-high">High</span>
+                        </div>
+                      </li>
+                      <li class="list-group-item d-flex align-items-center justify-content-between">
+                        <div>
+                          <span class="fw-bold text-primary small">SKU-4421</span>
+                          <span class="badge bg-label-secondary ms-1">BR-02</span>
+                          <p class="mb-0 text-xs text-muted mt-1">Tomato Paste 800g</p>
+                        </div>
+                        <div class="d-flex align-items-center gap-2">
+                          <span class="text-xs text-muted">4.5d left</span>
+                          <span class="risk-badge risk-medium">Medium</span>
+                        </div>
+                      </li>
+
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Procurement Alerts -->
+              <div class="card mb-4">
+                <div class="card-header d-flex align-items-center justify-content-between">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bx bx-brain text-primary"></i>
+                    <span class="fw-semibold">Procurement Alerts</span>
+                  </div>
+                  <span class="badge badge-soft-danger rounded-pill">5 active</span>
+                </div>
+                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item d-flex align-items-start gap-2">
+                    <span class="rounded-circle bg-danger flex-shrink-0 mt-1" style="width:7px;height:7px;"></span>
+                    <div>
+                      <p class="mb-0 small">8 SKUs at BR-01 will stock out within 48 hours.</p>
+                      <p class="mb-0 text-xs text-muted">2 min ago</p>
+                    </div>
+                  </li>
+                  <li class="list-group-item d-flex align-items-start gap-2">
+                    <span class="rounded-circle bg-warning flex-shrink-0 mt-1" style="width:7px;height:7px;"></span>
+                    <div>
+                      <p class="mb-0 small">Supplier Tehran Foods Co. delayed 3.2 days on avg this week.</p>
+                      <p class="mb-0 text-xs text-muted">18 min ago</p>
+                    </div>
+                  </li>
+                  <li class="list-group-item d-flex align-items-start gap-2">
+                    <span class="rounded-circle bg-primary flex-shrink-0 mt-1" style="width:7px;height:7px;"></span>
+                    <div>
+                      <p class="mb-0 small">AI detected high shortage risk for 12 SKUs in next 7 days.</p>
+                      <p class="mb-0 text-xs text-muted">1 hr ago</p>
+                    </div>
+                  </li>
+                  <li class="list-group-item d-flex align-items-start gap-2">
+                    <span class="rounded-circle bg-warning flex-shrink-0 mt-1" style="width:7px;height:7px;"></span>
+                    <div>
+                      <p class="mb-0 small">Constraint gap widened by 14% vs last period — review orders.</p>
+                      <p class="mb-0 text-xs text-muted">2 hr ago</p>
+                    </div>
+                  </li>
+                  <li class="list-group-item d-flex align-items-start gap-2">
+                    <span class="rounded-circle bg-primary flex-shrink-0 mt-1" style="width:7px;height:7px;"></span>
+                    <div>
+                      <p class="mb-0 small">Promotion campaign 'Summer Deals' starts in 3 days — 23 SKUs affected.</p>
+                      <p class="mb-0 text-xs text-muted">4 hr ago</p>
+                    </div>
+                  </li>
+
+                </ul>
+              </div>
+
+              <!-- Supply Analytics -->
+              <p class="fw-bold small mb-3"><span class="d-inline-block bg-primary rounded-pill me-2" style="width:4px;height:16px;vertical-align:middle;"></span>Supply Analytics</p>
+              <div class="row g-4">
+                <div class="col-lg-6">
+                  <div class="card h-100">
+                    <div class="card-header d-flex align-items-center justify-content-between">
+                      <div>
+                        <h6 class="mb-0">Inventory Risk Trend</h6>
+                        <small class="text-muted">Current inventory vs sales quantities over time</small>
+                      </div>
+                      <select class="form-select form-select-sm w-auto">
+                        <option>Last 7 Days</option>
+                        <option selected>Last 30 Days</option>
+                        <option>Last 90 Days</option>
+                      </select>
+                    </div>
+                    <div class="card-body">
+                      <div id="chartInventoryRisk"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="card h-100">
+                    <div class="card-header">
+                      <h6 class="mb-0">Inventory Coverage by Branch</h6>
+                      <small class="text-muted">Current ATP ÷ Average Daily Sales (days)</small>
+                    </div>
+                    <div class="card-body">
+                      <div class="d-flex gap-3 text-xs text-muted mb-2">
+                        <span><span class="d-inline-block rounded" style="width:12px;height:8px;background:#dc2626;"></span> Critical &lt;7d</span>
+                        <span><span class="d-inline-block rounded" style="width:12px;height:8px;background:#f59e0b;"></span> Warning 7-14d</span>
+                        <span><span class="d-inline-block rounded" style="width:12px;height:8px;background:#16a34a;"></span> Healthy &gt;14d</span>
+                      </div>
+                      <div id="chartCoverage"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <footer class="content-footer footer bg-footer-theme">
+              <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
+                <div class="mb-2 mb-md-0">
+                  © <script>document.write(new Date().getFullYear());</script>, Smart Supply — FMCG Procurement Platform
+                </div>
+                <div>
+                  <span class="text-muted">Built on the</span>
+                  <a href="https://themeselection.com/products/sneat-bootstrap-html-admin-template/" target="_blank" class="footer-link fw-bolder">Sneat</a>
+                  <span class="text-muted">admin template</span>
+                </div>
+              </div>
+            </footer>
+
+            <div class="content-backdrop fade"></div>
+          </div>
+        </div>
+      </div>
+      <div class="layout-overlay layout-menu-toggle"></div>
+    </div>
+
+    <script src="../assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="../assets/vendor/libs/popper/popper.js"></script>
+    <script src="../assets/vendor/js/bootstrap.js"></script>
+    <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="../assets/vendor/js/menu.js"></script>
+    <script src="../assets/vendor/libs/apex-charts/apexcharts.js"></script>
+    <script src="../assets/js/main.js"></script>
+
+    <script>
+      const tt = { style: { fontSize: '12px' } };
+      new ApexCharts(document.querySelector("#chartInventoryRisk"), {
+        chart: { type: 'line', height: 250, toolbar: { show: false } },
+        series: [
+          { name: 'Current Inventory', data: [12400, 11200, 10800, 9600, 8900, 8200, 8000] },
+          { name: 'Sales', data: [9800, 10200, 10500, 10900, 11200, 10800, 10600] }
+        ],
+        xaxis: { categories: ['Jun 1','Jun 5','Jun 10','Jun 15','Jun 20','Jun 25','Jun 27'], labels: { style: { fontSize: '11px' } } },
+        colors: ['#1e3a8a', '#16a34a'],
+        stroke: { width: [3, 3], dashArray: [0, 5], curve: 'smooth' },
+        markers: { size: 3 },
+        legend: { fontSize: '12px' },
+        grid: { borderColor: '#f1f5f9' }
+      }).render();
+
+      new ApexCharts(document.querySelector("#chartCoverage"), {
+        chart: { type: 'bar', height: 220, toolbar: { show: false } },
+        series: [{ name: 'Coverage (days)', data: [3.2, 4.1, 5.8, 9.4, 11.2, 16.7, 21.3] }],
+        xaxis: { categories: ['BR-01 Central','BR-04 East','BR-07 North','BR-02 South','BR-09 West','BR-05 Downtown','BR-03 Airport'] },
+        plotOptions: { bar: { horizontal: true, borderRadius: 4, distributed: true } },
+        colors: [3.2,4.1,5.8,9.4,11.2,16.7,21.3].map(d => d < 7 ? '#dc2626' : d <= 14 ? '#f59e0b' : '#16a34a'),
+        legend: { show: false },
+        grid: { borderColor: '#f1f5f9' },
+        dataLabels: { enabled: true, formatter: v => v + 'd', style: { fontSize: '11px' } }
+      }).render();
+    </script>
+
+  </body>
+</html>

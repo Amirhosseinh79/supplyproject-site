@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en" class="light-style layout-menu-fixed" dir="ltr" data-theme="theme-default"
+  data-assets-path="../assets/" data-template="vertical-menu-template-free">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <title>Supplier | Smart Supply — FMCG Procurement Platform</title>
+    <meta name="description" content="Smart Supply — AI-powered FMCG procurement platform" />
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/vendor/fonts/boxicons.css" />
+    <link rel="stylesheet" href="../assets/vendor/css/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="../assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="../assets/css/demo.css" />
+    <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="../assets/vendor/libs/apex-charts/apex-charts.css" />
+    <link rel="stylesheet" href="../assets/css/custom.css" />
+    
+    <script src="../assets/vendor/js/helpers.js"></script>
+    <script src="../assets/js/config.js"></script>
+  </head>
+
+  <body>
+    <div class="layout-wrapper layout-content-navbar">
+      <div class="layout-container">
+        <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+          <div class="app-brand demo">
+            <a href="index.html" class="app-brand-link">
+              <span class="app-brand-logo demo">
+                <span class="d-flex align-items-center justify-content-center" style="width:32px;height:32px;border-radius:8px;background:linear-gradient(135deg,#1e3a8a,#1e293b);">
+                  <i class="bx bx-package text-white" style="font-size:18px;"></i>
+                </span>
+              </span>
+              <span class="app-brand-text demo menu-text fw-bolder ms-2">Smart Supply</span>
+            </a>
+            <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
+              <i class="bx bx-chevron-left bx-sm align-middle"></i>
+            </a>
+          </div>
+
+          <div class="menu-inner-shadow"></div>
+          <ul class="menu-inner py-1">
+            <li class="menu-item">
+              <a href="index.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-line-chart"></i>
+                <div>
+                  <div class="fw-semibold">Executive Dashboard</div>
+                  <small class="text-muted" style="font-size:.65rem;">Real-time procurement overview</small>
+                </div>
+                
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="order-recommendations.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-cart"></i>
+                <div>
+                  <div class="fw-semibold">AI Order Recommendation</div>
+                  <small class="text-muted" style="font-size:.65rem;">Smart ordering suggestions</small>
+                </div>
+                <span class="badge bg-label-primary rounded-pill ms-2">10</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="promotion-planning.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bxs-megaphone"></i>
+                <div>
+                  <div class="fw-semibold">Promotion Planning</div>
+                  <small class="text-muted" style="font-size:.65rem;">Upload & manage promotions</small>
+                </div>
+                
+              </a>
+            </li>
+            <li class="menu-item active">
+              <a href="supplier.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-buildings"></i>
+                <div>
+                  <div class="fw-semibold">Supplier</div>
+                  <small class="text-muted" style="font-size:.65rem;">Performance & inventory</small>
+                </div>
+                
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="management.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-bar-chart-alt-2"></i>
+                <div>
+                  <div class="fw-semibold">Management Dashboard</div>
+                  <small class="text-muted" style="font-size:.65rem;">Executive-level overview</small>
+                </div>
+                
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="product-management.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-box"></i>
+                <div>
+                  <div class="fw-semibold">Product Management</div>
+                  <small class="text-muted" style="font-size:.65rem;">Master data & catalog</small>
+                </div>
+                
+              </a>
+            </li>
+            <li class="menu-header small text-uppercase"><span class="menu-header-text">System</span></li>
+            <li class="px-3 pb-3">
+              <div class="p-3 rounded" style="background:#f4f5fa;">
+                <p class="mb-0 fw-semibold small">AI Engine</p>
+                <p class="mb-1 text-muted small">Model: v2.4.1</p>
+                <div class="d-flex align-items-center gap-1">
+                  <span class="badge badge-dot bg-success"></span>
+                  <span class="small text-success fw-semibold">Live</span>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+        </aside>
+
+        <div class="layout-page">
+          <nav class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme" id="layout-navbar">
+            <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+              <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+                <i class="bx bx-menu bx-sm"></i>
+              </a>
+            </div>
+            <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+              <div class="navbar-nav align-items-center">
+                <div class="nav-item d-flex align-items-center">
+                  <i class="bx bx-search fs-4 lh-0"></i>
+                  <input type="text" class="form-control border-0 shadow-none" placeholder="Search SKU, products, branches..." aria-label="Search..." />
+                </div>
+              </div>
+              <ul class="navbar-nav flex-row align-items-center ms-auto">
+                <li class="nav-item lh-1 me-3 dropdown">
+                  <a class="nav-link dropdown-toggle hide-arrow position-relative" href="javascript:void(0);" data-bs-toggle="dropdown">
+                    <i class="bx bx-bell bx-sm"></i>
+                    <span class="badge bg-danger rounded-pill badge-notifications">6</span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end py-0">
+                    <li class="dropdown-menu-header border-bottom">
+                      <div class="dropdown-header d-flex align-items-center py-3">
+                        <h6 class="mb-0 me-auto">Procurement Alerts</h6>
+                        <span class="badge bg-label-primary rounded-pill">6 New</span>
+                      </div>
+                    </li>
+                    <li class="dropdown-notifications-list scrollable-container">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item list-group-item-action dropdown-notifications-item">
+                          <small class="text-danger fw-semibold">8 SKUs will stock out within 48 hours</small>
+                        </li>
+                        <li class="list-group-item list-group-item-action dropdown-notifications-item">
+                          <small class="text-warning fw-semibold">Tehran Foods Co. delayed 3.2 days avg this week</small>
+                        </li>
+                        <li class="list-group-item list-group-item-action dropdown-notifications-item">
+                          <small class="text-info fw-semibold">High shortage risk detected for 12 SKUs</small>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                  <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
+                    <div class="avatar avatar-online">
+                      <span class="avatar-initial rounded-circle" style="background:linear-gradient(135deg,#1e3a8a,#1e40af);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;">SM</span>
+                    </div>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end">
+                    <li>
+                      <a class="dropdown-item" href="javascript:void(0);">
+                        <div class="d-flex">
+                          <div class="flex-shrink-0 me-3">
+                            <div class="avatar avatar-online">
+                              <span class="avatar-initial rounded-circle" style="background:linear-gradient(135deg,#1e3a8a,#1e40af);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;">SM</span>
+                            </div>
+                          </div>
+                          <div class="flex-grow-1">
+                            <span class="fw-semibold d-block">Supply Manager</span>
+                            <small class="text-muted">Procurement Team</small>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li><div class="dropdown-divider"></div></li>
+                    <li><a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-user me-2"></i><span class="align-middle">My Profile</span></a></li>
+                    <li><a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-cog me-2"></i><span class="align-middle">Settings</span></a></li>
+                    <li><div class="dropdown-divider"></div></li>
+                    <li><a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-power-off me-2"></i><span class="align-middle">Log Out</span></a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+          <div class="content-wrapper">
+            <div class="container-xxl flex-grow-1 container-p-y">
+
+              <div class="d-flex align-items-start justify-content-between pb-3 mb-4 border-bottom flex-wrap gap-3">
+                <div>
+                  <h4 class="fw-bold mb-1">Supplier</h4>
+                  <p class="text-muted mb-0">Supplier performance, inventory visibility, stock risk, and collaboration</p>
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                  <i class="bx bx-filter-alt text-muted"></i>
+                  <label class="text-xs text-muted">Vendor</label>
+                  <select class="form-select form-select-sm" style="width:190px;">
+                    <option>All Vendors</option>
+                    <option>Alifard Saveh</option>
+                    <option>Alifard Firouzkouh</option>
+                    <option>Lavin Govar</option>
+                    <option>Roxan and Dara</option>
+                    <option>Shiva Firouzkouh</option>
+                    <option>Shiva Hashtgerd</option>
+                  </select>
+                  <button class="btn btn-outline-primary btn-sm"><i class="bx bx-download me-1"></i>Export</button>
+                </div>
+              </div>
+
+              <!-- KPI Cards -->
+              <div class="row g-3 mb-4">
+                <div class="col-sm-6 col-lg-3">
+                  <div class="card h-100"><div class="card-body">
+                    <div class="kpi-icon-tile bg-primary mb-3"><i class="bx bx-time-five text-white fs-4"></i></div>
+                    <p class="text-xs text-muted text-uppercase mb-1">Average Lead Time</p>
+                    <h4 class="fw-bold mb-1">4.6 Days</h4>
+                    <p class="text-xs text-warning fw-semibold mb-0">+0.4 vs prev. period</p>
+                  </div></div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                  <div class="card h-100 border-warning-subtle"><div class="card-body">
+                    <div class="d-flex justify-content-between mb-3">
+                      <div class="kpi-icon-tile bg-warning"><i class="bx bx-shopping-bag text-white fs-4"></i></div>
+                      <span class="badge badge-soft-warning rounded-pill">Active</span>
+                    </div>
+                    <p class="text-xs text-muted text-uppercase mb-1">Open Purchase Orders</p>
+                    <h4 class="fw-bold mb-1">38 POs</h4>
+                    <p class="text-xs text-muted mb-0">Across 6 suppliers</p>
+                  </div></div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                  <div class="card h-100"><div class="card-body">
+                    <div class="kpi-icon-tile mb-3" style="background:#059669;"><i class="bx bx-car text-white fs-4"></i></div>
+                    <p class="text-xs text-muted text-uppercase mb-1">Shipped Orders</p>
+                    <h4 class="fw-bold mb-1">124 Orders</h4>
+                    <p class="text-xs text-success fw-semibold mb-0">+12% vs last month</p>
+                  </div></div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                  <div class="card h-100"><div class="card-body">
+                    <div class="kpi-icon-tile bg-secondary mb-3"><i class="bx bx-layer text-white fs-4"></i></div>
+                    <p class="text-xs text-muted text-uppercase mb-1">Supplier Capacity</p>
+                    <h4 class="fw-bold mb-2">72%</h4>
+                    <div class="progress" style="height:6px;"><div class="progress-bar bg-secondary" style="width:72%"></div></div>
+                    <p class="text-xs text-muted mt-2 mb-0">Available utilization</p>
+                  </div></div>
+                </div>
+              </div>
+
+              <!-- Stockout Table -->
+              <div class="card mb-4">
+                <div class="card-header d-flex align-items-center justify-content-between">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bx bx-error-circle text-danger"></i>
+                    <span class="fw-semibold">Supplier Stockout Duration</span>
+                    <span class="badge badge-soft-danger rounded-pill">6 SKUs</span>
+                  </div>
+                  <button class="btn btn-sm btn-outline-primary"><i class="bx bx-download me-1"></i>Export</button>
+                </div>
+                <div class="table-responsive">
+                  <table class="table table-sm mb-0">
+                    <thead class="table-light">
+                      <tr class="text-xs text-uppercase">
+                        <th>SKU</th><th>Product Name</th><th class="text-center">Stockout Days</th><th>Risk</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td class="font-monospace fw-bold text-primary text-xs">SKU-10245</td>
+                      <td class="text-xs fw-medium">Premium Arabica Coffee Beans 1kg</td>
+                      <td class="text-center"><span class="fw-bold text-warning">4</span> <span class="text-muted text-xs">days</span></td>
+                      <td><span class="risk-badge risk-high">High</span></td>
+                    </tr>
+                    <tr>
+                      <td class="font-monospace fw-bold text-primary text-xs">SKU-30789</td>
+                      <td class="text-xs fw-medium">Natural Spring Mineral Water 500ml</td>
+                      <td class="text-center"><span class="fw-bold text-danger">7</span> <span class="text-muted text-xs">days</span></td>
+                      <td><span class="risk-badge risk-critical">Critical</span></td>
+                    </tr>
+                    <tr>
+                      <td class="font-monospace fw-bold text-primary text-xs">SKU-50892</td>
+                      <td class="text-xs fw-medium">High Protein Mixed Flavor Bars</td>
+                      <td class="text-center"><span class="fw-bold text-warning">3</span> <span class="text-muted text-xs">days</span></td>
+                      <td><span class="risk-badge risk-high">High</span></td>
+                    </tr>
+                    <tr>
+                      <td class="font-monospace fw-bold text-primary text-xs">SKU-11887</td>
+                      <td class="text-xs fw-medium">Sparkling Lemonade 330ml (6-pack)</td>
+                      <td class="text-center"><span class="fw-bold text-danger">5</span> <span class="text-muted text-xs">days</span></td>
+                      <td><span class="risk-badge risk-critical">Critical</span></td>
+                    </tr>
+                    <tr>
+                      <td class="font-monospace fw-bold text-primary text-xs">SKU-80665</td>
+                      <td class="text-xs fw-medium">Cold Press Juice Orange & Carrot 1L</td>
+                      <td class="text-center"><span class="fw-bold text-secondary">2</span> <span class="text-muted text-xs">days</span></td>
+                      <td><span class="risk-badge risk-medium">Medium</span></td>
+                    </tr>
+                    <tr>
+                      <td class="font-monospace fw-bold text-primary text-xs">SKU-20156</td>
+                      <td class="text-xs fw-medium">Organic Green Tea 100pk</td>
+                      <td class="text-center"><span class="fw-bold text-secondary">1</span> <span class="text-muted text-xs">days</span></td>
+                      <td><span class="risk-badge risk-low">Low</span></td>
+                    </tr>
+
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <!-- Charts -->
+              <div class="row g-4 mb-4">
+                <div class="col-lg-6">
+                  <div class="card h-100">
+                    <div class="card-header">
+                      <h6 class="mb-0">Branch vs Order Volume</h6>
+                      <small class="text-muted">Distribution of order quantity by branch</small>
+                    </div>
+                    <div class="card-body"><div id="chartBranchDemand"></div></div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="card h-100">
+                    <div class="card-header">
+                      <h6 class="mb-0">Supplier Delivery Performance</h6>
+                      <small class="text-muted">On-time vs delayed delivery rate</small>
+                    </div>
+                    <div class="card-body"><div id="chartDeliveryDonut"></div></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Supplier Inventory Upload -->
+              <div class="card">
+                <div class="card-header d-flex align-items-center gap-2">
+                  <i class="bx bx-upload text-primary"></i>
+                  <span class="fw-semibold">Supplier Inventory Upload</span>
+                  <span class="text-xs text-muted">— Upload supplier inventory to auto-calculate stockout and critical SKU counts</span>
+                </div>
+                <div class="card-body">
+                  <div class="row g-4">
+                    <div class="col-lg-6">
+                      <div class="dropzone mb-3" onclick="document.getElementById('supFileInput').click()">
+                        <input type="file" id="supFileInput" accept=".xlsx,.csv,.xls" class="d-none"
+                          onchange="document.getElementById('supUploadResult').classList.remove('d-none'); document.getElementById('supFileName').innerText = this.files[0]?.name || '';" />
+                        <div class="d-flex align-items-center justify-content-center rounded-4 mx-auto mb-3 border" style="width:56px;height:56px;background:#fff;">
+                          <i class="bx bxs-file-blank fs-2 text-secondary"></i>
+                        </div>
+                        <p class="fw-semibold mb-1 small">Drag &amp; drop supplier inventory file</p>
+                        <p class="text-muted small mb-1">or <span class="text-primary fw-semibold">browse to upload</span></p>
+                        <p class="text-xs text-muted mb-0">Supports: .xlsx, .csv, .xls</p>
+                      </div>
+                      <div id="supUploadResult" class="d-none alert d-flex align-items-center gap-3" style="background:#dbeafe;border-color:#bfdbfe;">
+                        <i class="bx bxs-file-blank text-primary fs-4"></i>
+                        <div class="flex-grow-1">
+                          <p class="mb-0 fw-semibold small text-primary" id="supFileName"></p>
+                          <p class="mb-0 text-xs text-primary">Ready to process</p>
+                        </div>
+                        <button class="btn btn-sm btn-primary" onclick="processUpload()">Process</button>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <p class="text-xs fw-semibold text-uppercase text-muted mb-2">Auto-Calculated Results</p>
+                      <div class="row g-3">
+                        <div class="col-6">
+                          <div class="card border-secondary-subtle bg-light h-100" id="oosCard">
+                            <div class="card-body">
+                              <div class="kpi-icon-tile bg-secondary mb-2" style="width:36px;height:36px;"><i class="bx bx-x-circle text-white"></i></div>
+                              <p class="text-xs text-muted text-uppercase mb-1">Out of Stock</p>
+                              <h5 class="fw-bold text-secondary mb-1" id="oosValue">—</h5>
+                              <p class="text-xs text-muted mb-0">Inventory = 0</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <div class="card border-secondary-subtle bg-light h-100" id="critCard">
+                            <div class="card-body">
+                              <div class="kpi-icon-tile bg-secondary mb-2" style="width:36px;height:36px;"><i class="bx bx-error text-white"></i></div>
+                              <p class="text-xs text-muted text-uppercase mb-1">Critical SKUs</p>
+                              <h5 class="fw-bold text-secondary mb-1" id="critValue">—</h5>
+                              <p class="text-xs text-muted mb-0">Inv. Days &lt; 5 (Target)</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="uploadSummary" class="d-none card mt-3">
+                        <div class="card-body">
+                          <p class="fw-semibold text-xs mb-2">Upload Summary</p>
+                          <div class="d-flex justify-content-between text-xs mb-1"><span class="text-muted">Total SKUs Processed</span><span class="fw-bold">248</span></div>
+                          <div class="d-flex justify-content-between text-xs mb-1"><span class="text-muted">In Stock SKUs</span><span class="fw-bold text-success">225</span></div>
+                          <div class="d-flex justify-content-between text-xs mb-1"><span class="text-muted">Out of Stock SKUs</span><span class="fw-bold text-danger">14</span></div>
+                          <div class="d-flex justify-content-between text-xs"><span class="text-muted">Critical SKUs (&lt;5d)</span><span class="fw-bold text-warning">9</span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <footer class="content-footer footer bg-footer-theme">
+              <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
+                <div class="mb-2 mb-md-0">
+                  © <script>document.write(new Date().getFullYear());</script>, Smart Supply — FMCG Procurement Platform
+                </div>
+                <div>
+                  <span class="text-muted">Built on the</span>
+                  <a href="https://themeselection.com/products/sneat-bootstrap-html-admin-template/" target="_blank" class="footer-link fw-bolder">Sneat</a>
+                  <span class="text-muted">admin template</span>
+                </div>
+              </div>
+            </footer>
+
+            <div class="content-backdrop fade"></div>
+          </div>
+        </div>
+      </div>
+      <div class="layout-overlay layout-menu-toggle"></div>
+    </div>
+
+    <script src="../assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="../assets/vendor/libs/popper/popper.js"></script>
+    <script src="../assets/vendor/js/bootstrap.js"></script>
+    <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="../assets/vendor/js/menu.js"></script>
+    <script src="../assets/vendor/libs/apex-charts/apexcharts.js"></script>
+    <script src="../assets/js/main.js"></script>
+
+    <script>
+      new ApexCharts(document.querySelector("#chartBranchDemand"), {
+        chart: { type: 'bar', height: 240, toolbar: { show: false } },
+        series: [{ name: 'Order Quantity', data: [1840, 1120, 980, 760, 1340] }],
+        xaxis: { categories: ['WH-CTR-01','BR-NTH-02','BR-STH-03','BR-EST-04','BR-WST-05'] },
+        plotOptions: { bar: { borderRadius: 4, distributed: true, columnWidth: '55%' } },
+        colors: [1840,1120,980,760,1340].map(v => v >= 1500 ? '#1e3a8a' : v >= 1000 ? '#3b82f6' : '#93c5fd'),
+        legend: { show: false },
+        grid: { borderColor: '#f1f5f9' },
+        dataLabels: { enabled: false }
+      }).render();
+
+      new ApexCharts(document.querySelector("#chartDeliveryDonut"), {
+        chart: { type: 'donut', height: 240 },
+        series: [82, 18],
+        labels: ['On Time', 'Delayed'],
+        colors: ['#16a34a', '#dc2626'],
+        legend: { position: 'right' },
+        dataLabels: { formatter: v => Math.round(v) + '%' }
+      }).render();
+
+      function processUpload() {
+        document.getElementById('oosValue').innerText = '14';
+        document.getElementById('critValue').innerText = '9';
+        document.getElementById('oosCard').classList.remove('border-secondary-subtle', 'bg-light');
+        document.getElementById('oosCard').classList.add('border-danger-subtle', 'bg-danger-subtle', 'bg-opacity-25');
+        document.getElementById('critCard').classList.remove('border-secondary-subtle', 'bg-light');
+        document.getElementById('critCard').classList.add('border-warning-subtle', 'bg-warning-subtle', 'bg-opacity-25');
+        document.getElementById('uploadSummary').classList.remove('d-none');
+      }
+    </script>
+
+  </body>
+</html>
